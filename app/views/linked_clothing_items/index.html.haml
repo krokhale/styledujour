@@ -1,0 +1,21 @@
+- #title "Linked Clothing Items"
+
+/%table
+/  %tr
+/    %th Item url
+/  - for linked_clothing_item in @linked_clothing_items
+/    %tr
+/      %td= linked_clothing_item.item_url
+/      %td= link_to 'Show', linked_clothing_item
+/      %td= link_to 'Edit', edit_linked_clothing_item_path(linked_clothing_item)
+/      %td= link_to 'Destroy', linked_clothing_item, :confirm => 'Are you sure?', :method => :delete
+
+/%p= link_to "New Linked Clothing Item", new_linked_clothing_item_path
+
+#linked_clothing_items
+
+:javascript
+  $(function() {
+    window.router = new Styledujour.Routers.LinkedClothingItemsRouter({linkedClothingItems: #{@linked_clothing_items.to_json.html_safe}});
+    Backbone.history.start();
+  });

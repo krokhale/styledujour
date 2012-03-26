@@ -1,0 +1,25 @@
+# == Schema Information
+#
+# Table name: user_scored_clothing_items
+#
+#  user_id          :integer         not null
+#  clothing_item_id :integer         not null
+#  price            :decimal(, )
+#  love             :boolean
+#  created_at       :datetime        not null
+#  updated_at       :datetime        not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  user_id: 1
+  clothing_item_id: 1
+  price: 9.99
+  love: false
+
+two:
+  user_id: 1
+  clothing_item_id: 1
+  price: 9.99
+  love: false

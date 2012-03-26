@@ -1,0 +1,18 @@
+= bootstrap_form_for @clothing_item do |f|
+  = f.error_messages
+
+  = f.text_field :name
+
+  = f.text_field :price
+
+  = f.text_area :description
+
+  = f.text_field :imageurl
+
+  = f.text_field :currency
+
+  = f.number_field :retailer_id
+
+  = f.number_field :manufacturer_id
+  %p
+    = f.submit

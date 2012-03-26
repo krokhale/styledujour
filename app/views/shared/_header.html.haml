@@ -1,0 +1,19 @@
+.navbar.navbar-top
+  .navbar-inner
+    .container
+      %a.btn.btn-navbar{:data=>{:toggle=>"collapse", :target=>".nav-collapse"}}
+        %span.icon-bar
+      =link_to "Style du Jour", root_path, :class=>"brand"
+      .nav-collapse
+        %ul.nav
+          -if user_signed_in?
+            
+            
+            %li.nav-text
+              ="Welcome, #{current_user.email}"
+            %li=link_to "Sign Out", destroy_user_session_path, :method=> :delete 
+          -else
+            %li.nav-text
+              Welcome Guest
+            %li=link_to "Sign In", new_user_session_path
+ 

@@ -1,0 +1,24 @@
+.row-fluid
+  %h2 Sign in
+  .span6.well
+    = render "oauth_links"
+    = bootstrap_form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f|
+      = f.email_field :email
+      = f.password_field :password
+      - if devise_mapping.rememberable?
+        = f.check_box :remember_me
+      = f.submit "Sign in"
+    = render "links"
+    
+  .span5
+    - if session["user_return_to"] 
+      %h3 Why do I need an account?
+      %ol
+        %li So your friends will know you played.
+        %li So you can keep track of your picks.
+        %li So you can earn Style Points and unlock rewards
+        
+    -else
+      %h3 Style du Jour 
+      %ul
+        %li Reason 1

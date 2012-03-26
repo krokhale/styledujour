@@ -1,0 +1,22 @@
+# == Schema Information
+#
+# Table name: user_asked_clothing_items
+#
+#  user_id          :integer         not null
+#  clothing_item_id :integer         not null
+#  referrer         :string(255)
+#  created_at       :datetime        not null
+#  updated_at       :datetime        not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  user_id: 1
+  clothing_item_id: 1
+  referrer: MyString
+
+two:
+  user_id: 1
+  clothing_item_id: 1
+  referrer: MyString

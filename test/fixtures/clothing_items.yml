@@ -1,0 +1,35 @@
+# == Schema Information
+#
+# Table name: clothing_items
+#
+#  id              :integer         not null, primary key
+#  name            :string(255)
+#  price           :decimal(8, 2)
+#  description     :text
+#  imageurl        :string(255)
+#  currency        :string(255)
+#  retailer_id     :integer
+#  manufacturer_id :integer
+#  heir_id         :integer
+#  heir_type       :string(255)
+#  created_at      :datetime        not null
+#  updated_at      :datetime        not null
+#
+
+one:
+  name: MyString
+  price: 9.99
+  description: MyText
+  imageurl: MyString
+  currency: MyString
+  retailer_id: 1
+  manufacturer_id: 1
+
+two:
+  name: MyString
+  price: 9.99
+  description: MyText
+  imageurl: MyString
+  currency: MyString
+  retailer_id: 1
+  manufacturer_id: 1

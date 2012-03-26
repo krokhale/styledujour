@@ -1,0 +1,146 @@
+
+%h1.span12{:style=>"text-align:center"} Ask How Cute Is This?
+#hcit
+
+-if @linked_clothing_item
+  = image_tag @linked_clothing_item.imageurl
+  = link_to "Ask Now", invite_friends_linked_clothing_item_url(@linked_clothing_item)
+-else
+  = bootstrap_form_for LinkedClothingItem.new do |f|
+    #bar.span4
+      %h4 Select the correct image
+      %input#cur_image{:type=>"hidden"}
+      #loader
+        #image_navigation
+          %a#prev{:href=>"#"} Prev
+          %a#next{:href=>"#"} Next
+        #attach_content
+          #attach_images
+          #attach_info  
+          #images_info
+            Showing
+            %span#current_image_number 1
+            of
+            %span#total_image_number 1 
+            images
+    .span4
+      = f.error_messages
+      = f.hidden_field :item_url, :value=>params[:u]
+      = f.text_field :name, :value=>params[:t]
+    
+      = f.text_field :price, :value => (@item_properties[:prices][0] if @item_properties && @item_properties[:prices])
+      #price_suggestions
+      = f.text_area :description, :size=>"20x5"
+    
+      = f.hidden_field :imageurl
+    
+      = f.hidden_field :currency, :value=>"USD"
+  
+        
+    .span4
+      = f.submit
+      
+  
+  - content_for :scripts do 
+  
+    :javascript
+      var url = "#{@url}";
+          
+      var prices; 
+      var images = []; 
+      var resp;
+      $(document).ready(function() {
+        
+          $.ajax({url:"get_page_details.json?u=#{u(params[:u])}&t=#{u(params[:t])}",dataType: 'json', data: null, timeout: 5000, success: function(response){      
+            resp = response;
+            prices = response.prices;
+            if(response.images_sized != null) {
+              $.each(response.images_sized, function(index,item){
+               images[index] = item.url;
+              });
+            }
+            else {
+              images[0] = response.image;
+            }  
+            parsePage();
+          }});
+      });
+      
+      function parsePage() {
+      
+          $('#linked_clothing_item_description').val(resp.description);
+          if(prices != null)
+            $('#linked_clothing_item_price').val(prices[0]);
+            
+          $.each(images, function(a,b){
+                var id = a+1;
+                $('#attach_images').append('<img src="'+b+'" id="'+id+'" width="200"/>');
+                
+                
+            });
+                var image_count = images.length;
+                $('#attach_images img').hide();
+                $('#total_image_number').html(image_count);
+                //Show first image
+                 $('img#1').fadeIn();
+                 $('#cur_image').val(1);
+                 $('#current_image_number').html(1);
+                 $('#linked_clothing_item_imageurl').val(images[0]);
+                 // next image
+                 $('#next').unbind('click');
+                 $('#next').bind("click", function(){
+   
+                    var total_images = image_count;
+                    if (total_images > 0)
+                    {
+                       var index = $('#cur_image').val();
+                       $('img#'+index).hide();
+                       if(index < total_images)
+                       {
+                          new_index = parseInt(index)+parseInt(1);
+                       }
+                       else
+                       {
+                          new_index = 1;
+                       }
+   
+                       $('#cur_image').val(new_index);
+                       $('#current_image_number').html(new_index);
+                       $('img#'+new_index).show();
+                       $('#linked_clothing_item_imageurl').val(images[new_index]);
+                    }
+                 });
+   
+                 // prev image
+                 $('#prev').unbind('click');
+                 $('#prev').bind("click", function(){
+   
+                    var total_images = image_count;
+                    if (total_images > 0)
+                    {
+                       var index = $('#cur_image').val();
+                       $('img#'+index).hide();
+                       if(index > 1)
+                       {
+                          new_index = parseInt(index)-parseInt(1);;
+                       }
+                       else
+                       {
+                          new_index = total_images;
+                       }
+   
+                       $('#cur_image').val(new_index);
+                       $('#current_image_number').html(new_index);
+                       $('img#'+new_index).show();
+                       $('#linked_clothing_item_imageurl').val(images[new_index]);
+                    }
+                 });
+        
+      }
+
+:javascript
+  $(function() {
+    //window.router = new Styledujour.Routers.LinkedClothingItemsRouter();
+    //window.router = new Styledujour.Routers.HcitRouter();
+    //Backbone.history.start();
+  });

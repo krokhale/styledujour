@@ -1,0 +1,13 @@
+# == Schema Information
+#
+# Table name: linked_clothing_items
+#
+#  id       :integer         not null, primary key
+#  item_url :string(255)     not null
+#
+
+one:
+  item_url: MyString
+
+two:
+  item_url: MyString
