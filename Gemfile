@@ -41,10 +41,11 @@ gem 'cancan'
 
 gem 'settingslogic'
 gem 'hpricot'
+gem 'annotate', :git => 'git://github.com/ctran/annotate_models.git'
 group :development do
   gem 'nifty-generators'
   gem 'ruby_parser'
-  gem 'annotate', :git => 'git://github.com/ctran/annotate_models.git'
+  
 end
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
