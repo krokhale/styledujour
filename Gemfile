@@ -40,10 +40,9 @@ gem 'opengraph', :git=>'git://github.com/parasquid/opengraph.git'
 gem 'cancan'
 
 gem 'settingslogic'
-
+gem 'hpricot'
 group :development do
   gem 'nifty-generators'
-  gem 'hpricot'
   gem 'ruby_parser'
   gem 'annotate', :git => 'git://github.com/ctran/annotate_models.git'
 end
