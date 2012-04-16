@@ -5,6 +5,10 @@
     .row-fluid
       .span4
         =link_to image_tag("facebook_128.png"), "javascript:inviteFacebook();"
+        
+    .row-fluid
+      .span12{:style=>"text-align: center;"}
+        =link_to "Go to clothing item", clothing_item_path(@linked_clothing_item.predecessor.id), :class=>"btn btn-large"
 
 #facebook-row.row-fluid{:style=>"display:none;"}
   .span6
@@ -14,15 +18,19 @@
 -content_for :scripts do
   =javascript_include_tag "http://connect.facebook.net/en_US/all.js"
   :javascript
-     
+      
      function inviteFacebook() {
-      //$("#ask-row").toggle();
-      //$("#facebook-row").toggle();
       FB.init({ 
                appId:'6194336540', 
                cookie:true, 
                status:true
+               
             });
-      
-     FB.ui({ method: 'apprequests', message: '#{current_user.name} asks How Cute Is This?.'});
+      FB.ui({ method: 'apprequests', message: '#{current_user.name} asks How Cute Is This?.'}, fbInviteRequestCallback);
+     }
+     
+     function fbInviteRequestCallback(response)
+     {
+      $.post('/hcit/fb_request', {'clothing_item_id':#{@linked_clothing_item.predecessor.id}, 'fb_ids':response.to, 'request_object_id':response.request}, 
+              function(data, status) { if(status == "success") { alert('Your Facebook friends have been asked!'); }}, 'json');
      }

@@ -37,6 +37,8 @@ gem 'mechanize'
 gem 'imagesize'
 gem 'opengraph', :git=>'git://github.com/parasquid/opengraph.git'
 
+gem 'cancan'
+
 group :development do
   gem 'nifty-generators'
   gem 'hpricot'

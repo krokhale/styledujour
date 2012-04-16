@@ -1,0 +1,11 @@
+%li.span3.mini-item
+  .thumbnail
+    - if show_my_score
+      #score="$#{item.score_for(current_user)} cute!"
+    =image_tag item.imageurl, :width=>"150px"
+    .caption
+      %h5=item.name
+      - if little_menu
+        %p
+          =link_to "View", clothing_item_path(item), :class=>"btn btn-primary"
+          =link_to "Ask", invite_friends_clothing_item_path(item), :class=>"btn"

@@ -1,2 +1,44 @@
-%h1 Hcit#index
-%p Find me in app/views/hcit/index.html.haml
+- js = "javascript:(function(e,a,g,h,f,c,b,d){if(!(f=e.jQuery)||g>f.fn.jquery||h(f)){c=a.createElement(\"script\");c.type=\"text/javascript\";c.src=\"http://ajax.googleapis.com/ajax/libs/jquery/\"+g+\"/jquery.min.js\";c.onload=c.onreadystatechange=function(){if(!b&&(!(d=this.readyState)||d==\"loaded\"||d==\"complete\")){h((f=e.jQuery).noConflict(1),b=1);f(c).remove()}};a.documentElement.childNodes[0].appendChild(c)}})(window,document,\"1.6.1\",function($,L){"
+- js << "(function(){var head,panel,panel_close_button,panel_frame,panel_html,panel_status,style;style='<style type=\"text/css\">\n #hacker-panel {\n display: none;\n position: fixed;\n bottom: 0;\n z-index: 999999;\n \n width: 100%25;\n height: 40px;\n\n border: 0;\n background: #fff;\n \n -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 -5px 6px 0;\n -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 -5px 6px 0;\n -o-box-shadow: rgba(0, 0, 0, 0.2) 0 -5px 6px 0;\n box-shadow: rgba(0, 0, 0, 0.2) 0 -5px 6p;\n }\n \n #hacker-panel .close-button {\n position: absolute;\n top: 10px;\n right: 10px;\n padding: 5px;\n background: #fff;\n color: #999;\n cursor: auto;\n display: block;\n font-family: Helvetica Neue, Helvetica, Arial, sans-serif;\n font-size: 18px;\n height: 10px;\n width: 11px;\n line-height: 10px;\n text-decoration: none;\n }\n \n #hacker-panel .status {\n text-align: center;\n padding-top: 10px;\n font-family: Verdana;\n font-size: 12px;\n }\n \n #hacker-panel .frame {\n display: none;\n width: 100%25;\n height: 100%25;\n border: 0;\n }\n</style>';head=$(\"head\");if(!head.length){$(\"html\").append($(\"<head></head>\"));}"
+- js << "$(\"head\").append(style);panel_html='<div id=\"hacker-panel\" class=\"panel\">\n <div class=\"close\">\n <a href=\"#\" class=\"close-button\">&times;</a>\n </div>\n <div class=\"status\">\n Loading...\n </div>\n <iframe class=\"frame\" />\n</div>';panel=$(\"#hacker-panel\");if(panel.length){if(panel.is(\":visible\")){panel.slideUp(\"fast\");}else{panel.slideDown(\"fast\");}}else{panel=$(panel_html);panel_status=panel.find(\".status\");panel_frame=panel.find(\".frame\");panel.appendTo(\"body\");panel.slideDown(\"fast\");$.getJSON(\"http://localhost:3000/hcit/getid?format=jsonp&callback=?&url=\"+encodeURI(window.location),function(data){if(data.length){return panel_frame.attr(\"src\",\"http://localhost:3000/item?id=\"+data[0]);}else{return panel_frame.attr(\"src\",\"http://localhost:3000/hcit/submit_link?u=\"+encodeURIComponent(document.location)+\"&t=\"+encodeURIComponent(document.title));}});panel_frame.bind(\"load\",function(){panel_status.fadeOut(\"fast\");panel_frame.fadeIn(\"fast\");return panel.animate({height:\"60%25\"});});}"
+- js << "panel_close_button=panel.find(\".close-button\");panel_close_button.click(function(){return panel.slideUp(\"fast\");});}).call(this);});"
+
+= render :partial => "menu"
+.row-fluid
+  .span12
+    .hero-unit
+      %h1 How Cute Is This?
+      %p Play the game. Look cute now.
+      %p
+        =link_to "Play Now!", "#", :class=>"btn btn-primary btn-large"
+      %p Drag this button to your browser bar to play HCIT on any clothing website: 
+      
+      %a{:href=>js, :class=>"btn"} How Cute Is This?
+      %p Click the browser bar button anytime you want to ask "How Cute Is This?"
+.row-fluid
+  .span4{:style=>"text-align: center;"}
+    %h3 Shop It!
+    =image_tag "hcit/magenta_bag.png"
+    .row
+      .span2.offset1
+        %p 
+        Like to shop?
+        %br/
+        Wish you could ask your friends "How Cute Is This?" even if they were far away?
+        %br/
+        Now you can. You can be asking your friends in seconds.
+      .span1
+  .span4{:style=>"text-align: center;"}
+    %h3 Share It!
+    =image_tag "hcit/omg!_2.png"
+    .row
+      .span2.offset1
+        %p Now that you found that special item. Share it. Ask it. And Wear it.
+      .span1
+  .span4{:style=>"text-align: center;"}
+    %h3 Show It!
+    =image_tag "hcit/trndsttr_3.png"
+    .row
+      .span2.offset1    
+        %p Show your friends or the world your shopping skills; or, just show them what you just bought!    
+      .span1

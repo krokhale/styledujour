@@ -1,0 +1,36 @@
+.well
+  = bootstrap_form_for user_score, :url=> hcit_score_clothing_item_path(item),  :remote=>true do |f|
+    =f.hidden_field :user_id
+    =f.hidden_field :clothing_item_id
+    =f.hidden_field :love 
+    =f.hidden_field :price
+  #dollar-slider
+  %h1 
+    $
+    %span#dollar-amount 0
+    Cute!
+
+  
+  %p
+    =link_to "Shop it!", "javascript:submit_form_with('shop');", :class=>"btn btn-success"
+    =link_to "Drop it!", "javascript:submit_form_with('drop');", :class=>"btn btn-danger"
+    
+    
+    
+:javascript
+  
+  $(function() {
+    $( "#dollar-slider" ).slider({max: 1000, step: 5, value: 0, slide: function(event,ui)
+    {
+      $("#dollar-amount").text(ui.value);
+      $("#user_scored_clothing_item_price").val(ui.value);
+    }});
+  });
+   function submit_form_with(feelings){
+    if (feelings == 'shop')
+      $('#user_scored_clothing_item_love').val(true);
+    else
+      $('#user_scored_clothing_item_love').val(false);
+      
+    $('#new_user_scored_clothing_item').submit();
+   }

@@ -3,6 +3,10 @@ Styledujour::Application.routes.draw do
   get "hcit/getid"
   get "hcit/submit_link"
   get "hcit/get_page_details"
+  post "hcit/fb_request"
+  get "hcit/my_asks"
+  get "hcit/my_scores"
+  get "hcit/browse"
   get "welcome/index"
   
   match 'facebook_app' => 'facebook_app#index'
@@ -14,7 +18,14 @@ Styledujour::Application.routes.draw do
     end
   end
 
-  resources :clothing_items
+  resources :clothing_items, :except=>[:edit, :delete] do
+    member do
+      get 'invite_friends'
+      get 'bookmark'
+      get 'hcit_form'
+      post 'hcit_score'
+    end
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

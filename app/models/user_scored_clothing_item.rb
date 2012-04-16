@@ -13,4 +13,7 @@
 class UserScoredClothingItem < ActiveRecord::Base
   belongs_to :user
   belongs_to :clothing_item
+  
+  scope :shopped, where(:love=>true)
+  scope :dropped, where(:love=>false)
 end

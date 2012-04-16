@@ -1,0 +1,32 @@
+# == Schema Information
+#
+# Table name: relations
+#
+#  id            :integer         not null, primary key
+#  name          :string(255)
+#  sender_type   :string(255)
+#  receiver_type :string(255)
+#  parent_id     :integer
+#  lft           :integer
+#  rgt           :integer
+#  created_at    :datetime        not null
+#  updated_at    :datetime        not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  sender_type: MyString
+  receiver_type: MyString
+  parent_id: 1
+  lft: 1
+  rgt: 1
+
+two:
+  name: MyString
+  sender_type: MyString
+  receiver_type: MyString
+  parent_id: 1
+  lft: 1
+  rgt: 1

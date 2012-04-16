@@ -1,0 +1,21 @@
+# == Schema Information
+#
+# Table name: profiles
+#
+#  id          :integer         not null, primary key
+#  birthday    :date
+#  description :string(255)
+#  actor_id    :integer
+#  created_at  :datetime        not null
+#  updated_at  :datetime        not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  birthday: 2012-03-30
+  description: MyString
+
+two:
+  birthday: 2012-03-30
+  description: MyString

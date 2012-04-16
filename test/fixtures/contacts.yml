@@ -1,0 +1,26 @@
+# == Schema Information
+#
+# Table name: contacts
+#
+#  id          :integer         not null, primary key
+#  sender_id   :integer
+#  receiver_id :integer
+#  inverse_id  :integer
+#  ties_count  :integer
+#  created_at  :datetime        not null
+#  updated_at  :datetime        not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  sender_id: 1
+  receiver_id: 1
+  inverse_id: 1
+  ties_count: 1
+
+two:
+  sender_id: 1
+  receiver_id: 1
+  inverse_id: 1
+  ties_count: 1

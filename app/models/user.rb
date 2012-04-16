@@ -19,6 +19,7 @@
 #  last_sign_in_at        :datetime
 #  current_sign_in_ip     :string(255)
 #  last_sign_in_ip        :string(255)
+#  actor_id               :integer
 #
 
 class User < ActiveRecord::Base
@@ -35,8 +36,11 @@ class User < ActiveRecord::Base
   has_many :user_asked_clothing_items
   has_many :user_bookmarked_clothing_items
   has_many :hcit_items, :through => :user_asked_clothing_items, :source => :clothing_item
+  has_many :bookmarked_items, :through => :user_bookmarked_clothing_items, :source => :clothing_item
   has_many :scores, :class_name => "UserScoredClothingItem"
-  has_many :scorered_items, :through => :user_scored_clothing_items, :class_name => "ClothingItem", :source=>:clothing_item
+  has_many :scorered_items, :through => :scores, :class_name => "ClothingItem", :source=>:clothing_item
+  belongs_to :actor
+  
   
   def self.find_for_facebook_oauth(access_token, signed_in_resource=nil)
     data = access_token.extra.raw_info

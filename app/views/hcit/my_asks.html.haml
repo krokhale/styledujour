@@ -1,0 +1,10 @@
+= render :partial => "menu"
+%h1.span12{:style=>"text-align:center"} My Asks
+#hcit
+
+- if @clothing_items
+  %ul.thumbnails
+    - @clothing_items.each do |clothing|
+      = render :partial => 'clothing_items/mini_item', :locals => {:item => clothing, :little_menu=>true, :show_my_score=>false}
+- else
+  %h3 Either browse what others are asking, or start searching the online stores now!

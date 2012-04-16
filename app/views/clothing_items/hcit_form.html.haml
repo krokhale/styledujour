@@ -1,0 +1,16 @@
+#hcit-score-form
+  .row
+    .span6
+      %h1 How Cute Is This?
+  .row
+    .span3
+      %ul.thumbnails
+        =#render :partial => 'mini_item', :locals=>{:item =>@clothing_item, :little_menu=>false}
+        %li
+          .thumbnail
+            =image_tag @clothing_item.imageurl, :width=>"150px"
+            .caption
+              %h5=@clothing_item.name
+      
+    .span3
+      =render :partial => 'score_form', :locals=>{:item =>@clothing_item, :user_score => @user_score}

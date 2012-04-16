@@ -28,4 +28,21 @@ class ClothingItem < ActiveRecord::Base
   has_many :askers, :through => :user_asked_clothing_items, :class_name => "User", :source=>:user
   has_many :scores, :class_name => "UserScoredClothingItem"
   has_many :scorers, :through => :user_scored_clothing_items, :class_name => "User", :source=>:user
+  
+  
+  def overall_hcit_score
+    (self.scores.shopped.sum(:price) / self.scores.shopped.count)
+  end
+  
+  def shopped_count
+    self.scores.shopped.count
+  end
+  
+  def dropped_count
+    self.scores.dropped.count
+  end
+  
+  def score_for(user)
+    self.scores.where(:user_id=>user).first.price
+  end
 end

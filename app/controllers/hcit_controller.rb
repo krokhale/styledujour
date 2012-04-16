@@ -1,5 +1,7 @@
 require 'parse_page'
 class HcitController < ApplicationController
+  before_filter :authenticate_user!, :only=>[:fb_request, :my_asks, :my_scores]
+  
   def index
   end
 
@@ -20,10 +22,61 @@ class HcitController < ApplicationController
       wants.html do
         render :text => "JSON only"
       end
-      wants.json { render json: @item_properties.to_json } 
+      wants.json { render json: @item_properties } 
     end
   end
   
+  def fb_request
+    @clothing_item = ClothingItem.find(params[:clothing_item_id])
+    @fb_ids = params[:fb_ids]
+    result = nil #flawed: fails to pick up additional invite errors
+    if @clothing_item && current_user
+      @fb_ids.each do |fbid|
+        if fbid.to_i > 0
+          existing_fb_invite = FacebookUserClothingInvite.where(:user_id=>current_user, :facebook_id=>fbid.to_i).first
+          if !existing_fb_invite
+            invite = FacebookUserClothingInvite.new
+            invite.user = current_user
+            invite.clothing_item = @clothing_item
+            invite.facebook_id = fbid.to_i
+            result= invite.save
+          else
+            result = true #already exists
+          end
+        end
+      end
+    end  
+    
+    respond_to do |wants|
+      wants.html do
+        if result
+          redirect_to clothing_item_path(@clothing_item), :notice => "You successfully asked your friends!"
+        else
+          redirect_to clothing_item_path(@clothing_item), :error => "We are sorry, something went wrong."
+        end
+      end
+      wants.js do
+        if result 
+          render :json=> nil, :status => 200 
+        else
+          render :json=> nil, :status => 500  
+        end
+      end
+    end
+  end
+  
+  
+  def my_asks
+    @clothing_items = current_user.hcit_items.order('user_asked_clothing_items.created_at desc')
+  end
+  
+  def my_scores
+    @clothing_items = current_user.scorered_items.order('user_scored_clothing_items.created_at desc').joins(:scores)
+  end
+  
+  def browse
+    @clothing_items = ClothingItem.order("created_at DESC")
+  end
   private
   def parse_page(url)
     parser=Parse::Ecommerce::Page.new

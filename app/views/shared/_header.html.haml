@@ -3,9 +3,12 @@
     .container
       %a.btn.btn-navbar{:data=>{:toggle=>"collapse", :target=>".nav-collapse"}}
         %span.icon-bar
-      =link_to "Style du Jour", root_path, :class=>"brand"
+      =link_to image_tag("logo.png"), root_path, :class=>"brand"
       .nav-collapse
         %ul.nav
+          %li=link_to "HCIT?", hcit_index_path
+     
+          %li.divider-vertical
           -if user_signed_in?
             
             

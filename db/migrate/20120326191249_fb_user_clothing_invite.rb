@@ -1,6 +1,6 @@
 class FbUserClothingInvite < ActiveRecord::Migration
   def up
-		create_table :facebook_user_clothing_invites, :id=>false, :force => true do |t|
+		create_table :facebook_user_clothing_invites, :force => true do |t|
 		    t.integer :facebook_id, :limit=> 8
 		    t.references :user
 		    t.references :clothing_item
