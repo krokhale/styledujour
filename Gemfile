@@ -21,6 +21,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+gem 'settingslogic'
 gem 'haml'
 gem 'jquery-rails'
 gem 'haml-rails'
@@ -39,7 +40,6 @@ gem 'opengraph', :git=>'git://github.com/parasquid/opengraph.git'
 
 gem 'cancan'
 
-gem 'settingslogic'
 gem 'hpricot'
 gem 'annotate', :git => 'git://github.com/ctran/annotate_models.git'
 group :development do
