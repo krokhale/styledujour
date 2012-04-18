@@ -2,7 +2,10 @@
   .span12
     .hero-unit
       %h1 What's Your Style du Jour?
-      %h2 Come play the game.
+      %h2 
+        Come
+        =link_to "play", hcit_index_path, :class=>"btn"
+        the game.
 .row-fluid
   .span4
   
