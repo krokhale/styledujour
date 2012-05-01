@@ -12,7 +12,6 @@ defaults: &defaults
 development:
   <<: *defaults
   neat_setting: 800
->>>>>>> social_stream
 
 test:
   <<: *defaults

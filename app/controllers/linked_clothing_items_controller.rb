@@ -18,7 +18,7 @@ class LinkedClothingItemsController < ApplicationController
 
   after_filter :increment_visit_count, :only => :show
 
-  load_and_authorize_resource :except => [:index, :invite_friends]
+  load_and_authorize_resource :except => [:index, :invite_friends, :create]
 
   respond_to :html, :js
 

@@ -2,11 +2,11 @@
 %h1.span12{:style=>"text-align:center"} Ask How Cute Is This?
 #hcit
 
--if @linked_clothing_item
+-if @linked_clothing_item.id
   = image_tag @linked_clothing_item.imageurl
   = link_to "Ask Now", invite_friends_linked_clothing_item_url(@linked_clothing_item)
 -else
-  = bootstrap_form_for LinkedClothingItem.new do |f|
+  = bootstrap_form_for @linked_clothing_item do |f|
     #bar.span4
       %h4 Select the correct image
       %input#cur_image{:type=>"hidden"}
@@ -35,9 +35,9 @@
       = f.hidden_field :imageurl
     
       = f.hidden_field :currency, :value=>"USD"
-
+      =f.hidden_field :owner_id, :value=>current_user.id
     .span4
-      = f.submit
+      = f.submit :value=>"Submit!", :class=>"btn btn-primary"
       
   
   - content_for :scripts do 

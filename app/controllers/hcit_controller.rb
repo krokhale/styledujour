@@ -8,6 +8,11 @@ class HcitController < ApplicationController
   def submit_link
     @url = params[:u]
     @linked_clothing_item = LinkedClothingItem.by_url(@url).first
+    if @linked_clothing_item
+    else
+      @linked_clothing_item = LinkedClothingItem.new
+    end
+    
     
    end
   
@@ -18,7 +23,7 @@ class HcitController < ApplicationController
   def get_page_details
     url = params[:u]
     @item_properties = parse_page(url)
-    
+    @item_properties[:prices].collect! { |x| x.sub("$","")}
     respond_to do |wants|
       wants.html do
         render :text => "JSON only"
