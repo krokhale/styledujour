@@ -1,15 +1,18 @@
 # config/application.yml
 defaults: &defaults
   domain: "localhost:3000"
-  facebook_key: "6194336540"
-  facebook_secret: "78bd1186d89dbf1403f3ff129d2f5f8a"
   cool:
     saweet: nested settings
   neat_setting: 24
   awesome_setting: <%= "Did you know 5 + 5 = #{5 + 5}?" %>
+  facebook:
+    key: "6194336540"
+    secret: "78bd1186d89dbf1403f3ff129d2f5f8a"
 
 development:
   <<: *defaults
+  neat_setting: 800
+>>>>>>> social_stream
 
 test:
   <<: *defaults
@@ -17,5 +20,7 @@ test:
 production:
   <<: *defaults
   domain: "www.styledujour.com"
-  facebook_key: "2355533850"
-  facebook_secret: "818a52855bed95cb433ab97435a2212f"
+  facebook:
+    key: "2355533850"
+    secret: "818a52855bed95cb433ab97435a2212f"
+

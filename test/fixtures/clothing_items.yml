@@ -2,18 +2,19 @@
 #
 # Table name: clothing_items
 #
-#  id              :integer         not null, primary key
-#  name            :string(255)
-#  price           :decimal(8, 2)
-#  description     :text
-#  imageurl        :string(255)
-#  currency        :string(255)
-#  retailer_id     :integer
-#  manufacturer_id :integer
-#  heir_id         :integer
-#  heir_type       :string(255)
-#  created_at      :datetime        not null
-#  updated_at      :datetime        not null
+#  id                 :integer         not null, primary key
+#  name               :string(255)
+#  price              :decimal(8, 2)
+#  description        :text
+#  imageurl           :string(255)
+#  currency           :string(255)
+#  retailer_id        :integer
+#  manufacturer_id    :integer
+#  heir_id            :integer
+#  heir_type          :string(255)
+#  created_at         :datetime        not null
+#  updated_at         :datetime        not null
+#  activity_object_id :integer
 #
 
 one:

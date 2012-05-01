@@ -1,7 +1,26 @@
 class ClothingItemsController < ApplicationController
+  #include SocialStream::Controllers::Objects #HAVE TO OVERRIDE
   before_filter :get_clothing_item, :except=>[:index,:new,:create]
   before_filter :check_if_scored, :only=>[:show,:hcit_form, :hcit_score]
   before_filter :authenticate_user!, :only=>[:create, :hcit_form, :hcit_score]
+  
+  def destroy
+    @post_activity = resource.post_activity
+
+    destroy!
+  end
+  inherit_resources
+
+  before_filter :set_author_ids, :only => [ :new, :create, :update ]
+
+  after_filter :increment_visit_count, :only => :show
+
+  load_and_authorize_resource :except => [:index, :hcit_form, :hcit_score, :invite_friends]
+
+  respond_to :html, :js
+
+
+
   def index
     @clothing_items = ClothingItem.all
   end
@@ -26,25 +45,25 @@ class ClothingItemsController < ApplicationController
       render :action => 'new'
     end
   end
-# 
-  # def edit
-# 
-  # end
-# 
-  # def update
-# 
-    # if @clothing_item.update_attributes(params[:clothing_item])
-      # redirect_to @clothing_item, :notice  => "Successfully updated clothing item."
-    # else
-      # render :action => 'edit'
-    # end
-  # end
-# 
-  # def destroy
-# 
-    # @clothing_item.destroy
-    # redirect_to clothing_items_url, :notice => "Successfully destroyed clothing item."
-  # end
+
+  def edit
+
+  end
+
+  def update
+
+    if @clothing_item.update_attributes(params[:clothing_item])
+      redirect_to @clothing_item, :notice  => "Successfully updated clothing item."
+    else
+      render :action => 'edit'
+    end
+  end
+
+  def destroy
+
+    #@clothing_item.destroy
+    redirect_to clothing_items_url, :notice => "Successfully destroyed clothing item."
+  end
   
   def hcit_form
     @user_score = UserScoredClothingItem.new(:user=>current_user, :clothing_item=>@clothing_item)
@@ -64,6 +83,7 @@ class ClothingItemsController < ApplicationController
         score.love = params[:user_scored_clothing_item][:love]
         
         if score.save
+           Point.award(current_user, "HCIT_score_clothing_item")
            respond_to do |wants|
              wants.html do
                redirect_to clothing_item_path(@clothing_item), :notice => "We got how cute you thought it was!"
@@ -103,4 +123,14 @@ class ClothingItemsController < ApplicationController
     end
   end
   
+  protected
+
+  def increment_visit_count
+    resource.activity_object.increment!(:visit_count) if request.format == 'html'
+  end
+
+  def set_author_ids
+    resource_params.first[:author_id] = current_subject.try(:actor_id)
+    resource_params.first[:user_author_id] = current_user.try(:actor_id)
+  end
 end

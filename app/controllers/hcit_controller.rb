@@ -1,6 +1,6 @@
 require 'parse_page'
 class HcitController < ApplicationController
-  before_filter :authenticate_user!, :only=>[:fb_request, :my_asks, :my_scores]
+  before_filter :authenticate_user!, :only=>[:fb_request, :my_asks, :my_scores, :submit_link]
   
   def index
   end
@@ -8,6 +8,7 @@ class HcitController < ApplicationController
   def submit_link
     @url = params[:u]
     @linked_clothing_item = LinkedClothingItem.by_url(@url).first
+    
    end
   
   def getid

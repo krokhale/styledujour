@@ -17,6 +17,11 @@
 //= require backbone_rails_sync
 //= require backbone_datalink
 //= require backbone/styledujour
-//= require_tree .
+//=# require social_stream-base
+//=# require social_stream-documents
+//=# require social_stream-events
+//=# require social_stream-linkser
+//=# require social_stream-presence
+//=# require_tree .
 //= require twitter/bootstrap
 
