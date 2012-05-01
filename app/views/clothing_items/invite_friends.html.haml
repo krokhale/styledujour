@@ -1,0 +1,54 @@
+#ask-row.row-fluid
+  .span12
+    %h1{:style=>"text-align:center"} Who To Ask?
+
+    .row-fluid
+      .span2
+        =link_to image_tag("facebook_64.png"), "javascript:inviteFacebook();"
+        %br/
+        Invite Select Friends
+      .span2
+        =link_to image_tag("facebook_64.png"), "javascript:postFacebookWall();"
+        %br/
+        Post to Facebook  
+    .row-fluid
+      .span12{:style=>"text-align: center;"}
+        =link_to "Go to clothing item", clothing_item_path(@clothing_item.id), :class=>"btn btn-large"
+
+#facebook-row.row-fluid{:style=>"display:none;"}
+  .span6
+    #fb-root
+    
+
+-content_for :scripts do
+  =javascript_include_tag "http://connect.facebook.net/en_US/all.js"
+  :javascript
+      
+     function inviteFacebook() {
+      FB.init({ 
+               appId:'#{Settings.facebook.key}', 
+               cookie:true, 
+               status:true
+               
+            });
+      FB.ui({ method: 'apprequests', message: '#{current_user.name} asks How Cute Is This?.'}, fbInviteRequestCallback);
+     }
+     
+     function fbInviteRequestCallback(response)
+     {
+      $.post('/hcit/fb_request', {'clothing_item_id':#{@clothing_item.id}, 'fb_ids':response.to, 'request_object_id':response.request}, 
+              function(data, status) { if(status == "success") { alert('Your Facebook friends have been asked!'); }}, 'json');
+     }
+
+      function postFacebookWall() {
+             FB.init({ 
+                 appId:'#{Settings.facebook.key}', 
+                 cookie:true, 
+                 status:true
+                 
+              });
+              
+              FB.ui({method: 'feed',  name: 'How Cute Is This?',  caption:"#{@clothing_item.name}",
+              description: '#{escape_javascript @clothing_item.description}', link: '#{clothing_item_url(@clothing_item)}', picture: '#{@clothing_item.imageurl}'
+              });
+       }
