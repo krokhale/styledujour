@@ -64,6 +64,7 @@
 #facebook-row.row-fluid{:style=>"display:none;"}
   .span6
     #fb-root
+
 -content_for :scripts do
   =javascript_include_tag "http://connect.facebook.net/en_US/all.js"
   :javascript
@@ -75,7 +76,7 @@
                status:true
                
             });
-      FB.ui({ method: 'apprequests', message: '#{current_user.name} asks How Cute Is This?.'}, fbInviteRequestCallback);
+      FB.ui({ method: 'apprequests', message: 'How Cute Is This?.'}, fbInviteRequestCallback);
      }
      
      function fbInviteRequestCallback(response)
