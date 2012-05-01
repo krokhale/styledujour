@@ -5,7 +5,7 @@ gem 'rails', '3.2.1'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+gem 'pg'
 
 gem 'less'
 # Gems used only for assets and not required
@@ -37,13 +37,23 @@ gem 'mechanize'
 gem 'imagesize'
 gem 'opengraph', :git=>'git://github.com/parasquid/opengraph.git'
 
+gem 'settingslogic'
 gem 'cancan'
+
+gem 'social_stream-base', :git=>'git://github.com/justinsaul/social_stream.git'
+gem 'social_stream-documents', :git=>'git://github.com/justinsaul/social_stream.git'
+gem 'social_stream-linkser', :git=>'git://github.com/justinsaul/social_stream.git'
+gem 'social_stream-presence', :git=>'git://github.com/justinsaul/social_stream.git'
 
 group :development do
   gem 'nifty-generators'
   gem 'hpricot'
   gem 'ruby_parser'
   gem 'annotate', :git => 'git://github.com/ctran/annotate_models.git'
+end
+
+group :test do
+  gem 'sqlite3'
 end
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

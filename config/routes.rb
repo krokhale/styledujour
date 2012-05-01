@@ -1,4 +1,6 @@
 Styledujour::Application.routes.draw do
+  devise_for :users, :controllers => {:omniauth_callbacks => 'omniauth_callbacks'}
+
   get "hcit/index"
   get "hcit/getid"
   get "hcit/submit_link"

@@ -13,8 +13,11 @@
       .row
         .span3
           %p{:style=>"font-size:1.5em;"}
-            %strong="$#{@clothing_item.overall_hcit_score}" 
-            Cute!    
+            - if @clothing_item.overall_hcit_score
+              %strong="$#{@clothing_item.overall_hcit_score}" 
+              Cute!    
+            - else
+              Be the first to tell us!
         .span2
           %p
             %strong=@clothing_item.shopped_count
@@ -44,7 +47,7 @@
           function hideModal() { $('#hcit_form').modal('hide'); }
       
       =link_to "Ask My Friends", "javascript:inviteFacebook();", :class=>"btn"
-  
+      =link_to "Ask All My Friends", "javascript:postFacebookWall();", :class=>"btn"
       %p
         %strong Description:
         = @clothing_item.description
@@ -67,7 +70,7 @@
       
      function inviteFacebook() {
       FB.init({ 
-               appId:'6194336540', 
+               appId:'#{Settings.facebook.key}', 
                cookie:true, 
                status:true
                
@@ -79,4 +82,17 @@
      {
       $.post('/hcit/fb_request', {'clothing_item_id':#{@clothing_item.id}, 'fb_ids':response.to, 'request_object_id':response.request}, 
               function(data, status) { if(status == "success") { alert('Your Facebook friends have been asked!'); }}, 'json');
+     }
+     
+     function postFacebookWall() {
+           FB.init({ 
+               appId:'#{Settings.facebook.key}', 
+               cookie:true, 
+               status:true
+               
+            });
+            
+            FB.ui({method: 'feed',  name: 'How Cute Is This?',  caption:"#{@clothing_item.name}",
+            description: '#{escape_javascript @clothing_item.description}', link: '#{clothing_item_url(@clothing_item)}', picture: '#{@clothing_item.imageurl}'
+            });
      }

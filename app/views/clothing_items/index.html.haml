@@ -1,25 +1,10 @@
 - title "Clothing Items"
+%h1.span12{:style=>"text-align:center"} Browse Clothing Items
+#clothing_items
 
-%table
-  %tr
-    %th Name
-    %th Price
-    %th Description
-    %th Imageurl
-    %th Currency
-    %th Retailer
-    %th Manufacturer
-  - for clothing_item in @clothing_items
-    %tr
-      %td= clothing_item.name
-      %td= clothing_item.price
-      %td= clothing_item.description
-      %td= clothing_item.imageurl
-      %td= clothing_item.currency
-      %td= clothing_item.retailer_id
-      %td= clothing_item.manufacturer_id
-      %td= link_to 'Show', clothing_item
-      %td= link_to 'Edit', edit_clothing_item_path(clothing_item)
-      %td= link_to 'Destroy', clothing_item, :confirm => 'Are you sure?', :method => :delete
-
-%p= link_to "New Clothing Item", new_clothing_item_path
+- if @clothing_items
+  %ul.thumbnails
+    - @clothing_items.each do |clothing|
+      = render :partial => 'clothing_items/mini_item', :locals => {:item => clothing, :little_menu=>true, :show_my_score=>false}
+- else
+  %h3 Either browse what others are asking, or start searching the online stores now!

@@ -16,4 +16,13 @@ class UserScoredClothingItem < ActiveRecord::Base
   
   scope :shopped, where(:love=>true)
   scope :dropped, where(:love=>false)
+  
+  after_create :update_clothing_item_activity
+  
+  private
+  
+  def update_clothing_item_activity
+    verb = love ? "shop" : "drop"
+    self.clothing_item.create_scored_activity(verb, self.user)
+  end
 end

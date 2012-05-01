@@ -14,5 +14,6 @@
   = f.number_field :retailer_id
 
   = f.number_field :manufacturer_id
+  =f.hidden_field :owner_id, :value=>current_user.id
   %p
     = f.submit

@@ -2,8 +2,9 @@
 #
 # Table name: linked_clothing_items
 #
-#  id       :integer         not null, primary key
-#  item_url :string(255)     not null
+#  id                 :integer         not null, primary key
+#  item_url           :string(255)     not null
+#  activity_object_id :integer
 #
 
 one:
