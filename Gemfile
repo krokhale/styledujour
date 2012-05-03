@@ -34,8 +34,8 @@ gem 'omniauth-twitter'
 gem 'heritage', :git=>'git://github.com/tramuntanal/Heritage.git'
 
 gem 'nokogiri'
-gem 'mechanize'
-gem 'imagesize'
+#gem 'mechanize'
+#gem 'imagesize'
 gem 'opengraph', :git=>'git://github.com/parasquid/opengraph.git'
 
 gem 'settingslogic'

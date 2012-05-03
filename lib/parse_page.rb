@@ -174,11 +174,18 @@ module Parse
       end
   
       def parse_images(url)
+        link_image = @doc.css("link[rel='image_src']").first.attributes["href"].value
+        
+        if link_image
+          valid_images =[]
+          valid_images << link_image if is_valid_image? link_image
+          return valid_images
+        end
         images = (@doc/"img")
         valid_images = []
         images.each do |image|
           next unless image.attributes['src'].present?
-          next if image.attributes['width'].present? && image.attributes['width'].value.to_i < 50
+          next if image.attributes['width'].present? && image.attributes['width'].value.to_i < 50 && image.attributes['style'].present?
           image_url = concat_url(url, image.attributes['src'].value)
           next unless not image_url =~ /\.gif(\??.*)?$/
           valid_images << image_url if is_valid_image? image_url
