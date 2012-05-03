@@ -2,7 +2,7 @@
   .thumbnail
     - if show_my_score
       #score="$#{item.score_for(current_user)} cute!"
-    =image_tag item.imageurl, :width=>"150px"
+    =image_tag item.imageurl, :style=>"max-width:150px;"#:width=>"150px"
     .caption
       %h5=item.name
       - if little_menu

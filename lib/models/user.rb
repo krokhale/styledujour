@@ -11,23 +11,14 @@ module UserExtended
     
     has_and_belongs_to_many :points, :join_table => "points_users"
     
+    before_save :update_email
+    
     private
-    def find_or_create_for_facebook_oauth(hash, signed_in_resource = nil)
-      puts hash.inspect
-      auth = Authentication.find_by_provider_and_uid(hash["provider"], hash["uid"])
-      user = User.find_by_email(hash["info"]["email"])
-
-      if user.nil?
-        user = User.new(:name => hash["info"]["name"], :email => hash["info"]["email"], :password => Devise.friendly_token[0,20])
-        user.build_actor
-        user.save!
+    def update_email
+      #this is a mess...user and actor have email
+      if self.actor
+        self.actor.email = self.email unless self.email.nil?
       end
-
-      if auth.nil?
-        auth = Authentication.create!(:user_id => user.id, :uid =>hash["uid"], :provider => hash["provider"])
-      end
-
-      user
     end
   end
 end
