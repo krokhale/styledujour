@@ -1,1 +1,5 @@
+<%- if current_user %>
 $('#hcit-score-form').html('<h1>We got it! Thanks!</h1>');
+<% else %>
+$('#hcit-score-form').html('<h3>You must login to save this score!</h3>');
+<% end%>

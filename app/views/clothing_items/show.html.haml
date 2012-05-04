@@ -29,11 +29,19 @@
           - if @clothing_item.heir
             =link_to "Buy It", @clothing_item.heir.item_url, :class=>"btn btn-success"
            
-      - if !@already_scored_item
-        -if current_user
-          = link_to "Tell Us", "#hcit_form", :data=>{:toggle=>"modal"}, :class=>"btn"
-        -else
-          = link_to "Tell Us", new_user_session_path, :class=>"btn"
+      - if @already_scored_item
+        .well
+          %h3="I thought it was $#{@user_price} cute."
+      -else
+        %h4 I think it is...
+        #hcit-score-form
+          -if current_user
+            =render :partial => 'score_form', :locals=>{:item =>@clothing_item, :user_score => @user_score, :remote_setting => true}
+          -else
+            =#need to put this somewhere else
+            =render :partial => 'score_form', :locals=>{:item =>@clothing_item, :user_score => UserScoredClothingItem.new(:clothing_item=>@clothing_item), :remote_setting=>true}
+            
+            
         .modal.hide.fade#hcit_form
           .modal-header
             =link_to "x", :data=>{:dismiss=>"modal"}, :class=>"close"

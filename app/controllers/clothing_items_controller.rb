@@ -2,7 +2,7 @@ class ClothingItemsController < ApplicationController
   #include SocialStream::Controllers::Objects #HAVE TO OVERRIDE
   before_filter :get_clothing_item, :except=>[:index,:new,:create]
   before_filter :check_if_scored, :only=>[:show,:hcit_form, :hcit_score]
-  before_filter :authenticate_user!, :only=>[:create, :hcit_form, :hcit_score]
+  before_filter :authenticate_user!, :only=>[:create, :hcit_form]
   
   def destroy
     @post_activity = resource.post_activity
@@ -27,8 +27,13 @@ class ClothingItemsController < ApplicationController
 
   def show
     @already_asked_item = false
-    if current_user && !current_user.hcit_items.where(:id=>@clothing_item).empty?
-      @already_asked_item = true 
+    if current_user
+      if !current_user.hcit_items.where(:id=>@clothing_item).empty?
+        @already_asked_item = true 
+        
+      end
+      @user_price = @clothing_item.score_for(current_user)
+      @user_score = UserScoredClothingItem.new(:user=>current_user, :clothing_item=>@clothing_item) unless @user_price
     end
     
   end
@@ -106,6 +111,13 @@ class ClothingItemsController < ApplicationController
         end
       else
         redirect_to :hcit_form
+      end
+    elsif @clothing_item && !current_user
+      cookies[:clothing_score] = {:value=>{:item=>@clothing_item.id, :score=>params[:user_scored_clothing_item][:price], :love=>params[:user_scored_clothing_item][:love]}.to_json}
+      respond_to do |wants|
+        wants.js do
+          
+        end
       end
     end
   end

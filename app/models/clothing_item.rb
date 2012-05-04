@@ -46,7 +46,7 @@ class ClothingItem < ActiveRecord::Base
   end
   
   def score_for(user)
-    self.scores.where(:user_id=>user).first.price
+    self.scores.where(:user_id=>user).try(:first).try(:price)
   end
   
   ##FOR SOCIAL_STREAM
