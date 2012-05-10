@@ -34,7 +34,7 @@ class ClothingItem < ActiveRecord::Base
   
   def overall_hcit_score
     return nil if self.scores.shopped.count == 0 
-    (self.scores.shopped.sum(:price) / self.scores.shopped.count)
+    BigDecimal.new((self.scores.shopped.sum(:price) / self.scores.shopped.count))
   end
   
   def shopped_count

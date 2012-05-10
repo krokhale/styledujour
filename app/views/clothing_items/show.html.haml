@@ -10,18 +10,18 @@
     .span7#product_info
       .row{:style=>"line-height:100px;height:100px;"}
         .span3
-          %h2{:style=>"line-height:100px;"} How Cute Is This?
-        .span2
+          %h2#what-is-hcit{:rel=>"popover", :data=>{"original-title"=>"What is this?", :content=>"How Cute Is This? is a fashion game to play with friends. You and your friends tell us what you would pay, and we all help you decide if you should buy it."},:style=>"line-height:100px;"} How Cute Is This?
+        .span2#what-is-cute{:rel=>"popover", :data=>{"original-title"=>"Cute?", :content=>"The cute price is the amount people are willing to pay for this item."}}
           - if @clothing_item.overall_hcit_score
             %p.s_price.s_price
               ="$#{@clothing_item.overall_hcit_score}"
               %span{:style=>"font-size:14px"} Cute!    
           - else
-            %p.s_price.s_price
+            %p.s_price.s_price{:onclick=>'$("#hcit-score-form-well").stop().css("background-color", "#FFFF9C").animate({ backgroundColor: "#FFFFFF"}, 2500);'}
               Tell Us
         .span1
           - if @clothing_item.heir
-            =link_to "Buy It", @clothing_item.heir.item_url, :class=>"btn btn-success"
+            =link_to "Buy It", @clothing_item.heir.item_url, :class=>"btn #{@buy_it}"
       .row
         .span2
           %p
@@ -94,7 +94,8 @@
 -content_for :scripts do
   =javascript_include_tag "http://connect.facebook.net/en_US/all.js"
   :javascript
-      
+     $('#what-is-hcit').popover({placement:'bottom'}); 
+     $('#what-is-cute').popover({placement:'bottom'}); 
      function inviteFacebook() {
       FB.init({ 
                appId:'#{Settings.facebook.key}', 
