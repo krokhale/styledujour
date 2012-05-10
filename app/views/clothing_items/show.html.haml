@@ -4,34 +4,49 @@
   .span12
     %h1=@clothing_item.name
 .row-fluid
-  .span12
+  .span12#product
     .span4
       =image_tag @clothing_item.imageurl, :style=>"max-width: 240px;"
-    .span7
-      %h2 How Cute Is This?
-      
-      .row
+    .span7#product_info
+      .row{:style=>"line-height:100px;height:100px;"}
         .span3
-          %p{:style=>"font-size:1.5em;"}
-            - if @clothing_item.overall_hcit_score
-              %strong="$#{@clothing_item.overall_hcit_score}" 
-              Cute!    
-            - else
-              Be the first to tell us!
+          %h2{:style=>"line-height:100px;"} How Cute Is This?
+        .span2
+          - if @clothing_item.overall_hcit_score
+            %p.s_price.s_price
+              ="$#{@clothing_item.overall_hcit_score}"
+              %span{:style=>"font-size:14px"} Cute!    
+          - else
+            %p.s_price.s_price
+              Tell Us
+        .span1
+          - if @clothing_item.heir
+            =link_to "Buy It", @clothing_item.heir.item_url, :class=>"btn btn-success"
+      .row
         .span2
           %p
             %strong=@clothing_item.shopped_count
             Shopped it!
+   
+        .span2
           %p
             %strong=@clothing_item.dropped_count
             Dropped it!
-        .span2
-          - if @clothing_item.heir
-            =link_to "Buy It", @clothing_item.heir.item_url, :class=>"btn btn-success"
+        .span3
+          
            
       - if @already_scored_item
         .well
-          %h3="I thought it was $#{@user_price} cute."
+          - if @user_score.love
+            %h3
+              =image_tag "hcit/shop_clean.png"
+              ="I thought it was $#{@user_score.price} cute."
+              
+          - else
+            %h3 
+              =image_tag "hcit/drop_clean.png"
+              I dropped it.
+              
       -else
         %h4 I think it is...
         #hcit-score-form

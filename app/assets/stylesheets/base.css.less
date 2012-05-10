@@ -118,3 +118,64 @@
 
 .activity_likes{ margin-bottom: 2px; }
 
+
+
+
+
+.s_price {
+  display: block;
+  margin: 0;
+  color: #fff;
+  letter-spacing: -1px;
+  text-align: center;
+  font-family: "Babel Sans", sans-serif;
+  font-weight: normal;
+  -moz-border-radius: 60px;
+  -webkit-border-radius: 60px;
+  border-radius: 60px;
+  /*behavior: url(js/PIE.php);*/
+  behavior: url(/javascripts/PIE.htc);
+  span {
+    display: block;
+    font-family: "Ubuntu Regular", sans-serif; }
+  .s_currency {
+    line-height: 16px;
+    font-size: 15px; } }
+
+.s_old_price {
+  line-height: 16px;
+  font-size: 12px;
+  text-decoration: line-through;
+  opacity: 0.8; }
+
+.s_price .s_currency {
+  &.s_before {
+    display: inline;
+    font-family: "Babel Sans", sans-serif !important; }
+  &.s_after {
+    opacity: 0.7; } }
+
+.s_old_price .s_currency {
+  display: none !important; }
+#product_info .s_price {
+  width: 100px;
+  height: 60px;
+  padding-top: 40px;
+  font-size: 28px;
+  background-image: url("/assets/price_3.png");
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.s_price {
+  background-color: #F02B63; }
+
+.s_promo_price {
+  background-color: #ff9900; }
+
+.s_price {
+  color: #ffffff;
+  .s_currency {
+    color: #ffffff; } }
+
+.s_promo_price, .s_old_price, .s_promo_price .s_currency {
+  color: #ffffff; }

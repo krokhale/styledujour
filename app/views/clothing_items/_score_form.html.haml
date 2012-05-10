@@ -12,9 +12,12 @@
 
   
   %p
-    =link_to "Shop it!", "javascript:submit_form_with('shop');", :class=>"btn btn-success"
-    =link_to "Drop it!", "javascript:submit_form_with('drop');", :class=>"btn btn-danger"
-    
+    %a{:href=>"javascript:submit_form_with('shop');", :class=>"btn btn-success"}
+      %i{:class=>"icon-shopping-cart"} 
+      Shop it!
+    %a{:href=>"javascript:submit_form_with('drop');", :class=>"btn btn-danger"}
+      %i{:class=>"icon-trash"}
+      Drop it!    
     
     
 :javascript

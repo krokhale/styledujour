@@ -32,8 +32,8 @@ class ClothingItemsController < ApplicationController
         @already_asked_item = true 
         
       end
-      @user_price = @clothing_item.score_for(current_user)
-      @user_score = UserScoredClothingItem.new(:user=>current_user, :clothing_item=>@clothing_item) unless @user_price
+      #@user_price = @clothing_item.score_for(current_user)
+      @user_score = UserScoredClothingItem.where(:clothing_item_id => @clothing_item.id, :user_id=>current_user.id).first || UserScoredClothingItem.new(:user=>current_user, :clothing_item=>@clothing_item) unless @user_price
     end
     
   end
