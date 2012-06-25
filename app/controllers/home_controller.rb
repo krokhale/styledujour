@@ -9,7 +9,7 @@ class HomeController < ApplicationController
   def check_session
     if cookies[:clothing_score]
       clothing_item = JSON.parse cookies[:clothing_score]
-      if current_user.scorered_items.where(:id=>clothing_item["item"]).empty?
+      if current_user.scored_items.where(:id=>clothing_item["item"]).empty?
         score = UserScoredClothingItem.new
         score.user = current_user
         score.clothing_item = ClothingItem.find(clothing_item["item"])

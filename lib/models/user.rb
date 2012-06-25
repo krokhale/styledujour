@@ -6,7 +6,7 @@ module UserExtended
     has_many :hcit_items, :through => :user_asked_clothing_items, :source => :clothing_item
     has_many :bookmarked_items, :through => :user_bookmarked_clothing_items, :source => :clothing_item
     has_many :scores, :class_name => "UserScoredClothingItem"
-    has_many :scorered_items, :through => :scores, :class_name => "ClothingItem", :source=>:clothing_item
+    has_many :scored_items, :through => :scores, :class_name => "ClothingItem", :source=>:clothing_item
     belongs_to :actor
     
     has_and_belongs_to_many :points, :join_table => "points_users"

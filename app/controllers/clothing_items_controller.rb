@@ -134,7 +134,7 @@ class ClothingItemsController < ApplicationController
   
   def check_if_scored
     @already_scored_item = false
-    if current_user && !current_user.scorered_items.where(:id=>@clothing_item).empty?
+    if current_user && !current_user.scored_items.where(:id=>@clothing_item).empty?
       @already_scored_item = true 
     end
   end

@@ -39,7 +39,7 @@
         .well
           - if @user_score.love
             %h3
-              =image_tag "hcit/shop_clean.png"
+              =image_tag "hcit/magenta_bag.png"
               ="I thought it was $#{@user_score.price} cute."
               
           - else
@@ -80,7 +80,7 @@
         
       %p
         %strong Retailer:
-        = @clothing_item.retailer_id
+        = @clothing_item.retailers.first.name
       %p
         %strong Manufacturer:
         = @clothing_item.manufacturer_id

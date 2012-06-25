@@ -1,0 +1,19 @@
+= form_for @outfit do |f|
+  -if @outfit.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@outfit.errors.count, "error")} prohibited this outfit from being saved:"
+      %ul
+        - @outfit.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :name
+    = f.text_field :name
+  .field
+    = f.label :closet_id
+    = f.number_field :closet_id
+  .field
+    = f.label :activity_object_id
+    = f.number_field :activity_object_id
+  .actions
+    = f.submit 'Save'

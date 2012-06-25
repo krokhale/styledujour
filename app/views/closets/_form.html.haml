@@ -1,0 +1,13 @@
+= form_for @closet do |f|
+  -if @closet.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@closet.errors.count, "error")} prohibited this closet from being saved:"
+      %ul
+        - @closet.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :name
+    = f.text_field :name
+  .actions
+    = f.submit 'Save'

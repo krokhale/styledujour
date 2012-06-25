@@ -1,0 +1,23 @@
+%h1 Listing outfits
+
+%table
+  %tr
+    %th Name
+    %th Closet
+    %th Activity object
+    %th
+    %th
+    %th
+
+  - @outfits.each do |outfit|
+    %tr
+      %td= outfit.name
+      %td= outfit.closet_id
+      %td= outfit.activity_object_id
+      %td= link_to 'Show', outfit
+      %td= link_to 'Edit', edit_outfit_path(outfit)
+      %td= link_to 'Destroy', outfit, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Outfit', new_outfit_path

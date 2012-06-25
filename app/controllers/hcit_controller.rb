@@ -77,12 +77,19 @@ class HcitController < ApplicationController
   end
   
   def my_scores
-    @clothing_items = current_user.scorered_items.order('user_scored_clothing_items.created_at desc').joins(:scores)
+    @clothing_items = current_user.scored_items.order('user_scored_clothing_items.created_at desc').joins(:scores)
   end
   
   def browse
     @clothing_items = ClothingItem.order("created_at DESC")
   end
+  
+  def how_cute
+    @points = current_user.points_earned_cache || 0
+    @scored = current_user.scored_items.count
+    @asks = current_user.hcit_items.count
+  end
+  
   private
   def parse_page(url)
     parser=Parse::Ecommerce::Page.new

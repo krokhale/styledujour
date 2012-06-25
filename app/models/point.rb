@@ -24,7 +24,7 @@ class Point < ActiveRecord::Base
     if point
       point.users << user
       user.update_attribute(:points_earned_cache, user.points.sum(:value))
-      
+      point.save!
       return true
     end
     

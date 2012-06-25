@@ -1,0 +1,23 @@
+# == Schema Information
+#
+# Table name: retailers
+#
+#  id         :integer         not null, primary key
+#  name       :string(255)
+#  url        :string(255)
+#  domain     :string(255)
+#  created_at :datetime        not null
+#  updated_at :datetime        not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  url: MyString
+  domain: MyString
+
+two:
+  name: MyString
+  url: MyString
+  domain: MyString

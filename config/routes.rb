@@ -1,4 +1,5 @@
 Styledujour::Application.routes.draw do
+
   devise_for :users, :controllers => {:omniauth_callbacks => 'omniauth_callbacks'}
 
   get "hcit/index"
@@ -9,6 +10,7 @@ Styledujour::Application.routes.draw do
   get "hcit/my_asks"
   get "hcit/my_scores"
   get "hcit/browse"
+  get "hcit/how_cute"
   get "welcome/index"
   
   match 'facebook_app' => 'facebook_app#index'
@@ -29,6 +31,15 @@ Styledujour::Application.routes.draw do
     end
   end
 
+  resources :users do
+    resources :closets do
+      resources :outfits do
+        
+      end
+    end
+  end
+
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
   devise_for :users, :controllers => {:omniauth_callbacks => "users/omniauth_callbacks"}

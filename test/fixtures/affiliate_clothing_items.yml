@@ -1,0 +1,38 @@
+# == Schema Information
+#
+# Table name: affiliate_clothing_items
+#
+#  id                   :integer         not null, primary key
+#  activity_object_id   :integer
+#  item_url             :string(255)
+#  mpn                  :string(255)
+#  upc                  :string(255)
+#  sku                  :string(255)
+#  is_accessory         :boolean
+#  skimlinks_product_id :string(255)
+#  skimlinks_group_id   :integer
+#  created_at           :datetime        not null
+#  updated_at           :datetime        not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  activity_object_id: 1
+  item_url: MyString
+  mpn: MyString
+  upc: MyString
+  sku: MyString
+  is_accessory: false
+  skimlinks_product_id: MyString
+  skimlinks_group_id: 1
+
+two:
+  activity_object_id: 1
+  item_url: MyString
+  mpn: MyString
+  upc: MyString
+  sku: MyString
+  is_accessory: false
+  skimlinks_product_id: MyString
+  skimlinks_group_id: 1

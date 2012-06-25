@@ -1,0 +1,13 @@
+= render :partial => "menu"
+%h1.span12{:style=>"text-align:center"} How Cute Am I?
+#hcit
+.row-fluid
+  .span3
+    %h3 Badges:
+    
+    %ul#awards-board
+      %li=image_tag "hcit/shpholic_1.png"
+  .span3.style-points
+    .style-points-box
+      .style-points-count= @points
+      .style-points-text style points

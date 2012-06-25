@@ -20,7 +20,7 @@
 class ClothingItem < ActiveRecord::Base
   include SocialStream::Models::Object
   parent_model
-  attr_accessible :name, :price, :description, :imageurl, :currency, :retailer_id, :manufacturer_id
+  attr_accessible :name, :price, :description, :imageurl, :currency, :retailer_id, :manufacturer_id, :category_id
   attr_accessible :author_id, :user_author_id, :owner_id, :activity_object_id
   
   has_and_belongs_to_many :bookmarkers, :class_name=> "User", :join_table => "user_bookmarked_clothing_items", :foreign_key => "clothing_item_id"   
@@ -31,6 +31,9 @@ class ClothingItem < ActiveRecord::Base
   has_many :scores, :class_name => "UserScoredClothingItem"
   has_many :scorers, :through => :user_scored_clothing_items, :class_name => "User", :source=>:user
   
+  has_and_belongs_to_many :retailers
+  belongs_to :manufacturer
+  belongs_to :category
   
   def overall_hcit_score
     return nil if self.scores.shopped.count == 0 

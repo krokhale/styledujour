@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120424212314) do
+ActiveRecord::Schema.define(:version => 20120616005541) do
 
   create_table "activities", :force => true do |t|
     t.integer  "activity_verb_id"
@@ -90,6 +90,17 @@ ActiveRecord::Schema.define(:version => 20120424212314) do
   add_index "actors", ["email"], :name => "index_actors_on_email"
   add_index "actors", ["slug"], :name => "index_actors_on_slug", :unique => true
 
+  create_table "affiliate_clothing_items", :force => true do |t|
+    t.integer  "activity_object_id"
+    t.string   "item_url"
+    t.string   "mpn"
+    t.string   "upc"
+    t.string   "sku"
+    t.boolean  "is_accessory"
+    t.string   "skimlinks_product_id"
+    t.integer  "skimlinks_group_id"
+  end
+
   create_table "audiences", :force => true do |t|
     t.integer "relation_id"
     t.integer "activity_id"
@@ -119,6 +130,39 @@ ActiveRecord::Schema.define(:version => 20120424212314) do
 
   add_index "avatars", ["actor_id"], :name => "index_avatars_on_actor_id"
 
+  create_table "badges", :force => true do |t|
+    t.string "name"
+    t.string "description"
+    t.string "icon"
+  end
+
+  add_index "badges", ["name"], :name => "index_badges_on_name"
+
+  create_table "badgings", :force => true do |t|
+    t.boolean  "seen",         :default => false
+    t.integer  "badge_id"
+    t.integer  "subject_id"
+    t.string   "subject_type"
+    t.datetime "created_at",                      :null => false
+    t.datetime "updated_at",                      :null => false
+  end
+
+  add_index "badgings", ["seen"], :name => "index_badgings_on_seen"
+
+  create_table "categories", :force => true do |t|
+    t.string   "name"
+    t.integer  "parent_id"
+    t.integer  "lft"
+    t.integer  "rgt"
+    t.string   "source"
+    t.integer  "source_identifier"
+    t.datetime "created_at",        :null => false
+    t.datetime "updated_at",        :null => false
+  end
+
+  add_index "categories", ["name"], :name => "index_categories_on_name"
+  add_index "categories", ["parent_id"], :name => "index_categories_on_parent_id"
+
   create_table "channels", :force => true do |t|
     t.integer  "author_id"
     t.integer  "owner_id"
@@ -133,21 +177,32 @@ ActiveRecord::Schema.define(:version => 20120424212314) do
 
   create_table "clothing_items", :force => true do |t|
     t.string   "name"
-    t.decimal  "price",              :precision => 8, :scale => 2
+    t.decimal  "price",                           :precision => 8, :scale => 2
     t.text     "description"
     t.string   "imageurl"
     t.string   "currency"
-    t.integer  "retailer_id"
     t.integer  "manufacturer_id"
     t.integer  "heir_id"
     t.string   "heir_type"
-    t.datetime "created_at",                                       :null => false
-    t.datetime "updated_at",                                       :null => false
+    t.datetime "created_at",                                                    :null => false
+    t.datetime "updated_at",                                                    :null => false
     t.integer  "activity_object_id"
+    t.integer  "gender",             :limit => 2
+    t.string   "age"
+    t.integer  "category_id"
   end
 
+  add_index "clothing_items", ["category_id"], :name => "index_clothing_items_on_category_id"
   add_index "clothing_items", ["heir_id"], :name => "index_clothing_items_on_heir_id"
   add_index "clothing_items", ["heir_type"], :name => "index_clothing_items_on_heir_type"
+
+  create_table "clothing_items_retailers", :id => false, :force => true do |t|
+    t.integer "clothing_item_id"
+    t.integer "retailer_id"
+  end
+
+  add_index "clothing_items_retailers", ["clothing_item_id", "retailer_id"], :name => "clothing_items_retailers_clothing_retailer"
+  add_index "clothing_items_retailers", ["retailer_id", "clothing_item_id"], :name => "clothing_items_retailers_retailer_clothing"
 
   create_table "comments", :force => true do |t|
     t.integer  "activity_object_id"
@@ -245,6 +300,12 @@ ActiveRecord::Schema.define(:version => 20120424212314) do
   end
 
   add_index "links", ["activity_object_id"], :name => "index_links_on_activity_object_id"
+
+  create_table "manufacturers", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "notifications", :force => true do |t|
     t.string   "type"
@@ -362,6 +423,14 @@ ActiveRecord::Schema.define(:version => 20120424212314) do
 
   add_index "relations", ["actor_id"], :name => "index_relations_on_actor_id"
   add_index "relations", ["ancestry"], :name => "index_relations_on_ancestry"
+
+  create_table "retailers", :force => true do |t|
+    t.string   "name"
+    t.string   "url"
+    t.string   "domain"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "rooms", :force => true do |t|
     t.integer  "actor_id"

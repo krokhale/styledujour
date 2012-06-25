@@ -1,0 +1,19 @@
+%h1 Listing closets
+
+%table
+  %tr
+    %th Name
+    %th
+    %th
+    %th
+
+  - @closets.each do |closet|
+    %tr
+      %td= closet.name
+      %td= link_to 'Show', closet
+      %td= link_to 'Edit', edit_closet_path(closet)
+      %td= link_to 'Destroy', closet, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Closet', new_closet_path

@@ -49,6 +49,10 @@ gem 'social_stream-documents', :git=>'git://github.com/justinsaul/social_stream.
 gem 'social_stream-linkser', :git=>'git://github.com/justinsaul/social_stream.git'
 gem 'social_stream-presence', :git=>'git://github.com/justinsaul/social_stream.git'
 
+gem 'badgeable_active_record'
+
+gem 'awesome_nested_set', :git=>'git://github.com/collectiveidea/awesome_nested_set.git'
+#gem 'acts-as-taggable-on', '~> 2.3.1' #2.2.2 already installed somewhere
 
 group :development do
   gem 'nifty-generators'
