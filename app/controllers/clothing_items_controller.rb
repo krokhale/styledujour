@@ -1,9 +1,11 @@
+load 'lib/backbone_responses.rb'
 class ClothingItemsController < ApplicationController
   #include SocialStream::Controllers::Objects #HAVE TO OVERRIDE
   before_filter :get_clothing_item, :except=>[:index,:new,:create]
   before_filter :check_if_scored, :only=>[:show,:hcit_form, :hcit_score]
   before_filter :authenticate_user!, :only=>[:create, :hcit_form]
-  
+  include BackboneResponses
+
   def destroy
     @post_activity = resource.post_activity
 
@@ -15,14 +17,35 @@ class ClothingItemsController < ApplicationController
 
   after_filter :increment_visit_count, :only => :show
 
-  load_and_authorize_resource :except => [:index, :hcit_form, :hcit_score, :invite_friends]
+  load_and_authorize_resource :except => [:index, :hcit_form, :hcit_score, :invite_friends, :user_scored_clothing_item, :add_to_closet]
 
-  respond_to :html, :js
+  respond_to :html, :js, :json
 
-
+  rescue_from CanCan::AccessDenied do |exception|
+    redirect_to :back, :alert => exception.message
+  end
 
   def index
-    @clothing_items = ClothingItem.all
+    collection_public_attributes
+    # if params[:closet_id] #support nested resources
+    #   @clothing_items = current_closet.clothing_items
+    # else
+    #   @clothing_items = ClothingItem.limit(10)
+    # end
+
+    respond_to do |wants|
+       wants.html do
+         
+       end
+      
+        wants.js do
+           render :json=> nil, :status => 500 
+        end
+
+        wants.json do
+          render :json=>instance_variable_get("@#{controller_name}"), :status => 200
+        end
+     end
   end
 
   def show
@@ -126,7 +149,41 @@ class ClothingItemsController < ApplicationController
     end
   end
   
-  
+  def user_scored_clothing_item
+    if current_user
+      @user_score = UserScoredClothingItem.where(:clothing_item_id => @clothing_item.id, :user_id=>current_user.id).first || UserScoredClothingItem.new(:user=>current_user, :clothing_item=>@clothing_item) unless @user_price
+    else
+      @user_score = UserScoredClothingItem.new(:clothing_item=>@clothing_item)
+    end
+
+    respond_to do |wants|
+       wants.html do
+         redirect_to clothing_item_path(@clothing_item)
+       end
+      
+      wants.json do
+         render :json=>@user_score.to_json(:only=>[:clothing_item_id, :love, :price, :user_id], :include=>[], :methods => [:overall_score])
+      end
+     end
+  end
+
+  def add_to_closet
+    status = 500
+    if current_user
+      if current_closet.clothing_items.find_by_id(@clothing_item)
+        status = 200
+      else
+        current_closet.clothing_items << @clothing_item
+        status = 200
+      end
+    end
+    respond_to do |wants|
+      wants.json do
+        render :json=>nil, :status=>status
+      end
+    end
+  end
+
   private
   def get_clothing_item
     @clothing_item = ClothingItem.find(params[:id])
@@ -148,5 +205,13 @@ class ClothingItemsController < ApplicationController
   def set_author_ids
     resource_params.first[:author_id] = current_subject.try(:actor_id)
     resource_params.first[:user_author_id] = current_user.try(:actor_id)
+  end
+
+  def begin_of_association_chain
+    if params[:closet_id]
+      current_closet
+    else
+      super
+    end
   end
 end

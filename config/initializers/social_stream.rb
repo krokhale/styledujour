@@ -54,6 +54,12 @@ ActiveSupport.on_load(:channel) do
   end
 end
 
+ActiveSupport.on_load(:actor) do
+  Actor.class_eval do
+    has_one :closet
+  end
+end
+
 ActiveSupport.on_load(:activity) do
   Activity.class_eval do
       # The title for this activity in the stream

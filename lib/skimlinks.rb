@@ -63,23 +63,22 @@ module Skimlinks
       Category.roots.each do |root|
         root.children.each do |category|
           
-          results = JSON.parse(gets("/query?format=json&q=categoryId%3A#{category.source_identifier}%20rows=300").body)
-          if results["skimlinksProductAPI"]["products"]
-            results["skimlinksProductAPI"]["products"].each do |product|
-              Products.create(category,product)
-            end
-          end
           
-          current_position = 300
-          count = results["skimlinksProductAPI"]["numFound"]
+          current_position = 0
+          count = 1
           while count > current_position 
-            results = JSON.parse(gets("/query?format=json&q=categoryId%3A#{category.source_identifier}%20rows=300&start=#{current_position}").body)
+            results = JSON.parse(gets("/query?format=json&q=categoryId%3A#{category.source_identifier}&rows=300&start=#{current_position}").body)
             current_position += 300
             if results["skimlinksProductAPI"]["products"]
               results["skimlinksProductAPI"]["products"].each do |product|
-                Products.create(category,product)
+                begin
+                  Products.create(category,product)
+                rescue Exception => e
+                  Rails.logger.error(e.to_s)
+                end
               end
             end
+            count = results["skimlinksProductAPI"]["numFound"] || 0
           end
         end
       end

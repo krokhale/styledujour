@@ -65,10 +65,28 @@ GIT
       nokogiri (~> 1.5.0)
 
 GIT
+  remote: git://github.com/softa/activerecord-postgres-hstore.git
+  revision: 93c6c88a506970204965f3902e19d18d65b05e09
+  specs:
+    activerecord-postgres-hstore (0.4.0)
+      pg
+      rails
+      rake
+
+GIT
   remote: git://github.com/tramuntanal/Heritage.git
   revision: 7beab7e97716261568e122461df7bff712013802
   specs:
     heritage (0.3.1)
+
+GIT
+  remote: git://github.com/zamith/backbone-rails.git
+  revision: f7c66adf2fbb4c03d2adacf90b75a9177cc3b93a
+  specs:
+    rails-backbone (0.7.2)
+      coffee-script (~> 2.2.0)
+      ejs (~> 1.0.0)
+      railties (>= 3.1.0)
 
 GEM
   remote: https://rubygems.org/
@@ -102,6 +120,10 @@ GEM
       multi_json (~> 1.0)
     acts-as-taggable-on (2.2.2)
       rails (~> 3.0)
+    acts_as_api (0.4)
+      activemodel (>= 3.0.0)
+      activesupport (>= 3.0.0)
+      rack (>= 1.1.0)
     ancestry (1.2.5)
       activerecord (>= 2.2.2)
     arel (3.0.2)
@@ -246,6 +268,7 @@ GEM
       paperclip (>= 2.3.8)
     pg (0.13.1)
     polyglot (0.3.3)
+    possessive (1.0.0)
     rack (1.4.1)
     rack-cache (1.2)
       rack (>= 0.4)
@@ -263,10 +286,6 @@ GEM
       activesupport (= 3.2.1)
       bundler (~> 1.0)
       railties (= 3.2.1)
-    rails-backbone (0.7.0)
-      coffee-script (~> 2.2.0)
-      ejs (~> 1.0.0)
-      railties (>= 3.1.0)
     rails_autolink (1.0.6)
       rails (~> 3.1)
     railties (3.2.1)
@@ -332,12 +351,15 @@ GEM
       rack (>= 1.0.0)
     warden (1.1.1)
       rack (>= 1.0)
+    will_paginate (3.0.3)
     xmpp4r (0.5)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  activerecord-postgres-hstore!
+  acts_as_api
   annotate!
   awesome_nested_set!
   badgeable_active_record
@@ -361,8 +383,9 @@ DEPENDENCIES
   omniauth-twitter
   opengraph!
   pg
+  possessive
   rails (= 3.2.1)
-  rails-backbone
+  rails-backbone!
   ruby_parser
   sass-rails (~> 3.2.3)
   settingslogic
@@ -372,3 +395,4 @@ DEPENDENCIES
   social_stream-presence!
   sqlite3
   uglifier (>= 1.0.3)
+  will_paginate (~> 3.0)

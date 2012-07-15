@@ -10,10 +10,11 @@
 // WARNING: THE FIRST BLANK LINE MARKS THE END OF WHAT'S TO BE PROCESSED, ANY BLANK LINE SHOULD
 // GO AFTER THE REQUIRES BELOW.
 //
-//= require jquery
-//= require jquery_ujs
+//=# require jquery
+//=# require jquery_ujs
 //= require underscore
 //= require backbone
+//= require backbone/backbone.paginator.min
 //= require backbone_rails_sync
 //= require backbone_datalink
 //= require backbone/styledujour
@@ -24,3 +25,4 @@
 //=# require social_stream-presence
 //=# require_tree .
 //= require twitter/bootstrap
+

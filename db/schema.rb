@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120616005541) do
+ActiveRecord::Schema.define(:version => 20120706203125) do
 
   create_table "activities", :force => true do |t|
     t.integer  "activity_verb_id"
@@ -91,14 +91,14 @@ ActiveRecord::Schema.define(:version => 20120616005541) do
   add_index "actors", ["slug"], :name => "index_actors_on_slug", :unique => true
 
   create_table "affiliate_clothing_items", :force => true do |t|
-    t.integer  "activity_object_id"
-    t.string   "item_url"
-    t.string   "mpn"
-    t.string   "upc"
-    t.string   "sku"
-    t.boolean  "is_accessory"
-    t.string   "skimlinks_product_id"
-    t.integer  "skimlinks_group_id"
+    t.integer "activity_object_id"
+    t.string  "item_url"
+    t.string  "mpn"
+    t.string  "upc"
+    t.string  "sku"
+    t.boolean "is_accessory"
+    t.string  "skimlinks_product_id"
+    t.integer "skimlinks_group_id"
   end
 
   create_table "audiences", :force => true do |t|
@@ -175,6 +175,24 @@ ActiveRecord::Schema.define(:version => 20120616005541) do
   add_index "channels", ["owner_id"], :name => "index_channels_on_owner_id"
   add_index "channels", ["user_author_id"], :name => "index_channels_on_user_author_id"
 
+  create_table "closets", :force => true do |t|
+    t.string   "name"
+    t.integer  "actor_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.string   "slug"
+  end
+
+  add_index "closets", ["actor_id"], :name => "index_closets_on_actor_id"
+
+  create_table "closets_clothing_items", :id => false, :force => true do |t|
+    t.integer "closet_id"
+    t.integer "clothing_item_id"
+  end
+
+  add_index "closets_clothing_items", ["closet_id", "clothing_item_id"], :name => "closets_clothing_items_closet_item_index"
+  add_index "closets_clothing_items", ["clothing_item_id", "closet_id"], :name => "closets_clothing_items_item_closet_index"
+
   create_table "clothing_items", :force => true do |t|
     t.string   "name"
     t.decimal  "price",                           :precision => 8, :scale => 2
@@ -195,6 +213,14 @@ ActiveRecord::Schema.define(:version => 20120616005541) do
   add_index "clothing_items", ["category_id"], :name => "index_clothing_items_on_category_id"
   add_index "clothing_items", ["heir_id"], :name => "index_clothing_items_on_heir_id"
   add_index "clothing_items", ["heir_type"], :name => "index_clothing_items_on_heir_type"
+
+  create_table "clothing_items_outfits", :id => false, :force => true do |t|
+    t.integer "clothing_item_id"
+    t.integer "outfit_id"
+  end
+
+  add_index "clothing_items_outfits", ["clothing_item_id", "outfit_id"], :name => "index_clothing_items_outfits_on_clothing_item_id_and_outfit_id"
+  add_index "clothing_items_outfits", ["outfit_id", "clothing_item_id"], :name => "index_clothing_items_outfits_on_outfit_id_and_clothing_item_id"
 
   create_table "clothing_items_retailers", :id => false, :force => true do |t|
     t.integer "clothing_item_id"
@@ -324,6 +350,19 @@ ActiveRecord::Schema.define(:version => 20120616005541) do
   end
 
   add_index "notifications", ["conversation_id"], :name => "index_notifications_on_conversation_id"
+
+  create_table "outfits", :force => true do |t|
+    t.string   "name"
+    t.integer  "closet_id"
+    t.integer  "activity_object_id"
+    t.string   "outfit_image"
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
+    t.hstore   "info"
+  end
+
+  add_index "outfits", ["activity_object_id"], :name => "index_outfits_on_activity_object_id"
+  add_index "outfits", ["closet_id"], :name => "index_outfits_on_closet_id"
 
   create_table "permissions", :force => true do |t|
     t.string   "action"

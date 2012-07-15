@@ -8,9 +8,9 @@ module UserExtended
     has_many :scores, :class_name => "UserScoredClothingItem"
     has_many :scored_items, :through => :scores, :class_name => "ClothingItem", :source=>:clothing_item
     belongs_to :actor
-    
     has_and_belongs_to_many :points, :join_table => "points_users"
-    
+    has_many :closets, :through => :actor
+
     before_save :update_email
     
     private

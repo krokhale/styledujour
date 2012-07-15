@@ -1,13 +1,11 @@
-= form_for @closet do |f|
-  -if @closet.errors.any?
-    #error_explanation
-      %h2= "#{pluralize(@closet.errors.count, "error")} prohibited this closet from being saved:"
-      %ul
-        - @closet.errors.full_messages.each do |msg|
-          %li= msg
+.row
+  .span16.columns
+    = form_for Closet.new, :url => "", :html => { :id => "#{form_type}_closet" } do |f|
+      %fieldset
+        .clearfix
+          = f.label :name
+          .input
+            = f.text_field :name, :value => "${name}", :class => "xlarge"
 
-  .field
-    = f.label :name
-    = f.text_field :name
-  .actions
-    = f.submit 'Save'
+        .actions
+          = f.submit t("helpers.submit.#{form_type}", :model => f.object.class.model_name.human), :class => "btn primary"

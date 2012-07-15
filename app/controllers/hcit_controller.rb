@@ -81,7 +81,13 @@ class HcitController < ApplicationController
   end
   
   def browse
-    @clothing_items = ClothingItem.order("created_at DESC")
+    @clothing_items = ClothingItem.order("created_at DESC").limit(20)
+    respond_to do |wants|
+      wants.html do
+        
+      end
+      wants.json { render json: @clothing_items } 
+    end
   end
   
   def how_cute

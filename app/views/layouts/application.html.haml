@@ -8,9 +8,8 @@
     %link{:rel=>"shortcut icon", :href=>"/assets/favicon.ico"}
     = stylesheet_link_tag "application"
     =# javascript_include_tag "https://www.google.com/jsapi"
-    = javascript_include_tag "application"
-    = javascript_include_tag 'https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.6/jquery-ui.min.js'
     = csrf_meta_tag
+    = javascript_include_tag 'https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'
     = yield(:head)
 
   %body
@@ -28,4 +27,7 @@
       .row
         = yield
 
+    = javascript_include_tag "application"
+    = javascript_include_tag 'https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.6/jquery-ui.min.js'
     = yield(:scripts)
+    = yield(:templates)

@@ -8,13 +8,15 @@
 #  description        :text
 #  imageurl           :string(255)
 #  currency           :string(255)
-#  retailer_id        :integer
 #  manufacturer_id    :integer
 #  heir_id            :integer
 #  heir_type          :string(255)
 #  created_at         :datetime        not null
 #  updated_at         :datetime        not null
 #  activity_object_id :integer
+#  gender             :integer(2)
+#  age                :string(255)
+#  category_id        :integer
 #
 
 class ClothingItem < ActiveRecord::Base

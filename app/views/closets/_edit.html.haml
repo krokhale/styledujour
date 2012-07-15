@@ -1,0 +1,11 @@
+.row
+  .span16.columns
+    .page-header
+      %h1
+        = t(".title")
+        ${name}
+      %ul.tabs
+        %li
+          = link_to t("links.back"), "#/index"
+
+= render :partial => "form", :locals => { :form_type => "edit" }

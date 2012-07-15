@@ -80,7 +80,7 @@
         
       %p
         %strong Retailer:
-        = @clothing_item.retailers.first.name
+        = @clothing_item.retailers.first.try(:name)
       %p
         %strong Manufacturer:
         = @clothing_item.manufacturer_id

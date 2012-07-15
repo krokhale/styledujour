@@ -27,7 +27,7 @@ gem 'jquery-rails'
 gem 'haml-rails'
 gem 'bootstrap_forms'
 gem 'devise'
-gem 'rails-backbone'
+gem 'rails-backbone', :git=>'git://github.com/zamith/backbone-rails.git'
 gem 'mobylette'
 gem 'omniauth-facebook'
 gem 'omniauth-twitter'
@@ -54,6 +54,9 @@ gem 'badgeable_active_record'
 gem 'awesome_nested_set', :git=>'git://github.com/collectiveidea/awesome_nested_set.git'
 #gem 'acts-as-taggable-on', '~> 2.3.1' #2.2.2 already installed somewhere
 
+gem 'activerecord-postgres-hstore', git: 'git://github.com/softa/activerecord-postgres-hstore.git'
+
+gem 'possessive'
 group :development do
   gem 'nifty-generators'
   gem 'ruby_parser'
@@ -79,3 +82,10 @@ end
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
 gem "mocha", :group => :test
+
+# Gems used for rails-backbone
+#gem 'inherited_resources'
+gem 'will_paginate', '~> 3.0'
+gem 'acts_as_api'
+#gem 'haml-rails'
+#gem 'less-rails-bootstrap'

@@ -28,6 +28,8 @@ Styledujour::Application.routes.draw do
       get 'bookmark'
       get 'hcit_form'
       post 'hcit_score'
+      get 'user_scored_clothing_item'
+      post 'add_to_closet'
     end
   end
 
@@ -39,7 +41,13 @@ Styledujour::Application.routes.draw do
     end
   end
 
-  
+  resources :closets do
+    resources :outfits do
+    end
+    resources :clothing_items do
+    end
+
+  end
   # The priority is based upon order of creation:
   # first created -> highest priority.
   devise_for :users, :controllers => {:omniauth_callbacks => "users/omniauth_callbacks"}

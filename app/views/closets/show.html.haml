@@ -1,9 +1,15 @@
-%p#notice= notice
 
-%p
-  %b Name:
-  = @closet.name
+%ul.breadcrumb
+  %li
+    =link_to @closet.actor.name, @closet.actor.subject
+    %span.divider /
+  %li.active
+    ="#{@closet.name} Closet"
 
-= link_to 'Edit', edit_closet_path(@closet)
-\|
-= link_to 'Back', closets_path
+%ul.nav.nav-tabs
+  %li.active
+    %a{:href=>"#closet-home", :data=>{:toggle=>"tab"}} Style Board
+  %li
+    %a{:href=>"#closet-outfits", :data=>{:toggle=>"tab"}} Outfits
+  %li
+    %a{:href=>"#closet-items", :data=>{:toggle=>"tab"}} Clothing	

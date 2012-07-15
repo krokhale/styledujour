@@ -18,6 +18,10 @@ class UserScoredClothingItem < ActiveRecord::Base
   scope :dropped, where(:love=>false)
   
   after_create :update_clothing_item_activity
+
+  def overall_score
+    self.clothing_item.overall_hcit_score
+  end
   
   private
   

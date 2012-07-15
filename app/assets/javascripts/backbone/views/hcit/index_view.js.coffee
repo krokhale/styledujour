@@ -1,6 +1,6 @@
 Styledujour.Views.Hcit ||= {}
 
-class Styledujour.Views.Hcit.GetIndexView extends Backbone.View
+class Styledujour.Views.Hcit.IndexView extends Backbone.View
   template: JST["backbone/templates/hcit/index"]
 
   render: ->

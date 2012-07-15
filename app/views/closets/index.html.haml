@@ -1,19 +1,110 @@
-%h1 Listing closets
+#closets
 
-%table
-  %tr
-    %th Name
-    %th
-    %th
-    %th
+#outfits
 
-  - @closets.each do |closet|
-    %tr
-      %td= closet.name
-      %td= link_to 'Show', closet
-      %td= link_to 'Edit', edit_closet_path(closet)
-      %td= link_to 'Destroy', closet, :confirm => 'Are you sure?', :method => :delete
+#clothing_items
 
-%br
+%canvas#canvas 
+=content_for :scripts do
+  =javascript_include_tag "outfit_creation"
+  :javascript
+    window.onload = (function() {
+      outfit_canvas.init('canvas');
+        
+        //outfit_canvas.loadSide(images);
+        
+        this.scrollTo(0, 1); // Remove Address Bar Mobile
+        
+        // Automatically Call Draw (This fixes the loading bug)
+        (function draw(){
+          requestAnimFrame(draw);
+          outfit_canvas.draw();
+        })();
+      window.router = new Styledujour.Routers.ClosetsRouter({ closets: #{ @closets.to_json.html_safe } });
+      Backbone.history.start();
 
-= link_to 'New Closet', new_closet_path
+    });
+
+      
+      /* 
+        Configure and set-up Script
+      */
+
+      
+      window.requestAnimFrame = (function(){
+        return  window.requestAnimationFrame       || 
+                window.webkitRequestAnimationFrame || 
+                window.mozRequestAnimationFrame    || 
+                window.oRequestAnimationFrame      || 
+                window.msRequestAnimationFrame     || 
+                function( callback ){
+                  window.setTimeout(callback, 1000 / 60);
+                };
+      })();
+      
+      
+      
+      function bop()
+      {
+        outfit_canvas.loadSide(images2);
+        outfit_canvas.loadSide(images3);
+        outfit_canvas.loadSide(images4);
+        outfit_canvas.loadSide(images2);
+      }
+      
+      function bop2()
+      {
+        outfit_canvas.loadSide(images2, true);   
+      }
+      
+      function moveDown()
+      {
+        outfit_canvas.moveOffsetDown();
+      }
+      
+      function moveUp()
+      {
+        outfit_canvas.moveOffsetUp();
+      }
+      
+      function save()
+      {
+        var canvasData = outfit_canvas.save();
+        
+        var ajax = new XMLHttpRequest();
+        ajax.open("POST",'image.php',false);
+        ajax.setRequestHeader('Content-Type', 'application/upload');
+        ajax.send(canvasData);      
+      }
+      
+      function updateSelected()
+      {
+        if(outfit_canvas.selected != undefined)
+        {
+          outfit_canvas.layers[outfit_canvas.selected].scale = document.getElementById('slider').value;
+        }
+      }
+
+
+
+
+/ .row-fluid
+
+            
+/   .span8
+/     - if @closet.nil?
+/       #closetCarousel.carousel.slide
+/         .carousel-inner
+/           .active.item
+/             =image_tag "sales-header-01.jpg", :class=>"pull-left"
+
+/             = form_for [current_subject,Closet.new] do |f|
+              
+/               .field
+/                 = f.hidden_field :name, :value => current_subject.actor.name.possessive
+/                 = f.hidden_field :actor_id, :value => current_subject.actor.id
+/               .actions
+/                 = f.submit 'Start My Closet!', :class=>"btn btn-primary btn-large "
+
+/ =content_for :javascript do
+/   $('.closetCarousel').carousel();

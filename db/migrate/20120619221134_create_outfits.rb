@@ -4,14 +4,14 @@ class CreateOutfits < ActiveRecord::Migration
       t.string :name
       t.integer :closet_id
       t.integer :activity_object_id
-      #image
-      #data blob
+      t.string :outfit_image#image
+      
       t.timestamps
     end
     
     create_table :clothing_items_outfits, :id => false do |t|
-      t.references :clothing_items
-      t.references :outfits
+      t.references :clothing_item
+      t.references :outfit
     end
     
 		add_index :outfits, :closet_id
