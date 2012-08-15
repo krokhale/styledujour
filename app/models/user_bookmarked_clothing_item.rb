@@ -11,4 +11,6 @@
 class UserBookmarkedClothingItem < ActiveRecord::Base
   belongs_to :user
   belongs_to :clothing_item
+
+  attr_accessible :clothing_item_id
 end

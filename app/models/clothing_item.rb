@@ -19,10 +19,11 @@
 #  category_id        :integer
 #
 
+require 'open-uri'
 class ClothingItem < ActiveRecord::Base
   include SocialStream::Models::Object
   parent_model
-  attr_accessible :name, :price, :description, :imageurl, :currency, :retailer_id, :manufacturer_id, :category_id
+  attr_accessible :name, :price, :description, :imageurl, :currency, :retailer_id, :manufacturer_id, :category_id, :photo
   attr_accessible :author_id, :user_author_id, :owner_id, :activity_object_id
   
   has_and_belongs_to_many :bookmarkers, :class_name=> "User", :join_table => "user_bookmarked_clothing_items", :foreign_key => "clothing_item_id"   
@@ -36,6 +37,19 @@ class ClothingItem < ActiveRecord::Base
   has_and_belongs_to_many :retailers
   belongs_to :manufacturer
   belongs_to :category
+  
+  has_attached_file :photo, 
+    :styles => {
+      :thumb => "100x100>",
+      :medium => "x150"
+      },
+    :path => '/:class/:id/:attachment/:style/:filename',
+    :storage => :s3, 
+    :s3_credentials => S3_CREDENTIALS
+
+  def photo_url
+    self.photo.url
+  end
   
   def overall_hcit_score
     return nil if self.scores.shopped.count == 0 
@@ -52,6 +66,10 @@ class ClothingItem < ActiveRecord::Base
   
   def score_for(user)
     self.scores.where(:user_id=>user).try(:first).try(:price)
+  end
+
+  def photo_from_url(url)
+    self.update_attribute(:photo, open(url))
   end
   
   ##FOR SOCIAL_STREAM

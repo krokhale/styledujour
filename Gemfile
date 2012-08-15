@@ -44,11 +44,12 @@ gem 'cancan'
 gem 'hpricot'
 gem 'annotate', :git => 'git://github.com/ctran/annotate_models.git'
 
+gem "aws-s3", :require => "aws/s3"
 gem 'social_stream-base', :git=>'git://github.com/justinsaul/social_stream.git'
 gem 'social_stream-documents', :git=>'git://github.com/justinsaul/social_stream.git'
 gem 'social_stream-linkser', :git=>'git://github.com/justinsaul/social_stream.git'
 gem 'social_stream-presence', :git=>'git://github.com/justinsaul/social_stream.git'
-
+#gem 'aws-sdk'
 gem 'badgeable_active_record'
 
 gem 'awesome_nested_set', :git=>'git://github.com/collectiveidea/awesome_nested_set.git'
@@ -57,6 +58,8 @@ gem 'awesome_nested_set', :git=>'git://github.com/collectiveidea/awesome_nested_
 gem 'activerecord-postgres-hstore', git: 'git://github.com/softa/activerecord-postgres-hstore.git'
 
 gem 'possessive'
+
+
 group :development do
   gem 'nifty-generators'
   gem 'ruby_parser'

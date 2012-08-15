@@ -1,0 +1,14 @@
+development:
+  bucket: sdjdevelopment
+  access_key_id: AKIAJOFYGDRTH5XROSUA
+  secret_access_key: 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
+
+test:
+  bucket: sdjtest
+  access_key_id: AKIAJOFYGDRTH5XROSUA
+  secret_access_key: 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
+
+production:
+  bucket: sdjproduction
+  access_key_id: AKIAJOFYGDRTH5XROSUA
+  secret_access_key: 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

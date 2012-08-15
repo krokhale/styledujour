@@ -1,25 +1,17 @@
 #closets
 
 #outfits
-
+%canvas#canvas
 #clothing_items
-
-%canvas#canvas 
+ 
 =content_for :scripts do
   =javascript_include_tag "outfit_creation"
+  - if Rails.env == "development"
+    =javascript_include_tag "jquery.s3-image-proxy.dev"
+
   :javascript
     window.onload = (function() {
-      outfit_canvas.init('canvas');
-        
-        //outfit_canvas.loadSide(images);
-        
-        this.scrollTo(0, 1); // Remove Address Bar Mobile
-        
-        // Automatically Call Draw (This fixes the loading bug)
-        (function draw(){
-          requestAnimFrame(draw);
-          outfit_canvas.draw();
-        })();
+
       window.router = new Styledujour.Routers.ClosetsRouter({ closets: #{ @closets.to_json.html_safe } });
       Backbone.history.start();
 
@@ -42,42 +34,33 @@
                 };
       })();
       
+      function drawCanvasInit(){
+          requestAnimFrame(drawCanvasInit);
+          outfit_canvas.draw();
+        }
       
-      
-      function bop()
-      {
-        outfit_canvas.loadSide(images2);
-        outfit_canvas.loadSide(images3);
-        outfit_canvas.loadSide(images4);
-        outfit_canvas.loadSide(images2);
-      }
-      
-      function bop2()
-      {
-        outfit_canvas.loadSide(images2, true);   
-      }
-      
-      function moveDown()
+      function outfitCanvasMoveDown()
       {
         outfit_canvas.moveOffsetDown();
       }
       
-      function moveUp()
+      function outfitCanvasMoveUp()
       {
         outfit_canvas.moveOffsetUp();
       }
       
-      function save()
+      function outfitCanvasSave()
       {
         var canvasData = outfit_canvas.save();
         
+        return canvasData;
         var ajax = new XMLHttpRequest();
         ajax.open("POST",'image.php',false);
         ajax.setRequestHeader('Content-Type', 'application/upload');
         ajax.send(canvasData);      
       }
       
-      function updateSelected()
+      function outfitCanvasupdateSelected()
       {
         if(outfit_canvas.selected != undefined)
         {

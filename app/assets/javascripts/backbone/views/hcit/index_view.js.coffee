@@ -4,5 +4,5 @@ class Styledujour.Views.Hcit.IndexView extends Backbone.View
   template: JST["backbone/templates/hcit/index"]
 
   render: ->
-    $(@el).html(@template())
+    window.location.hash = "/browse"
     return this

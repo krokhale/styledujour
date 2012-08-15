@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120706203125) do
+ActiveRecord::Schema.define(:version => 20120726213809) do
 
   create_table "activities", :force => true do |t|
     t.integer  "activity_verb_id"
@@ -208,6 +208,10 @@ ActiveRecord::Schema.define(:version => 20120706203125) do
     t.integer  "gender",             :limit => 2
     t.string   "age"
     t.integer  "category_id"
+    t.string   "photo_file_name"
+    t.string   "photo_content_type"
+    t.integer  "photo_file_size"
+    t.datetime "photo_updated_at"
   end
 
   add_index "clothing_items", ["category_id"], :name => "index_clothing_items_on_category_id"
@@ -355,10 +359,13 @@ ActiveRecord::Schema.define(:version => 20120706203125) do
     t.string   "name"
     t.integer  "closet_id"
     t.integer  "activity_object_id"
-    t.string   "outfit_image"
-    t.datetime "created_at",         :null => false
-    t.datetime "updated_at",         :null => false
+    t.datetime "created_at",                :null => false
+    t.datetime "updated_at",                :null => false
     t.hstore   "info"
+    t.string   "outfit_image_file_name"
+    t.string   "outfit_image_content_type"
+    t.string   "outfit_image_file_size"
+    t.boolean  "outfit_image_processing"
   end
 
   add_index "outfits", ["activity_object_id"], :name => "index_outfits_on_activity_object_id"

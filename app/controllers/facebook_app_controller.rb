@@ -5,6 +5,12 @@ class FacebookAppController < ApplicationController
   def index
     @facebook_session_data["user_id"]
     @facebook_session_data["oauth_token"]
+
+    @user = User.find_or_create_for_facebook_oauth(@facebook_session_data,current_user)
+
+    if @user.persisted?
+      sign_in_and_redirect @user, :event => :authentication
+    end
   end
   
   private

@@ -11,7 +11,7 @@
         %h1 How Cute Is This?
         %p Play the game. Look cute now.
         %p
-          =link_to "Play Now!", hcit_browse_path, :class=>"btn btn-primary btn-large"
+          =link_to "Play Now!", hcit_browse_path, :class=>"btn btn-primary btn-large", :id=>"play-now"
         %p Drag this button to your browser bar to play HCIT on any clothing website: 
         
         %a{:href=>js, :class=>"btn"} How Cute Is This?
@@ -51,7 +51,15 @@
 = content_for :scripts do
   =javascript_include_tag "http://connect.facebook.net/en_US/all.js"
   :javascript
-    $('#hcit').ready(function (){
-      window.router = new Styledujour.Routers.HcitRouter({clothing_items: []});
-      Backbone.history.start();
+    function startBB() {
+      if (Backbone.history === undefined) {
+        window.router = new Styledujour.Routers.HcitRouter({clothing_items: []});
+        Backbone.history.start();
+        Backbone.history.started = true;
+        $('#menu-browse').attr('href',"#/browse");
+        }
+    }
+    $('#hcit-menu').ready(function (){
+      $('#menu-browse').attr('href',"javascript:startBB();");
+      $('#play-now').attr('href',"javascript:startBB();");
     }); 

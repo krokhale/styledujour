@@ -132,6 +132,10 @@ GEM
       jquery-rails (>= 1.0.9)
       paperclip (>= 2.3.4)
       rmagick (>= 2.13.1)
+    aws-s3 (0.6.3)
+      builder
+      mime-types
+      xml-simple
     badgeable (0.5.1)
     badgeable_active_record (0.1.1)
       activerecord (> 2.1.0)
@@ -352,6 +356,7 @@ GEM
     warden (1.1.1)
       rack (>= 1.0)
     will_paginate (3.0.3)
+    xml-simple (1.1.1)
     xmpp4r (0.5)
 
 PLATFORMS
@@ -362,6 +367,7 @@ DEPENDENCIES
   acts_as_api
   annotate!
   awesome_nested_set!
+  aws-s3
   badgeable_active_record
   bootstrap_forms
   cancan

@@ -3,7 +3,7 @@ class ClothingItemsController < ApplicationController
   #include SocialStream::Controllers::Objects #HAVE TO OVERRIDE
   before_filter :get_clothing_item, :except=>[:index,:new,:create]
   before_filter :check_if_scored, :only=>[:show,:hcit_form, :hcit_score]
-  before_filter :authenticate_user!, :only=>[:create, :hcit_form]
+  before_filter :authenticate_user!, :only=>[:create, :hcit_form, :bookmark]
   include BackboneResponses
 
   def destroy
@@ -17,7 +17,7 @@ class ClothingItemsController < ApplicationController
 
   after_filter :increment_visit_count, :only => :show
 
-  load_and_authorize_resource :except => [:index, :hcit_form, :hcit_score, :invite_friends, :user_scored_clothing_item, :add_to_closet]
+  load_and_authorize_resource :except => [:index, :hcit_form, :hcit_score, :invite_friends, :user_scored_clothing_item, :add_to_closet, :bookmark]
 
   respond_to :html, :js, :json
 
@@ -43,7 +43,9 @@ class ClothingItemsController < ApplicationController
         end
 
         wants.json do
-          render :json=>instance_variable_get("@#{controller_name}"), :status => 200
+          render :json=>@clothing_items.to_json(:methods=>[:photo_url],
+           :except=>[:photo_content_type,:photo_file_name, :photo_file_size, :photo_update_at,
+            :update_at, :activity_object_id]), :status => 200
         end
      end
   end
@@ -63,6 +65,16 @@ class ClothingItemsController < ApplicationController
     else
       @buy_it = "btn-success"
     end
+
+    respond_to do |wants|
+       wants.html do
+         redirect_to clothing_item_path(@clothing_item)
+       end
+      
+      wants.json do
+         render :json=>@clothing_item.to_json(:include=>[:heir])
+      end
+     end
   end
 
   def new
@@ -124,6 +136,10 @@ class ClothingItemsController < ApplicationController
             wants.js do
                
             end
+
+            wants.json do
+              render :json=>{:message => '<h1>We got it! You have earned 1 Style Point.</h1>'}, :status => 200
+            end
            end
          else
            respond_to do |wants|
@@ -134,10 +150,23 @@ class ClothingItemsController < ApplicationController
             wants.js do
                render :json=> nil, :status => 500 
             end
+
+            wants.json do
+              render :json=> nil, :status => 500 
+            end
            end
         end
       else
-        redirect_to :hcit_form
+        respond_to do |wants|
+           wants.html do
+            redirect_to :hcit_form
+           end
+
+          wants.json do
+            render :json=> {:message => '<h1>You already scored this item.</h1>'}, :status => 302 
+          end
+         end
+        
       end
     elsif @clothing_item && !current_user
       cookies[:clothing_score] = {:value=>{:item=>@clothing_item.id, :score=>params[:user_scored_clothing_item][:price], :love=>params[:user_scored_clothing_item][:love]}.to_json}
@@ -145,6 +174,11 @@ class ClothingItemsController < ApplicationController
         wants.js do
           
         end
+
+        wants.json do
+          render :json=> {:message => "<h3>You must <a href=\"#{new_user_session_path}\">login</a> to save this score!</h3>"}, :status => 302
+        end
+
       end
     end
   end
@@ -184,9 +218,30 @@ class ClothingItemsController < ApplicationController
     end
   end
 
+  def bookmark
+    status = 500
+    if current_user
+      if current_user.bookmarks.find_by_id(@clothing_item)
+        status = 200
+      else
+        #current_user.bookmarks << @clothing_item
+        item = current_user.user_bookmarked_clothing_items.new
+        item.clothing_item = @clothing_item
+        current_user.user_bookmarked_clothing_items << item
+        #current_user.bookmarks.create!(:clothing_item_id=>@clothing_item)
+        status = 200
+      end
+    end
+    respond_to do |wants|
+      wants.json do
+        render :json=>nil, :status=>status
+      end
+    end
+  end
+
   private
   def get_clothing_item
-    @clothing_item = ClothingItem.find(params[:id])
+    @clothing_item = ClothingItem.includes(:heir).find(params[:id])
   end
   
   def check_if_scored

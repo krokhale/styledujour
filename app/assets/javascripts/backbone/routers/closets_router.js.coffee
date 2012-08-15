@@ -4,13 +4,14 @@ class Styledujour.Routers.ClosetsRouter extends Backbone.Router
     @closets.reset options.closets
 
   routes:
-    "/new"                : "newCloset"
-    "/index"              : "index"
+    "new"                : "newCloset"
+    "index"              : "index"
     ":id/edit"           : "edit"
     ":id"                : "show"
     ".*"                  : "index"
     ":id/outfits"        : "outfitIndex"
     ":id/outfits/new"    : "newOutfit"
+    ":id/outfits/:outfit" : "showOutfit"
     ":id/clothing_items" : "clothingItemIndex"
 
   newCloset: ->
@@ -42,8 +43,19 @@ class Styledujour.Routers.ClosetsRouter extends Backbone.Router
 
   newOutfit: (id) ->
     closet = @closets.get(id)
+    closet.clothing_items = new Styledujour.Collections.ClothingItemsCollection({closet_id: id})
 
-    @view = new Styledujour.Views.Outfits.NewView(collection: closet.outfits, closet_id: id)
+    closet.clothing_items.fetch({
+      success: =>
+        @view = new Styledujour.Views.Outfits.NewView(collection: closet.outfits, closet_id: id, clothing_items: closet.clothing_items)
+        $("#outfits").html(@view.render().el)
+      })
+
+  showOutfit: (id, outfit) ->
+    closet = @closets.get(id)
+    outfit = closet.outfits.get(outfit)
+
+    @view = new Styledujour.Views.Outfits.ShowView(model: outfit)
     $("#outfits").html(@view.render().el)
 
   clothingItemIndex: (id) ->

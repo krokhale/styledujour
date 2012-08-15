@@ -1,10 +1,10 @@
 <td><%= name %></td>
 <td><%= closet_id %></td>
-<td><%= outfit_image %></td>
+<td><img src="<%= image %>" height="100" width="100"/></td>
 <td><%= info %></td>
-<td><%= update_at %></td>
+<td><%= updated_at %></td>
 <td><%= created_at %></td>
 
-<td><a href="#/<%= id %>">Show</td>
-<td><a href="#/<%= id %>/edit">Edit</td>
-<td><a href="#/<%= id %>/destroy" class="destroy">Destroy</a></td>
+<td><a href="#/<%= closet_id %>/outfits/<%= id %>">Show</td>
+<td><a href="#/<%= closet_id %>/outfits/<%= id %>/edit">Edit</td>
+<td><a href="#/<%= closet_id %>/outfits/<%= id %>/destroy" class="destroy">Destroy</a></td>

@@ -1,14 +1,18 @@
 
   <li class='span3 mini-item'>
     <div class='thumbnail'>
-      <img alt="<%= name%>" src="<%=imageurl%>" style="max-width:150px;" />
+      <img alt="<%= name%>" src="<%=imageurl%>" style="max-width:150px; max-height: 150px;" />
       <div class='caption'>
         <h5><%=name%></h5>
-        <p>
-          <a href="#/clothing_items/<%=id%>" class="btn btn-primary">View</a>
-          <a href="/clothing_items/<%=id%>/invite_friends" class="btn">Ask</a>
-          <div id="add-to-closet"><a href="">Add To Closet</a></div>
-        </p>
+        <div class="btn-toolbar">
+          <div class="btn-group">
+            <a href="#/clothing_items/<%=id%>" class="btn" title="View"><i class="icon-eye-open"></i></a>
+            <a href="#" class="btn" id="add-to-closet" title="Add To Closet"><i class="icon-plus"></i></a>
+            <a href="/clothing_items/<%=id%>/invite_friends" class="btn" title="How Cute Is This?"><i class="icon-heart"></i></a>
+            <a href="#" class="btn" id="bookmark-it" title="Bookmark it"><i class="icon-bookmark"></i></a>
+            <a href="#" class="btn" title="Buy it" id="buy-it"><i class="icon-shopping-cart"></i></a>
+          </div>
+        </div>
       </div>
     </div>
   </li>

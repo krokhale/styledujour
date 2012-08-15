@@ -37,9 +37,16 @@ class Styledujour.Routers.HcitRouter extends Backbone.Router
 
   show: (id) ->
     clothing_item = @clothing_items.get(id)
-
-    @view = new Styledujour.Views.ClothingItems.ShowView(model: clothing_item)
-    $("#hcit").html(@view.render().el)
+    if (clothing_item == undefined)
+      clothing_item = new Styledujour.Models.ClothingItem({id: id})
+      clothing_item.fetch({
+      success: =>
+        @view = new Styledujour.Views.ClothingItems.ShowView(model: clothing_item)
+        $("#hcit").html(@view.render().el)
+      })
+    else
+      @view = new Styledujour.Views.ClothingItems.ShowView(model: clothing_item)
+      $("#hcit").html(@view.render().el)
 
   edit: (id) ->
     clothing_item = @clothing_items.get(id)

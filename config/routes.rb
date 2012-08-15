@@ -30,6 +30,7 @@ Styledujour::Application.routes.draw do
       post 'hcit_score'
       get 'user_scored_clothing_item'
       post 'add_to_closet'
+      post 'bookmark'
     end
   end
 

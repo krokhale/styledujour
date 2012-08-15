@@ -1,7 +1,7 @@
-.row-fluid
+#hcit-menu.row-fluid
   .span12
     %ul.nav.nav-pills
-      %li{:class=>"#{'active' if params[:action] == 'browse'}"}=link_to "Browse", hcit_browse_path
+      %li{:class=>"#{'active' if params[:action] == 'browse'}"}=link_to "Browse", hcit_browse_path, :id=>"menu-browse"
       %li{:class=>"#{'active' if params[:action] == 'my_asks'}"}=link_to "My Asks", hcit_my_asks_path
       %li{:class=>"#{'active' if params[:action] == 'my_scores'}"}=link_to "My Scores", hcit_my_scores_path
       %li{:class=>"#{'active' if params[:action] == 'how_cute'}"}=link_to "How Cute Am I?", hcit_how_cute_path if current_user

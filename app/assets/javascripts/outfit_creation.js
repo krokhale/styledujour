@@ -146,7 +146,7 @@ var outfit_canvas = {
 		this.side.dy = this.side.imgGap;
 		
 		this.side.dxMax = Math.floor(this.side.width/(this.side.imgWidth + this.side.imgGap));
-		
+		window.addEventListener('goLoadSide', this.loadSideLoaded, false);
 	},
 
 	loadSide: function(imgs, clear)
@@ -177,7 +177,7 @@ var outfit_canvas = {
 					img: img,
 				
 					name: info.name,
-					src: info.imageurl,
+					src: info.photo_url,
 					
 					sx: info.sx || 0,
 					sy: info.sy || 0,
@@ -185,18 +185,20 @@ var outfit_canvas = {
 					sheight: info.sheight || img.height,
 					
 					width: info.width || that.side.imgWidth,
-					height: info.height || that.side.imgHeight
+					height: info.height || that.side.imgHeight,
+
+					clothing_item: info.id
 					
 				};
 				
 				that.side.items.push(item);
-				
 				that.side.loaded++;
-				that.loadSideLoaded();
+				//that.loadSideLoaded();
 				
 			})(items[i], this, imgs[i]);
 			
-			items[i].src = imgs[i].imageurl;
+			items[i].src = imgs[i].photo_url;
+			$([items[i]]).s3ImageProxy();
 		}
 	},
 	
@@ -503,6 +505,7 @@ var outfit_canvas = {
 						this.drag.yoff = pos.y - (item.dy + this.side.offset);
 						
 						this.drag.item = {
+							clothing_item: item.clothing_item,
 							name: item.name,
 							
 							img: item.img,
@@ -561,6 +564,7 @@ var outfit_canvas = {
 					this.drag.yoff = pos.y - layer.dy;
 					
 					this.drag.item = {
+						clothing_item: layer.clothing_item,
 						name: layer.name,
 						
 						img: layer.img,
@@ -632,6 +636,7 @@ var outfit_canvas = {
 			// Create Elemet + Set as Selected + Z Index Top
 			var dragInfo = this.drag.item;
 			var item = {
+				clothing_item: dragInfo.clothing_item,
 				name: dragInfo.name,
 				
 				img: dragInfo.img,
@@ -777,9 +782,14 @@ var outfit_canvas = {
 		// Save Data
 		var data = this.canvas.toDataURL("image/png");
 		
+		var layers = $.map(this.layers, function(o,i) {
+			return JSON.parse(JSON.stringify(o, function(k,v) { return (k === 'img') ? undefined : v; }));
+		});
+
+		var saveData = {img: data, info: layers}
 		// Redraw Scene
 		this.draw();
 		
-		return data;
+		return saveData;
 	}
 }

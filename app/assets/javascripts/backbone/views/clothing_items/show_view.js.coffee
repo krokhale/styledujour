@@ -5,34 +5,29 @@ class Styledujour.Views.ClothingItems.ShowView extends Backbone.View
 
   events:
     "click #inviteFacebook" : "inviteFacebook",
-    "click #postFacebookWall" : "postFacebookWall"
+    "click #postFacebookWall" : "postFacebookWall",
+    "click #hcit-shop-it" : "submitShopIt",
+    "click #hcit-drop-it" : "submitDropIt"
 
   render: ->
-    @model.user_scored_clothing_item = new Styledujour.Models.UserScoredClothingItem({id: @model.attributes.id})
-    @model.user_scored_clothing_item.fetch()
-    
+    console.log(@model.user_scored_clothing_item.toJSON())
+
     $(@el).html(@template(@model ))
 
-    this.$el.find( "#dollar-slider" ).slider({max: 1000, step: 5, value: 0, slide: (event,ui) =>    
-      $("#dollar-amount").text(ui.value)
-      $("#user_scored_clothing_item_price").val(ui.value)
-    })
+    if (@model.user_scored_clothing_item.love == undefined) 
+      this.$el.find( "#dollar-slider" ).slider({max: 1000, step: 5, value: 0, slide: (event,ui) =>    
+        $("#dollar-amount").text(ui.value)
+        $("#user_scored_clothing_item_price").val(ui.value)
+      })
 
-    submit_form_with: (feelings) ->
-      if (feelings == 'shop')
-        $('#user_scored_clothing_item_love').val(true)
-      else
-        $('#user_scored_clothing_item_love').val(false)
-        
-      $('#new_user_scored_clothing_item').submit()
-   
-    this.$el.find('#hcit_form').modal({show: false})
-    this.$el.find('#hcit_form').on('show', ->
-        $.get('/clothing_items/'+@model.attributes.id+'/hcit_form.html', (data) => 
-         $('.modal-body').html(data)
+     
+      this.$el.find('#hcit_form').modal({show: false})
+      this.$el.find('#hcit_form').on('show', ->
+          $.get('/clothing_items/'+@model.attributes.id+'/hcit_form.html', (data) => 
+           $('.modal-body').html(data)
+          );
         );
-      );
-              
+             
     hideModal: ->
      $('#hcit_form').modal('hide')
      
@@ -41,6 +36,18 @@ class Styledujour.Views.ClothingItems.ShowView extends Backbone.View
     
            
     return this
+
+  submitShopIt: ->
+
+    this.$el.find('#user_scored_clothing_item_love').val(true)
+
+    this.submitHCITScore(this)
+
+  submitDropIt: ->
+
+    this.$el.find('#user_scored_clothing_item_love').val(false)
+    this.submitHCITScore(this)
+
 
   fbInviteRequestCallback: (response) =>
     model = @model.toJSON()
@@ -75,7 +82,22 @@ class Styledujour.Views.ClothingItems.ShowView extends Backbone.View
           }
     FB.ui { method: 'apprequests', message: 'How Cute Is This?.'}, this.fbInviteRequestCallback
    
-  
+  submitHCITScore: (that)->
+    newModel = {}
+    that.$el.find("#new_user_scored_clothing_item").children("input").each( 
+      (i, el) ->
+        if ($(el).val() != "") 
+            newModel[el.name] = $(el).val()
+    )
+    hcitScore = new Styledujour.Models.UserScoredClothingItem( newModel )
+    hcitScore.url = "/clothing_items/" + @model.attributes.id + "/hcit_score.json"
+    hcitScore.save({}, 
+      success: (model, resp) ->
+        that.$el.find('#hcit-score-form').html(resp.message)
+
+      error: (model, resp) ->
+        json =eval("("+resp.responseText+")")
+        that.$el.find('#hcit-score-form').html(json.message)
+      )
 
   
-   

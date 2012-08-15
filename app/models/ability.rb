@@ -10,6 +10,12 @@ class Ability < SocialStream::Ability
       closet.actor== user.actor.actor
     end
     can :create, Closet
+
+    can :create, Outfit
+    can [:read, :edit, :destroy], Outfit do |outfit|
+        arr = user.closets.collect {|x| x.id}
+        arr.include? outfit.closet_id
+    end
     # can [:read, :linkedin_contacts, :invite_linkedin, :select_contacts, :invite, :invite_email, :email_contacts, :contacts], User
     # can [:create, :edit, :update, :destroy, :leads, :signin_partner], User do |other|
     #   other == user

@@ -1,7 +1,7 @@
 <div class='row'>
 	<div class='row-fluid'>
 	  <div class="span12">
-	  	<h1><a href="javascript:window.history.back();">Back</a><%=user_scored_clothing_item.love%></h1>
+	  	<h1><a href="javascript:window.history.back();">Back</a></h1>
 	  </div>
 	  <div class='span12'>
 	    <h1><%=attributes.name%></h1>
@@ -18,20 +18,20 @@
 	          <h2 data-content='How Cute Is This? is a fashion game to play with friends. You and your friends tell us what you would pay, and we all help you decide if you should buy it.' data-original-title='What is this?' id='what-is-hcit' rel='popover' style='line-height:100px;'>How Cute Is This?</h2>
 	        </div>
 	        <div class='span2' data-content='The cute price is the amount people are willing to pay for this item.' data-original-title='Cute?' id='what-is-cute' rel='popover'>
-	         <% if(user_scored_clothing_item.price) { %>
-	         	<p class='s_price s_price'><%=user_scored_clothing_item.price%><span style='font-size:14px'>Cute!</span></p>
+	         <% if(user_scored_clothing_item.attributes.price != null && user_scored_clothing_item.attributes.price > -1) { %>
+	         	<p class='s_price s_price'>$<%=user_scored_clothing_item.attributes.price%><span style='font-size:14px'>Cute!</span></p>
 	         <% } else {%>	
 		         <p class='s_price s_price' onclick='$("#hcit-score-form-well").stop().css("background-color", "#FFFF9C").animate({ backgroundColor: "#FFFFFF"}, 2500);'>Tell Us!</p>
 		     <% } %>
 	        </div>
-	        <% if (attributes.hasOwnProperty("buy_url")) {%>
+	        <% if (attributes.hasOwnProperty("heir")) {%>
 		        <div class='span1'>
-		          <a href="<%=attributes.buy_url%>" class="btn btn-success">Buy It</a>
+		          <a href="<%=attributes.heir.item_url%>" class="btn btn-success">Buy It</a>
 		        </div>
 	        <% }%>
 	      </div>
 	      <div class='row'>
-	      	<% if (attributes.hasOwnProperty("shopped_it")) {%>
+	      	<% if (user_scored_clothing_item.attributes.hasOwnProperty("shopped_it")) {%>
 	        <div class='span2'>
 	          <p>
 	            <strong><%=attributes.shopped_it%></strong>
@@ -50,10 +50,10 @@
 	      <h4>I think it is...</h4>
 	      <div id='hcit-score-form'>
 	        <div class='well' id='hcit-score-form-well'>
-	          <form accept-charset="UTF-8" action="/clothing_items/<%=attributes.id%>/hcit_score" class="new_user_scored_clothing_item" data-remote="true" id="new_user_scored_clothing_item" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="Ldj3U0pyNbDbajCfmY5T2DnGaEE0LTqZxZybcAei5gQ=" /></div>
-	          <input id="user_scored_clothing_item_clothing_item_id" name="user_scored_clothing_item[clothing_item_id]" type="hidden" value="<%=attributes.id%>" />
-	          <input id="user_scored_clothing_item_love" name="user_scored_clothing_item[love]" type="hidden" />
-	          <input id="user_scored_clothing_item_price" name="user_scored_clothing_item[price]" type="hidden" />
+	          <form accept-charset="UTF-8" action="/clothing_items/<%=attributes.id%>/hcit_score" class="new_user_scored_clothing_item" data-remote="true" id="new_user_scored_clothing_item" method="post"><div style="margin:0;padding:0;display:inline"></div>
+	          <input id="user_scored_clothing_item_clothing_item_id" name="clothing_item_id" type="hidden" value="<%=attributes.id%>" />
+	          <input id="user_scored_clothing_item_love" name="love" type="hidden" />
+	          <input id="user_scored_clothing_item_price" name="price" type="hidden" />
 	          </form>
 	          <div id='dollar-slider'></div>
 	          <h1>
@@ -62,14 +62,14 @@
 	            Cute!
 	          </h1>
 	          <p>
-	            <a class='btn btn-success' href="javascript:submit_form_with('shop');">
+	            <div class='btn btn-success' href="" id="hcit-shop-it">
 	              <i class='icon-shopping-cart'></i>
 	              Shop it!
-	            </a>
-	            <a class='btn btn-danger' href="javascript:submit_form_with('drop');">
+	            </div>
+	            <div class='btn btn-danger' href="" id="hcit-drop-it">
 	              <i class='icon-trash'></i>
 	              Drop it!
-	            </a>
+	            </div>
 	          </p>
 	        </div>
 
