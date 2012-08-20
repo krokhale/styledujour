@@ -51,4 +51,4 @@ class Styledujour.Views.Hcit.ClothingItemView extends Backbone.View
 
   buyIt: (e) ->
      e.preventDefault()
-     window.open(@model.attributes.buy_url)
+     window.open(@model.attributes.heir.item_url)

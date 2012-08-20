@@ -43,9 +43,8 @@ class ClothingItemsController < ApplicationController
         end
 
         wants.json do
-          render :json=>@clothing_items.to_json(:methods=>[:photo_url],
-           :except=>[:photo_content_type,:photo_file_name, :photo_file_size, :photo_update_at,
-            :update_at, :activity_object_id]), :status => 200
+          render :json=>@clothing_items.to_json(:except=>[:activity_object_id, :heir_id, :heir_type, :photo_content_type, :photo_file_name, :photo_file_size, :photo_updated_at],
+          :methods=>[:photo_url],:include=>[:heir => {:only=>[:item_url]}]), :status => 200
         end
      end
   end

@@ -1,0 +1,1 @@
+attributes :id, :name, :price, :description, :imageurl, :photo_url, :currency, :gender

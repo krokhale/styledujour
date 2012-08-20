@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.1'
+gem 'rails', '3.2.3'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -59,6 +59,7 @@ gem 'activerecord-postgres-hstore', git: 'git://github.com/softa/activerecord-po
 
 gem 'possessive'
 
+gem 'rabl', git: 'git://github.com/nesquena/rabl.git'
 
 group :development do
   gem 'nifty-generators'
