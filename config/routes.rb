@@ -2,7 +2,7 @@ Styledujour::Application.routes.draw do
 
   devise_for :users, :controllers => {:omniauth_callbacks => 'omniauth_callbacks'}
 
-  devise_for :users, :controllers=>{:sessions=>"api/v1/sessions", :omniauth_callbacks => 'omniauth_callbacks'}, :skip=>[:sessions] do
+  devise_for :users, :controllers=>{:sessions=>"api/v1/sessions"}, :skip=>[:sessions] do
     match 'api/v1/auth_token'=>"api/v1/sessions#get_authentication_token", :via=>:get
     match 'api/v1/login'=>'api/v1/sessions#create', :via=>[:get, :post]
     get 'api/v1/logout'=>'api/v1/sessions#destroy', :via=>:destroy_user_session
