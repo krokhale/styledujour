@@ -37,7 +37,8 @@ gem 'nokogiri'
 #gem 'mechanize'
 #gem 'imagesize'
 gem 'opengraph', :git=>'git://github.com/parasquid/opengraph.git'
-
+#gem 'mogli'
+gem 'fb_graph'
 gem 'settingslogic'
 gem 'cancan'
 
