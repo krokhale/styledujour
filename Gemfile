@@ -65,7 +65,8 @@ gem 'rabl', git: 'git://github.com/nesquena/rabl.git'
 group :development do
   gem 'nifty-generators'
   gem 'ruby_parser'
-  
+  gem 'heroku'
+
 end
 
 group :test do
@@ -94,3 +95,4 @@ gem 'will_paginate', '~> 3.0'
 gem 'acts_as_api'
 #gem 'haml-rails'
 #gem 'less-rails-bootstrap'
+
