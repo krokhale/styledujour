@@ -73,11 +73,21 @@ class HcitController < ApplicationController
   
   
   def my_asks
-    @clothing_items = current_user.hcit_items.order('user_asked_clothing_items.created_at desc')
+    @clothing_items = current_user.hcit_items.order('user_asked_clothing_items.created_at desc').joins(:scores).limit(20)
+    respond_to do |wants|
+      wants.html {}
+      wants.json { render json: @clothing_items.to_json(:except=>[:activity_object_id, :heir_id, :heir_type, :photo_content_type, :photo_file_name, :photo_file_size, :photo_updated_at],
+          :methods=>[:photo_url],:include=>[:scores => {:only=>[:clothing_item_id, :love, :price, :user_id], :methods => [:overall_score]},:heir => {:only=>[:item_url]}]), :status => 200 } 
+    end
   end
   
   def my_scores
-    @clothing_items = current_user.scored_items.order('user_scored_clothing_items.created_at desc').joins(:scores)
+    @clothing_items = current_user.scored_items.order('user_scored_clothing_items.created_at desc').joins(:scores).limit(20)
+    respond_to do |wants|
+      wants.html {}
+      wants.json { render json: @clothing_items.to_json(:except=>[:activity_object_id, :heir_id, :heir_type, :photo_content_type, :photo_file_name, :photo_file_size, :photo_updated_at],
+          :methods=>[:photo_url],:include=>[:scores => {:only=>[:clothing_item_id, :love, :price, :user_id], :methods => [:overall_score]},:heir => {:only=>[:item_url]}]), :status => 200  } 
+    end
   end
   
   def browse
