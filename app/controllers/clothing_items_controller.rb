@@ -22,6 +22,7 @@ class ClothingItemsController < ApplicationController
   respond_to :html, :js, :json
 
   rescue_from CanCan::AccessDenied do |exception|
+    Rails.logger.debug "Access Denied!"
     redirect_to :back, :alert => exception.message
   end
 
@@ -35,7 +36,7 @@ class ClothingItemsController < ApplicationController
 
     respond_to do |wants|
        wants.html do
-         
+            
        end
       
         wants.js do
@@ -67,7 +68,7 @@ class ClothingItemsController < ApplicationController
 
     respond_to do |wants|
        wants.html do
-         redirect_to clothing_item_path(@clothing_item)
+         #redirect_to clothing_item_path(@clothing_item)
        end
       
       wants.json do

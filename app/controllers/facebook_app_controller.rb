@@ -3,10 +3,13 @@ class FacebookAppController < ApplicationController
   before_filter :facebook_session
   
   def index
-    @facebook_session_data["user_id"]
-    @facebook_session_data["oauth_token"]
 
-    @user = User.find_or_create_for_facebook_oauth(@facebook_session_data,current_user)
+
+    fb = FbGraph::User.me(@facebook_session_data["oauth_token"])
+    fb_user = fb.fetch
+
+
+    @user = User.find_or_create_for_facebook_oauth({"provider"=>"facebook","uid"=>fb_user.raw_attributes["id"], "info"=>fb_user.raw_attributes},current_user)
 
     if @user.persisted?
       sign_in_and_redirect @user, :event => :authentication
