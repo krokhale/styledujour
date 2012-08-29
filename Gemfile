@@ -17,7 +17,7 @@ group :assets do
   gem 'less-rails-bootstrap', '>=2.0.0'
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer'
-
+  gem 'less-rails-fontawesome'
   gem 'uglifier', '>= 1.0.3'
 end
 

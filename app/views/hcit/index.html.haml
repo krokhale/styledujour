@@ -6,43 +6,60 @@
 = render :partial => "menu"
 #hcit
   .row-fluid
-    .span12
-      .hero-unit
+    .span12.hero-unit{:style=>"background-color: white; padding: 10px"}
+      .span6
         %h1 How Cute Is This?
-        %p Play the game. Look cute now.
-        %p
-          =link_to "Play Now!", hcit_browse_path, :class=>"btn btn-primary btn-large", :id=>"play-now"
-        %p Drag this button to your browser bar to play HCIT on any clothing website: 
+        %ul.unstyled
+          %li
+            .row
+              .span1
+                =image_tag "hcit/magenta_bag.png"
+              .span4
+                %h3 Shop It!
+                %p Like to shop? Wish you could ask your friends "How Cute Is This?" even if they are far away? Now you can. You can be asking your friends in seconds.
+          %li
+            .row
+              .span1
+                =image_tag "hcit/omg!_2.png"
+              .span4
+                %h3 Share It!
+                %p Now that you found that special item. Share it. Ask it. And Wear it.
+          %li
+            .row
+              .span1
+                =image_tag "hcit/trndsttr_3.png"
+              .span4
+                %h3 Show It!
+                %p Show your friends or the world your shopping skills; or, just show them what you just bought!  
+      .span6
+        #hcit-carousel.carousel.slide
+          .carousel-inner
+            .active.item{:style=>"height: 300px;text-align: center"}
+              #spacer{:style=>"height: 55px;"}
+                
+              %h2 
+                =link_to "Play Now!", hcit_browse_path, :class=>"btn btn-primary btn-large", :id=>"play-now"
+                %br
+                Play the game. Look cute now.
+               
+              
+              %p To play while shopping online, drag this button to your browser bar to play HCIT on any clothing website: 
+              
+              %a{:href=>js, :class=>"btn"} How Cute Is This?
+              %p Then, click the browser bar button anytime you want to ask "How Cute Is This?"
+            .item{:style=>"height: 300px"}
+              %h1 IMAGE
+          %a.carousel-control.left{:href=>"#hcit-carousel", :data=>{:slide=>"prev"}} &lsaquo;
+          %a.carousel-control.right{:href=>"#hcit-carousel", :data=>{:slide=>"next"}} &rsaquo;
+      / .hero-unit
+      /   %h1 How Cute Is This?
+      /   %p Play the game. Look cute now.
+      /   %p
+      /     =link_to "Play Now!", hcit_browse_path, :class=>"btn btn-primary btn-large", :id=>"play-now"
+      /   %p Drag this button to your browser bar to play HCIT on any clothing website: 
         
-        %a{:href=>js, :class=>"btn"} How Cute Is This?
-        %p Click the browser bar button anytime you want to ask "How Cute Is This?"
-  .row-fluid
-    .span4{:style=>"text-align: center;"}
-      %h3 Shop It!
-      =image_tag "hcit/magenta_bag.png"
-      .row
-        .span2.offset1
-          %p 
-          Like to shop?
-          %br/
-          Wish you could ask your friends "How Cute Is This?" even if they were far away?
-          %br/
-          Now you can. You can be asking your friends in seconds.
-        .span1
-    .span4{:style=>"text-align: center;"}
-      %h3 Share It!
-      =image_tag "hcit/omg!_2.png"
-      .row
-        .span2.offset1
-          %p Now that you found that special item. Share it. Ask it. And Wear it.
-        .span1
-    .span4{:style=>"text-align: center;"}
-      %h3 Show It!
-      =image_tag "hcit/trndsttr_3.png"
-      .row
-        .span2.offset1    
-          %p Show your friends or the world your shopping skills; or, just show them what you just bought!    
-        .span1
+      /   %a{:href=>js, :class=>"btn"} How Cute Is This?
+      /   %p Click the browser bar button anytime you want to ask "How Cute Is This?"
 
   .row-fluid#facebook-row{:style=>'display:none;'}
     .span6
