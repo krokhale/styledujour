@@ -9,6 +9,19 @@ Styledujour::Application.routes.draw do
     match 'api/v1/facebook'=>'api/v1/omniauth_callbacks#facebook', :via=>[:get]
   end
 
+
+  namespace :api do
+    namespace :v1 do
+      resources :users, :except=>[:index, :show, :edit, :update, :delete] do
+        member do
+          get 'contacts'
+          get 'facebook_invites'
+          get 'check_facebook_friend'
+        end
+      end
+    end
+  end
+
   get "hcit/index"
   get "hcit/getid"
   get "hcit/submit_link"
