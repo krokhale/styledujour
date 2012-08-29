@@ -25,45 +25,45 @@ class ClothingItem < ActiveRecord::Base
   parent_model
   attr_accessible :name, :price, :description, :imageurl, :currency, :retailer_id, :manufacturer_id, :category_id, :photo
   attr_accessible :author_id, :user_author_id, :owner_id, :activity_object_id
-  
-  has_and_belongs_to_many :bookmarkers, :class_name=> "User", :join_table => "user_bookmarked_clothing_items", :foreign_key => "clothing_item_id"   
+
+  has_and_belongs_to_many :bookmarkers, :class_name=> "User", :join_table => "user_bookmarked_clothing_items", :foreign_key => "clothing_item_id"
   has_many :user_asked_clothing_items
   has_many :user_scored_clothing_items
-  
+
   has_many :askers, :through => :user_asked_clothing_items, :class_name => "User", :source=>:user
   has_many :scores, :class_name => "UserScoredClothingItem"
   has_many :scorers, :through => :user_scored_clothing_items, :class_name => "User", :source=>:user
-  
+
   has_and_belongs_to_many :retailers
   belongs_to :manufacturer
   belongs_to :category
-  
-  has_attached_file :photo, 
+
+  has_attached_file :photo,
     :styles => {
       :thumb => "100x100>",
       :medium => "x150"
       },
     :path => '/:class/:id/:attachment/:style/:filename',
-    :storage => :s3, 
+    :storage => :s3,
     :s3_credentials => S3_CREDENTIALS
 
   def photo_url
     self.photo.url
   end
-  
+
   def overall_hcit_score
-    return nil if self.scores.shopped.count == 0 
-    BigDecimal.new((self.scores.shopped.sum(:price) / self.scores.shopped.count))
+    return nil if self.scores.shopped.count == 0
+    BigDecimal.new((self.scores.shopped.sum(:price) / self.scores.shopped.count)).to_s
   end
-  
+
   def shopped_count
     self.scores.shopped.count
   end
-  
+
   def dropped_count
     self.scores.dropped.count
   end
-  
+
   def score_for(user)
     self.scores.where(:user_id=>user).try(:first).try(:price)
   end
@@ -71,13 +71,13 @@ class ClothingItem < ActiveRecord::Base
   def photo_from_url(url)
     self.update_attribute(:photo, open(url))
   end
-  
+
   ##FOR SOCIAL_STREAM
-  
+
   def title
     name.truncate(30, :separator => ' ')
   end
-  
+
   def create_scored_activity(verb, user)
     #because I don't want to modify activity_object.rb yet
 
@@ -92,7 +92,7 @@ class ClothingItem < ActiveRecord::Base
 
     a.save!
   end
-  
+
     # Is subject allowed to perform action on this {Activity}?
   def allow?(subject, action)
     return false if channel.blank?
@@ -111,14 +111,14 @@ class ClothingItem < ActiveRecord::Base
 
       # Only posting to own relations or allowed to post to foreign relations
       return foreign_rels.blank? && own_rels.present? ||
-             foreign_rels.present? && Relation.allow(subject, 
+             foreign_rels.present? && Relation.allow(subject,
                                                      action,
                                                      'activity',
                                                      :in => foreign_rels).
                                                all.size == foreign_rels.size
 
     when 'read'
-      return true 
+      return true
     when 'update'
       return true if [channel.author_id, channel.owner_id].include?(Actor.normalize_id(subject))
     when 'destroy'
@@ -130,3 +130,4 @@ class ClothingItem < ActiveRecord::Base
       allow?(subject, action, 'activity', :in => self.relation_ids, :public => false)
   end
 end
+
