@@ -30,4 +30,6 @@ class Api::V1::UsersController < ApplicationController
 	      format.json { render :json => @invite.to_json(:except=>[:id, :updated_at, :created_at]), :callback => params[:callback] }
     	end
 	end
+
+	
 end

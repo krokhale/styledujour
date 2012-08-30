@@ -61,7 +61,7 @@ class ClothingItemsController < ApplicationController
       @user_score = UserScoredClothingItem.where(:clothing_item_id => @clothing_item.id, :user_id=>current_user.id).first || UserScoredClothingItem.new(:user=>current_user, :clothing_item=>@clothing_item) unless @user_price
     end
     if @clothing_item.overall_hcit_score
-      @buy_it = (@clothing_item.price < @clothing_item.overall_hcit_score) ? "btn-success" : "btn-warning"
+      @buy_it = (@clothing_item.price < BigDecimal.new(@clothing_item.overall_hcit_score)) ? "btn-success" : "btn-warning"
     else
       @buy_it = "btn-success"
     end

@@ -1,6 +1,6 @@
 Styledujour::Application.routes.draw do
 
-  devise_for :users, :controllers => {:omniauth_callbacks => 'omniauth_callbacks'}
+ devise_for :users, :controllers => {:omniauth_callbacks => 'omniauth_callbacks'}
 
   devise_for :users, :controllers=>{:sessions=>"api/v1/sessions"}, :skip=>[:sessions] do
     match 'api/v1/auth_token'=>"api/v1/sessions#get_authentication_token", :via=>:get
@@ -8,7 +8,6 @@ Styledujour::Application.routes.draw do
     get 'api/v1/logout'=>'api/v1/sessions#destroy', :via=>:destroy_user_session
     match 'api/v1/facebook'=>'api/v1/omniauth_callbacks#facebook', :via=>[:get]
   end
-
 
   namespace :api do
     namespace :v1 do
@@ -62,6 +61,7 @@ Styledujour::Application.routes.draw do
     end
   end
 
+
   resources :closets do
     resources :outfits do
     end
@@ -71,7 +71,7 @@ Styledujour::Application.routes.draw do
   end
   # The priority is based upon order of creation:
   # first created -> highest priority.
-  devise_for :users, :controllers => {:omniauth_callbacks => "users/omniauth_callbacks"}
+  #devise_for :users, :controllers => {:omniauth_callbacks => "users/omniauth_callbacks"}
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
