@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120726213809) do
+ActiveRecord::Schema.define(:version => 20120901200429) do
 
   create_table "activities", :force => true do |t|
     t.integer  "activity_verb_id"
@@ -100,6 +100,20 @@ ActiveRecord::Schema.define(:version => 20120726213809) do
     t.string  "skimlinks_product_id"
     t.integer "skimlinks_group_id"
   end
+
+  create_table "ask_hcits", :force => true do |t|
+    t.integer  "clothing_item_id",             :null => false
+    t.integer  "sender_id",                    :null => false
+    t.integer  "receiver_id",                  :null => false
+    t.integer  "user_scored_clothing_item_id"
+    t.datetime "created_at",                   :null => false
+    t.datetime "updated_at",                   :null => false
+  end
+
+  add_index "ask_hcits", ["clothing_item_id"], :name => "index_ask_hcits_on_clothing_item_id"
+  add_index "ask_hcits", ["receiver_id"], :name => "index_ask_hcits_on_receiver_id"
+  add_index "ask_hcits", ["sender_id"], :name => "index_ask_hcits_on_sender_id"
+  add_index "ask_hcits", ["user_scored_clothing_item_id"], :name => "index_ask_hcits_on_user_scored_clothing_item_id"
 
   create_table "audiences", :force => true do |t|
     t.integer "relation_id"

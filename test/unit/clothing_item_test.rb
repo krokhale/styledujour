@@ -17,6 +17,10 @@
 #  gender             :integer(2)
 #  age                :string(255)
 #  category_id        :integer
+#  photo_file_name    :string(255)
+#  photo_content_type :string(255)
+#  photo_file_size    :integer
+#  photo_updated_at   :datetime
 #
 
 require 'test_helper'

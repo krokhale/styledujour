@@ -60,7 +60,7 @@ class Styledujour.Views.ClothingItems.ShowView extends Backbone.View
   postFacebookWall: =>
    model = @model.toJSON()
    FB.init({ 
-           appId:'6194336540', 
+           appId:'2355533850', 
            cookie:true, 
            status:true
         });
@@ -75,7 +75,7 @@ class Styledujour.Views.ClothingItems.ShowView extends Backbone.View
 
   inviteFacebook: =>
     FB.init { 
-             appId:'6194336540', 
+             appId:'2355533850', 
              cookie:true, 
              status:true
              

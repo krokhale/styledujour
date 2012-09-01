@@ -18,6 +18,8 @@ Styledujour::Application.routes.draw do
           get 'check_facebook_friend'
         end
       end
+      post 'hcit/ask_user'
+      get 'hcit/answer_queue'
     end
   end
 

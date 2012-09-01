@@ -104,6 +104,11 @@ class HcitController < ApplicationController
     @points = current_user.points_earned_cache || 0
     @scored = current_user.scored_items.count
     @asks = current_user.hcit_items.count
+
+    respond_to do |wants|
+      wants.html {}
+      wants.json { render json: {points: @points, scored: @scored, asks: @asks, :status => 200  } }
+    end
   end
   
   private

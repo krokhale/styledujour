@@ -75,7 +75,7 @@ Devise.setup do |config|
   # Notice that if you are skipping storage for all authentication paths, you
   # may want to disable generating routes to Devise's sessions controller by
   # passing :skip => :sessions to `devise_for` in your config/routes.rb
-  config.skip_session_storage = [:http_auth]
+  config.skip_session_storage = [:http_auth, :token_auth]
 
   # ==> Configuration for :database_authenticatable
   # For bcrypt, this is the cost for hashing the password and defaults to 10. If
@@ -120,9 +120,9 @@ Devise.setup do |config|
   # Options to be passed to the created cookie. For instance, you can set
   # :secure => true in order to force SSL only cookies.
   if Rails.env.development? || Rails.env.test?
-    config.cookie_options = {}
+    config.rememberable_options = {}
   else
-    config.cookie_options = {:secure => true}
+    config.rememberable_options = {:secure => true}
   end
   # ==> Configuration for :validatable
   # Range for password length. Default is 6..128.
@@ -216,21 +216,17 @@ Devise.setup do |config|
   # Add a new OmniAuth provider. Check the wiki for more information on setting
   # up on your models and hooks.
   # config.omniauth :github, 'APP_ID', 'APP_SECRET', :scope => 'user,public_repo'
-  config.omniauth :linkedin, "1", "2"
+  #config.omniauth :linkedin, "1", "2"
                       
                       
   #config.omniauth :twitter, "wgTxO0fTpjTeSnjKC9ZHA","JepulVWwLcuAnGfWjwCu47yEP0TcJJfKtvISPBsilI"
                       
   config.token_authentication_key = :auth_token
                       
-  config.stateless_token = true
-  if Rails.env.development?
-    config.omniauth :facebook, "6194336540", "78bd1186d89dbf1403f3ff129d2f5f8a"
-    config.omniauth :twitter, "APP_ID", "APP_SECRET"
-  else
-    config.omniauth :facebook, "2355533850", "818a52855bed95cb433ab97435a2212f"
-    config.omniauth :twitter, "APP_ID", "APP_SECRET"
-  end
+  #config.stateless_token = true
+
+  config.omniauth :facebook, FACEBOOK_CONFIG['app_id'], FACEBOOK_CONFIG['secret']
+  config.omniauth :twitter, "WfvhOKj3QFnzNruDGeRw", "UK6S0oRFc4E1Pz5EaplMxQmBbe6ZzP54UzqqFS70tGo"
   
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or
