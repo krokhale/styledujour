@@ -25,3 +25,4 @@
 //=# require social_stream-presence
 //=# require_tree .
 //= require twitter/bootstrap
+//= require ga
