@@ -25,10 +25,11 @@
 
 require 'open-uri'
 class ClothingItem < ActiveRecord::Base
+  attr_accessor :clothing_item_image_base64
   include SocialStream::Models::Object
   parent_model
   attr_accessible :name, :price, :description, :imageurl, :currency, :retailer_id, :manufacturer_id, :category_id, :photo
-  attr_accessible :author_id, :user_author_id, :owner_id, :activity_object_id
+  attr_accessible :author_id, :user_author_id, :owner_id, :activity_object_id, :clothing_item_image_base64
 
   has_and_belongs_to_many :bookmarkers, :class_name=> "User", :join_table => "user_bookmarked_clothing_items", :foreign_key => "clothing_item_id"
   has_many :user_asked_clothing_items
@@ -50,6 +51,8 @@ class ClothingItem < ActiveRecord::Base
     :path => '/:class/:id/:attachment/:style/:filename',
     :storage => :s3,
     :s3_credentials => S3_CREDENTIALS
+
+    before_validation :setup_photo, :if => :clothing_item_image_base64_provided?
 
   def photo_url
     self.photo.url
@@ -76,6 +79,18 @@ class ClothingItem < ActiveRecord::Base
     self.update_attribute(:photo, open(url))
   end
 
+  def clothing_item_image_base64_provided?
+    !self.clothing_item_image_base64.blank?
+  end
+
+  def setup_photo
+    base64data = self.clothing_item_image_base64.split(',')
+    data = StringIO.new(Base64.decode64(base64data[1]))
+    data.class.class_eval { attr_accessor :original_filename, :content_type }
+    data.original_filename = "#{self.name.parameterize}.png"
+    data.content_type = "image/png"
+    self.photo = data
+  end
   ##FOR SOCIAL_STREAM
 
   def title
