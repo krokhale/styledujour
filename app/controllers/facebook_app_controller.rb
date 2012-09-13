@@ -39,7 +39,9 @@ class FacebookAppController < ApplicationController
       sign_in @user, :event => :authentication
     end
 
-    redirect_to clothing_item_path(clothing_item)
+    if clothing_item
+      redirect_to clothing_item_path(clothing_item)
+    end
   end
   
   private

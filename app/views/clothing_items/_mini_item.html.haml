@@ -1,7 +1,10 @@
 %li.span3.mini-item
   .thumbnail
     - if show_my_score
-      #score="$#{item.score_for(current_user)} cute!"
+      -if item.score_for(current_user)
+        #score="$#{item.score_for(current_user)} cute!"
+      -else
+        #score Dropped!
     =image_tag item.imageurl, :style=>"max-width:150px;"#:width=>"150px"
     .caption
       %h5=item.name

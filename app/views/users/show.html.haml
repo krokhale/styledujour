@@ -1,0 +1,25 @@
+
+.row-fluid
+  .span2#side-navigation
+    .well.sidebar-nav
+      %ul.nav.nav-list
+        %li.nav-header Menu
+        %li.active
+          %a{:href=>"#{home_path}"}
+            %i.icon-home
+            Home
+        %li
+          %a{:href=>"#{hcit_index_path}"}
+            %i.icon-play
+            HCIT
+  .span6#activity-feed
+    .span6
+      %h1=sanitize @user.name
+      = contact_to(@user)
+      = render :partial => "activities/index",:locals  => { :activities => @user.wall(:profile, :for => current_subject).page(params[:page]), :owner => @user }
+  .span4#right-rail
+    .span2
+      = render :partial => 'subjects/contacts', :locals => { :subject => @user }
+      
+      %h3 Groups
+      = render :partial => "users/groups", :locals  => { :user => @user }

@@ -6,7 +6,9 @@ class Styledujour.Views.Hcit.ClothingItemView extends Backbone.View
   events:
     "click #add-to-closet" : "addToCloset",
     "click #bookmark-it" : "bookmark",
-    "click #buy-it" : "buyIt"
+    "click #buy-it" : "buyIt",
+    "click #post-facebook" : "postFacebookWall",
+    "click #invite-friends" : "inviteFacebook"
 
   tagName: "div"
 
@@ -52,3 +54,36 @@ class Styledujour.Views.Hcit.ClothingItemView extends Backbone.View
   buyIt: (e) ->
      e.preventDefault()
      window.open(@model.attributes.heir.item_url)
+
+  fbInviteRequestCallback: (response) =>
+    model = @model.toJSON()
+    $.post('/hcit/fb_request', {'clothing_item_id':model.id, 'fb_ids':response.to, 'request_object_id':response.request}, 
+            (data, status) =>
+               if(status == "success") 
+                 alert('Your Facebook friends have been asked!'); 
+            , 'json')
+   
+  postFacebookWall: =>
+   model = @model.toJSON()
+   FB.init({ 
+           appId:'2355533850', 
+           cookie:true, 
+           status:true
+        });
+   FB.ui({
+      method: 'feed',  
+      name: 'How Cute Is This?',  
+      caption: model.name, 
+      description: model.description, 
+      link: 'http://www.styledujour.com/clothing_items/'+model.id, 
+      picture: model.imageurl
+    });
+
+  inviteFacebook: =>
+    FB.init { 
+             appId:'2355533850', 
+             cookie:true, 
+             status:true
+             
+          }
+    FB.ui { method: 'apprequests', message: 'How Cute Is This?.'}, this.fbInviteRequestCallback     

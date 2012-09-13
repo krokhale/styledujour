@@ -87,8 +87,8 @@ class ClothingItem < ActiveRecord::Base
     base64data = self.clothing_item_image_base64.split(',')
     data = StringIO.new(Base64.decode64(base64data[1]))
     data.class.class_eval { attr_accessor :original_filename, :content_type }
-    data.original_filename = "#{self.name.parameterize}.png"
-    data.content_type = "image/png"
+    data.original_filename = "#{self.name.parameterize}.jpeg"
+    data.content_type = "image/jpeg"
     self.photo = data
   end
   ##FOR SOCIAL_STREAM

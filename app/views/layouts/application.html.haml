@@ -26,7 +26,8 @@
           %h1= yield(:title)
       .row
         = yield
-
+    %footer.footer
+      =render :partial=>"shared/footer"
     = javascript_include_tag "application"
     = javascript_include_tag 'https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.6/jquery-ui.min.js'
     = yield(:scripts)

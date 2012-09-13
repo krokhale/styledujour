@@ -545,4 +545,6 @@ en:
     browser: "Auto-detect browser language"
     none: "Language independent content"
   clothing_item:
-    confirm_delete: "Cannot Delete"
+    confirm_delete: "Are you sure?"
+  outfit:
+    confirm_delete: "Are you sure?"

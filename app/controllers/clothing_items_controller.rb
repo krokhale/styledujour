@@ -3,9 +3,9 @@ class ClothingItemsController < ApplicationController
   #include SocialStream::Controllers::Objects #HAVE TO OVERRIDE
   skip_before_filter :verify_authenticity_token
 
-  before_filter :get_clothing_item, :except=>[:index,:new,:create]
+  before_filter :get_clothing_item, :except=>[:index,:new,:create, :bookmarked]
   before_filter :check_if_scored, :only=>[:show,:hcit_form, :hcit_score]
-  before_filter :authenticate_user!, :only=>[:create, :hcit_form, :bookmark]
+  before_filter :authenticate_user!, :only=>[:create, :hcit_form, :bookmark, :bookmarked]
   include BackboneResponses
 
   def destroy
@@ -19,7 +19,7 @@ class ClothingItemsController < ApplicationController
 
   after_filter :increment_visit_count, :only => :show
 
-  load_and_authorize_resource :except => [:index, :hcit_form, :hcit_score, :invite_friends, :user_scored_clothing_item, :add_to_closet, :bookmark]
+  load_and_authorize_resource :except => [:index, :hcit_form, :hcit_score, :invite_friends, :user_scored_clothing_item, :add_to_closet, :bookmark, :bookmarked]
 
   respond_to :html, :js, :json
 
@@ -238,6 +238,18 @@ class ClothingItemsController < ApplicationController
     respond_to do |wants|
       wants.json do
         render :json=>nil, :status=>status
+      end
+    end
+  end
+
+  def bookmarked
+    @bookmarks = current_user.bookmarked_items
+
+    respond_to do |wants|
+      wants.json do
+        render :json=>@bookmarks, :status=>:success
+      end
+      wants.html do
       end
     end
   end

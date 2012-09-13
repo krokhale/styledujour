@@ -11,10 +11,10 @@
           %a{:href=>"#{hcit_index_path}"}
             %i.icon-play
             HCIT
-  .span4#activity-feed
-    .span4
+  .span6#activity-feed
+    .span6
       =# render :partial => "activities/index",:locals => { :activities => current_subject.wall(:home).page(params[:page]),:owner => current_subject }
       = render :partial => 'activities/wall',:locals  => { :activities => current_subject.wall(:home).page(params[:page]),:owner => current_subject }
   .span4#right-rail
     .span2
-      Extra text
+      

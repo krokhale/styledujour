@@ -23,6 +23,7 @@ Styledujour::Application.routes.draw do
     end
   end
 
+  match "hcit" => "hcit#index"
   get "hcit/index"
   get "hcit/getid"
   get "hcit/submit_link"
@@ -52,6 +53,9 @@ Styledujour::Application.routes.draw do
       get 'user_scored_clothing_item'
       post 'add_to_closet'
       post 'bookmark'
+    end
+    collection do
+      get 'bookmarked'
     end
   end
 

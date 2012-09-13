@@ -1,10 +1,28 @@
 = render :partial => "menu"
-%h1.span12{:style=>"text-align:center"} Browse What Other's Are Looking At Now
 #hcit
+  %h1.span12{:style=>"text-align:center"} Browse What Other's Are Looking At Now
+  - if @clothing_items
+    %ul.thumbnails
+      - @clothing_items.each do |clothing|
+        = render :partial => 'clothing_items/mini_item', :locals => {:item => clothing, :little_menu=>true, :show_my_score=>false}
+  - else
+    %h3 Either browse what others are asking, or start searching the online stores now!
 
-- if @clothing_items
-  %ul.thumbnails
-    - @clothing_items.each do |clothing|
-      = render :partial => 'clothing_items/mini_item', :locals => {:item => clothing, :little_menu=>true, :show_my_score=>false}
-- else
-  %h3 Either browse what others are asking, or start searching the online stores now!
+  .row-fluid#facebook-row{:style=>'display:none;'}
+    .span6
+      #fb-root
+= content_for :scripts do
+  =javascript_include_tag "http://connect.facebook.net/en_US/all.js"
+  :javascript
+    function startBB() {
+      if (Backbone.history === undefined) {
+        window.router = new Styledujour.Routers.HcitRouter({clothing_items: []});
+        Backbone.history.start();
+        Backbone.history.started = true;
+        $('#menu-browse').attr('href',"#/browse");
+        }
+    }
+
+    $('#hcit-menu').ready(function (){
+    	startBB();
+    });  
