@@ -85,7 +85,7 @@ class ClothingItem < ActiveRecord::Base
 
   def setup_photo
     base64data = self.clothing_item_image_base64.split(',')
-    data = StringIO.new(Base64.decode64(base64data[1]))
+    data = StringIO.new(Base64.decode64(base64data.last))
     data.class.class_eval { attr_accessor :original_filename, :content_type }
     data.original_filename = "#{self.name.parameterize}.jpeg"
     data.content_type = "image/jpeg"
