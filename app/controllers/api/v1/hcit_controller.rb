@@ -1,5 +1,6 @@
 class Api::V1::HcitController < ApplicationController
 	before_filter :authenticate_user!
+	skip_before_filter :verify_authenticity_token
 
 	def ask_user
 		@invite = AskHCIT.new
