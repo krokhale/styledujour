@@ -87,9 +87,14 @@ class ClothingItemsController < ApplicationController
   def create
     @clothing_item = ClothingItem.new(params[:clothing_item])
     if @clothing_item.save
-      redirect_to @clothing_item, :notice => "Successfully created clothing item."
+      respond_to do |format|
+        format.html { redirect_to @clothing_item, :notice => "Successfully created clothing item." }
+        format.json { render :json => @clothing_item.attributes.merge({:url => @clothing_item.photo.try(:url)}).to_json }
     else
-      render :action => 'new'
+      respond_to do |format|
+        format.html { render :action => 'new'}
+        format.json { render :json => @clothing_item.errors }
+      end
     end
   end
 
