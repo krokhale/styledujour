@@ -4,10 +4,10 @@ class FacebookAppController < ApplicationController
   
   def index
 
-    uri = URI.parse("https://graph.facebook.com/")
-    http = Net::HTTP.new(uri.host, uri.port)
-    http.use_ssl = true
-    http.verify_mode = OpenSSL::SSL::VERIFY_NONE
+    # uri = URI.parse("https://graph.facebook.com/")
+    # http = Net::HTTP.new(uri.host, uri.port)
+    # http.use_ssl = true
+    # http.verify_mode = OpenSSL::SSL::VERIFY_NONE
 
     fb = FbGraph::User.me(@facebook_session_data["oauth_token"])
     fb_user = fb.fetch
@@ -23,8 +23,8 @@ class FacebookAppController < ApplicationController
       app_requests.each do |request| #each app request
         inviter = Authentication.where(:provider=>"facebook",:uid=>request.from.identifier).first.try(:user_id)
         if inviter
-          fb_invite = FacebookUserClothingInvite.by_facebook(request.to.identifier).where(:user_id =>inviter)
-          fb_invite.update_attribute!(:accepted=>true)
+          fb_invite = FacebookUserClothingInvite.by_facebook(request.to.identifier).where(:user_id =>inviter).first
+          fb_invite.update_attribute(:accepted,true)
           clothing_item = fb_invite.clothing_item_id
           @user.create_friendship(fb_invite.user) ## bond users to a friendship
         end
@@ -49,7 +49,7 @@ class FacebookAppController < ApplicationController
   private
   def facebook_session
     @facebook_session_data = decode_data params[:signed_request]
-    logger.debug @facebook_session_data
+    #logger.debug @facebook_session_data
   end
   
   def base64_url_decode str
