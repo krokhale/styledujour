@@ -13,6 +13,12 @@ module UserExtended
 
     before_save :update_email
     
+    def create_friendship(friend)   
+      follow_relation = actor.relation_custom("friend")
+      tie = Tie.create! :contact_id => self.contact_to!(friend).id, :relation_id => follow_relation.id
+      recip = tie.contact.inverse!
+    end
+
     private
     def update_email
       #this is a mess...user and actor have email

@@ -1,6 +1,6 @@
 Styledujour::Application.routes.draw do
 
- devise_for :users, :controllers => {:omniauth_callbacks => 'omniauth_callbacks'}
+ devise_for :users, :controllers => {:omniauth_callbacks => 'users/omniauth_callbacks'}
 
   devise_for :users, :controllers=>{:sessions=>"api/v1/sessions"}, :skip=>[:sessions] do
     match 'api/v1/auth_token'=>"api/v1/sessions#get_authentication_token", :via=>:get
@@ -16,7 +16,11 @@ Styledujour::Application.routes.draw do
           get 'contacts'
           get 'facebook_invites'
           get 'check_facebook_friend'
+          get 'friendship_requests'
+          post 'request_friendships'
+          post 'accept_friendship'
         end
+
       end
       post 'hcit/ask_user'
       get 'hcit/answer_queue'

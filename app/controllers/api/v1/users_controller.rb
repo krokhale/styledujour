@@ -31,5 +31,46 @@ class Api::V1::UsersController < ApplicationController
     	end
 	end
 
-	
+	def contacts_in_network
+		@users = nil
+		if params[:network] == "facebook"
+		  fb = FbGraph::User.me(params[:token])
+		  friends = fb.friends.map { |friend| friend.identifier }
+
+
+		  @users = Authentication.includes(:user).where(:provider=>"facebook", :uid=>friends).map { |a| a.user }
+
+		end
+
+		respond_to do |format|
+	      format.js { @invite = @users }
+	      format.json { render :json => @users, :callback => params[:callback] }
+    	end	
+	end
+
+	def request_friendships
+		friends = params[:friends]
+		follow_relation = current_actor.relation_custom("friend")
+		friends.each do |f|
+			friend = User.find(f)
+      		tie = Tie.create! :contact_id => current_user.contact_to!(friend).id, :relation_id => follow_relation.id
+		end
+	end
+
+	def friendship_requests
+		@requests = current_actor.received_contacts.pending
+
+		respond_to do |format|
+	      format.js { @requests = @requests }
+	      format.json { render :json => @requests.to_json(:except=>[:inverse_id, :ties_count, :updated_at], :methods=>[:sender_name, :receiver_name]), :callback => params[:callback] }
+    	end
+	end
+
+	def accept_friendship
+		@request = current_actor.received_contacts.pending.find(params[:id])
+		if @request
+			tie = Tie.create! :contact_id => @request.id, :relation_id => @request.relations.first.id
+	      	recip = tie.contact.inverse!
+	    end
+	end
 end

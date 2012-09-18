@@ -26,11 +26,13 @@ class FacebookAppController < ApplicationController
           fb_invite = FacebookUserClothingInvite.by_facebook(request.to.identifier).where(:user_id =>inviter)
           fb_invite.update_attribute!(:accepted=>true)
           clothing_item = fb_invite.clothing_item_id
+          @user.create_friendship(fb_invite.user) ## bond users to a friendship
         end
 
         #tell facebook to delete app request
-        request = Net::Http::Delete.new("#{request.identifier}?access_token=#{fb_user.access_token}")
-        response = http.request(request)
+        FbGraph::AppRequest.new(request.identifier, :access_token => fb.access_token).destroy
+        #request = Net::Http::Delete.new("#{request.identifier}?access_token=#{fb_user.access_token}")
+        #response = http.request(request)
       end
       
     end
