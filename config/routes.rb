@@ -17,6 +17,7 @@ Styledujour::Application.routes.draw do
           get 'facebook_invites'
           get 'check_facebook_friend'
           get 'friendship_requests'
+          get 'contacts_in_network'
           post 'request_friendships'
           post 'accept_friendship'
         end
