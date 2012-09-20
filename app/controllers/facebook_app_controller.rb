@@ -26,9 +26,13 @@ class FacebookAppController < ApplicationController
         inviter = Authentication.where(:provider=>"facebook",:uid=>request.from.identifier).first.try(:user_id)
         if inviter
           fb_invite = FacebookUserClothingInvite.by_facebook(request.to.identifier).where(:user_id =>inviter).first
-          fb_invite.update_attribute(:accepted,true)
-          clothing_item = fb_invite.clothing_item_id
-          @user.create_friendship(fb_invite.user) ## bond users to a friendship
+          if fb_invite
+            fb_invite.update_attribute(:accepted,true)
+            clothing_item = fb_invite.clothing_item_id
+            @user.create_friendship(fb_invite.user) ## bond users to a friendship
+          else
+            @user.create_friendship(User.find(inviter))
+          end
         end
 
         #tell facebook to delete app request
