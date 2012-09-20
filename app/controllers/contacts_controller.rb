@@ -83,7 +83,7 @@ class ContactsController < ApplicationController
       else
         {
           'name'  => c.receiver.name,
-          'id'    => c.receiver.receiver_subject.id,
+          'id'    => c.receiver_subject.id,
           'url'   => polymorphic_url(c.receiver_subject),
           'image' => {
             'url' => root_url + c.receiver.logo.url
