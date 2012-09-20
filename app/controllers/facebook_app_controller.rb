@@ -52,7 +52,11 @@ class FacebookAppController < ApplicationController
   
   private
   def facebook_session
-    @facebook_session_data = decode_data params[:signed_request]
+    if params[:signed_request]
+     @facebook_session_data = decode_data params[:signed_request]
+   else
+    @facebook_session_data = []
+   end
     #logger.debug @facebook_session_data
   end
   
@@ -63,7 +67,9 @@ class FacebookAppController < ApplicationController
   end
   
   def decode_data str
-    encoded_sig, payload = str.split('.')
-    data = ActiveSupport::JSON.decode base64_url_decode(payload)
+    if str
+      encoded_sig, payload = str.split('.')
+      data = ActiveSupport::JSON.decode base64_url_decode(payload)
+    end
   end
 end
