@@ -30,8 +30,11 @@ class FacebookAppController < ApplicationController
             fb_invite.update_attribute(:accepted,true)
             clothing_item = fb_invite.clothing_item_id
             @user.create_friendship(fb_invite.user) ## bond users to a friendship
+            fb_invite.user.create_friendship(@user)
           else
-            @user.create_friendship(User.find(inviter))
+            friend = User.find(inviter)
+            @user.create_friendship(friend)
+            friend.create_friendship(@user)
           end
         end
 
