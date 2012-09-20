@@ -5,7 +5,7 @@ class Api::V1::HcitController < ApplicationController
 	def ask_user
 		@invite = AskHCIT.new
 		@invite.sender = current_actor
-		@invite.receiver_id = User.find_by_id(params[:receiver]).try(:actor).try(:id)
+		@invite.receiver_id = User.find_by_id(params[:receiver_id]).try(:actor).try(:id)
 		@invite.clothing_item = ClothingItem.find_by_id(params[:clothing_item_id])
 
 		respond_to do |format|
