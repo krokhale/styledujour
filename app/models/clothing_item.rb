@@ -54,6 +54,15 @@ class ClothingItem < ActiveRecord::Base
 
     before_validation :setup_photo, :if => :clothing_item_image_base64_provided?
 
+  scope :public, lambda { 
+    channels   = Channel.arel_table
+    audiences  = Audience.arel_table
+    relations  = Relation.arel_table
+
+     audience_conditions = audiences[:relation_id].in("0").or(relations[:type].eq('Relation::Public'))
+     select("clothing_items.*").joins(:activity_object => [:activities => [:channel,:audiences, :relations]]).includes(:heir).where(audience_conditions)
+
+  }
   def photo_url
     self.photo.url
   end

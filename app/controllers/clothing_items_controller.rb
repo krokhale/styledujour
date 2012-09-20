@@ -29,7 +29,9 @@ class ClothingItemsController < ApplicationController
     redirect_to :back, :alert => exception.message
   end
 
+  has_scope :public, :type=>:boolean, :default=>true, :only=>[:index]
   def index
+    
     collection_public_attributes
     # if params[:closet_id] #support nested resources
     #   @clothing_items = current_closet.clothing_items

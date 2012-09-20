@@ -61,6 +61,7 @@ gem 'activerecord-postgres-hstore', git: 'git://github.com/softa/activerecord-po
 gem 'possessive'
 
 gem 'rabl', git: 'git://github.com/nesquena/rabl.git'
+gem 'has_scope'
 
 group :development do
   gem 'nifty-generators'

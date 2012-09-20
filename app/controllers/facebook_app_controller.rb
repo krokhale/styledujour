@@ -14,7 +14,9 @@ class FacebookAppController < ApplicationController
 
 
     @user = User.find_or_create_for_facebook_oauth({"provider"=>"facebook","uid"=>fb_user.raw_attributes["id"], "info"=>fb_user.raw_attributes},current_user)
-
+    if @user.persisted?
+      sign_in @user, :event => :authentication
+    end
     #get all app requests
     app_requests = fb_user.app_requests
     clothing_item = nil
@@ -37,9 +39,7 @@ class FacebookAppController < ApplicationController
       
     end
 
-    if @user.persisted?
-      sign_in @user, :event => :authentication
-    end
+    
 
     if clothing_item
       redirect_to clothing_item_path(clothing_item)

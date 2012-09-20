@@ -416,6 +416,7 @@ DEPENDENCIES
   fb_graph
   haml
   haml-rails
+  has_scope
   heritage!
   heroku
   hpricot
