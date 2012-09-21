@@ -157,5 +157,9 @@ class ClothingItem < ActiveRecord::Base
     Relation.
       allow?(subject, action, 'activity', :in => self.relation_ids, :public => false)
   end
+
+  def to_json
+    self.attributes.merge(:url =>self.photo.try(:url)).to_json
+  end
 end
 
