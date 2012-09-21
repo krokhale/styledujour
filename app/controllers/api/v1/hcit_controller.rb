@@ -1,6 +1,6 @@
 class Api::V1::HcitController < ApplicationController
-	before_filter :authenticate_user!
 	skip_before_filter :verify_authenticity_token
+	before_filter :authenticate_user!
 
 	def ask_user
 		@invite = AskHCIT.new
@@ -23,9 +23,9 @@ class Api::V1::HcitController < ApplicationController
 	def answer_queue
 		@invites = AskHCIT.unanswered.where(:receiver_id=>current_actor.id)
 
-		respond_to do |format|
+		respond_to do |wants|
 
-	      format.json {
+	      wants.json {
 	      	render :json =>@invites,:callback => params[:callback]
 	      }
     	end
@@ -35,7 +35,7 @@ class Api::V1::HcitController < ApplicationController
 		@count = current_user.hcit_items.count
 	    respond_to do |wants|
 	      wants.html {}
-	      wants.json { render json: {clothing_items: @count}, :status => 200 } 
+	      wants.json { render :json=> {clothing_items: @count}, :status => 200 } 
 	    end
 	end
 end
