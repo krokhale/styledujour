@@ -32,10 +32,10 @@ class Api::V1::HcitController < ApplicationController
 	end
 
 	def my_asks_count
-		@clothing_items = current_user.hcit_items.count
+		@count = current_user.hcit_items.count
 	    respond_to do |wants|
 	      wants.html {}
-	      wants.json { render json: @clothing_items, :status => 200 } 
+	      wants.json { render json: {clothing_items: @count}, :status => 200 } 
 	    end
 	end
 end
