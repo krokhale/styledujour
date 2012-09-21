@@ -69,7 +69,7 @@ class ClothingItem < ActiveRecord::Base
 
   def overall_hcit_score
     return nil if self.scores.shopped.count == 0
-    (self.scores.shopped.sum(:price) / BigDecimal.new(self.scores.shopped.count)).to_s
+    (self.scores.shopped.sum(:price) / BigDecimal.new(self.scores.shopped.count.to_s)).to_s
   end
 
   def shopped_count
