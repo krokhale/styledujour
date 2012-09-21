@@ -159,7 +159,7 @@ class ClothingItem < ActiveRecord::Base
   end
 
   def as_json(options)
-    super.merge(:url =>self.photo.try(:url))
+    super(options.merge(:url =>self.photo.try(:url)))
   end
 end
 
