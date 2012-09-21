@@ -54,7 +54,7 @@ class ClothingItem < ActiveRecord::Base
 
     before_validation :setup_photo, :if => :clothing_item_image_base64_provided?
 
-  scope :public, lambda { 
+  scope :public, lambda {
     channels   = Channel.arel_table
     audiences  = Audience.arel_table
     relations  = Relation.arel_table
@@ -158,8 +158,8 @@ class ClothingItem < ActiveRecord::Base
       allow?(subject, action, 'activity', :in => self.relation_ids, :public => false)
   end
 
-  def to_json
-    self.attributes.merge(:url =>self.photo.try(:url)).to_json
+  def as_json(options)
+    super.merge(:url =>self.photo.try(:url))
   end
 end
 
