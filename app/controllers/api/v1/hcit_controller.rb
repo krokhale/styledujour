@@ -21,7 +21,7 @@ class Api::V1::HcitController < ApplicationController
 	end
 
 	def answer_queue
-		@invites = AskHCIT.unanswered.find_by_receiver_id(current_actor.id)
+		@invites = AskHCIT.unanswered.where(:receiver_id=>current_actor.id)
 
 		respond_to do |format|
 
