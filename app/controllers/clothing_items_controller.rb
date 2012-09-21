@@ -94,7 +94,7 @@ class ClothingItemsController < ApplicationController
       end
       respond_to do |format|
         format.html { redirect_to @clothing_item, :notice => "Successfully created clothing item." }
-        format.json { render :json => @clothing_item.attributes.merge(:url => @clothing_item.photo.try(:url)).to_json }
+        format.json { render :json => @clothing_item }
       end
     else
       respond_to do |format|

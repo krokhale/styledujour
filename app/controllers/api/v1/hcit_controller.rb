@@ -26,7 +26,7 @@ class Api::V1::HcitController < ApplicationController
 		respond_to do |format|
 
 	      format.json {
-	      	render :json =>@invites,:callback => params[:callback]
+	      	render :json =>@invites.to_json(:include => [:clothing_item]) ,:callback => params[:callback]
 	      }
     	end
 	end
