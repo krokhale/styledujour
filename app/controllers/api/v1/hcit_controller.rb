@@ -26,9 +26,17 @@ class Api::V1::HcitController < ApplicationController
 		respond_to do |format|
 
 	      format.json {
-	      	render :json =>@invites.to_json(:include => [:clothing_item]) ,:callback => params[:callback]
+	      	render :json =>@invites,:callback => params[:callback]
 	      }
     	end
+	end
+
+	def my_asks_count
+		@clothing_items = current_user.hcit_items.count
+	    respond_to do |wants|
+	      wants.html {}
+	      wants.json { render json: @clothing_items, :status => 200 } 
+	    end
 	end
 end
 
