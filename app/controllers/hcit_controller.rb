@@ -78,6 +78,7 @@ class HcitController < ApplicationController
       wants.html {}
       wants.json { render json: @clothing_items.to_json(:except=>[:activity_object_id, :heir_id, :heir_type, :photo_content_type, :photo_file_name, :photo_file_size, :photo_updated_at],
           :methods=>[:photo_url],:include=>[:scores => {:only=>[:clothing_item_id, :love, :price, :user_id], :methods => [:overall_score]},:heir => {:only=>[:item_url]}]), :status => 200 } 
+      wants.mobile {render :text => "why are you here?"}
     end
   end
   
