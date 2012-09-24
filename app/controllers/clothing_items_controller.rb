@@ -92,6 +92,7 @@ class ClothingItemsController < ApplicationController
     if @clothing_item.save
       unless current_user.hcit_items.where("user_asked_clothing_items.clothing_item_id = ?",@clothing_item).first
         current_user.hcit_items << @clothing_item
+        Point.award(current_user, "HCIT_add_clothing_item") #+1
       end
       respond_to do |format|
         format.html { redirect_to @clothing_item, :notice => "Successfully created clothing item." }

@@ -26,5 +26,23 @@ module UserExtended
         self.actor.email = self.email unless self.email.nil?
       end
     end
+
+    def find_or_create_for_facebook_oauth(hash, signed_in_resource = nil)
+      auth = Authentication.find_by_provider_and_uid(hash["provider"], hash["uid"])
+      user = User.find_by_email(hash["info"]["email"])
+
+      if user.nil?
+        user = User.create!(:name => hash["info"]["name"], :email => hash["info"]["email"], :password => Devise.friendly_token[0,20])
+      end
+
+      if auth.nil?
+        auth = Authentication.create!(:user_id => user.id, :uid =>hash["uid"], :provider => hash["provider"])
+      end
+
+      if hash["info"]["image"].present?
+        user.update_attribute(:image, hash["info"]["image"])
+      end
+      user
+    end
   end
 end
