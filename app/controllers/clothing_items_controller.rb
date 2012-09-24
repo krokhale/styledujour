@@ -144,6 +144,13 @@ class ClothingItemsController < ApplicationController
 
         if score.save
            Point.award(current_user, "HCIT_score_clothing_item")
+
+           answer_queue = AskHCIT.unanswered.where(:receiver_id=>current_actor.id, :clothing_item_id=>@clothing_item).first
+
+           if answer_queue
+             answer_queue.update_attribute(:user_scored_clothing_item_id,score)
+           end
+           
            respond_to do |wants|
              wants.html do
                redirect_to clothing_item_path(@clothing_item), :notice => "We got how cute you thought it was!"
