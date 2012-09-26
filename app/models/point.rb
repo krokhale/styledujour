@@ -16,7 +16,7 @@ class Point < ActiveRecord::Base
   has_many :points_users, :class_name => "PointsUsers", :foreign_key => "point_id"
   has_many :users, :through => :points_users, :source => :user
   #has_and_belongs_to_many :users, :join_table => "points_users"
-  
+
   def self.award(user, action)
     
     point = Point.find_by_action(action)

@@ -1,5 +1,5 @@
 badge "Shopholic Lvl 1" do
-  thing Point
+  thing PointsUsers
   subject :user
   count 3
 

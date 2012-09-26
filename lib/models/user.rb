@@ -10,7 +10,7 @@ module UserExtended
     belongs_to :actor
     has_and_belongs_to_many :points, :join_table => "points_users"
     has_many :closets, :through => :actor
-
+    include Badgeable::Subject
     before_save :update_email
     
     def create_friendship(friend)   

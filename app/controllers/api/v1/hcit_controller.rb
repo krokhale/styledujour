@@ -38,5 +38,21 @@ class Api::V1::HcitController < ApplicationController
 	      wants.json { render :json=> {clothing_items: @count}, :status => 200 } 
 	    end
 	end
+
+	def my_scores_count
+		@count = current_user.scores.count
+	    respond_to do |wants|
+	      wants.html {}
+	      wants.json { render :json=> {scores: @count}, :status => 200 } 
+	    end
+	end
+
+	def my_badges
+		@badges = current_user.badges
+		respond_to do |wants|
+	      
+	      wants.json { render :json=> @badges, :status => 200 } 
+	    end
+	end
 end
 
