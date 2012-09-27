@@ -168,15 +168,7 @@ class ClothingItem < ActiveRecord::Base
 
   private
   def give_user_points
-    #Point.award(user_author.user, "HCIT_add_clothing_item") if self.user_author
-    if self.user_author
-      point = Point.find_by_action("HCIT_add_clothing_item")
-      user = self.user_author.user
-      if point  
-        point.points_users.create!(:user=>user)
-        user.update_attribute(:points_earned_cache, user.points.sum(:value))
-      end
-    end
+    Point.award(user_author.user, "HCIT_add_clothing_item") if self.user_author
   end
 end
 

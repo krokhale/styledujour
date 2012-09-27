@@ -12,6 +12,19 @@ GIT
     annotate (2.4.1.beta1)
 
 GIT
+  remote: git://github.com/justinsaul/Badgeable.git
+  revision: 0a762ce0390009cf20f984e25b76d6ca8039c6ca
+  specs:
+    badgeable (0.5.1)
+
+GIT
+  remote: git://github.com/justinsaul/badgeable_active_record.git
+  revision: aa83c7a6c34e72ad45370fce841f1d9dacc3e607
+  specs:
+    badgeable_active_record (0.1.1)
+      activerecord (> 2.1.0)
+
+GIT
   remote: git://github.com/justinsaul/social_stream.git
   revision: 3820620b677a5c8131fbee93f5b6821140634f7f
   specs:
@@ -146,10 +159,6 @@ GEM
       builder
       mime-types
       xml-simple
-    badgeable (0.5.1)
-    badgeable_active_record (0.1.1)
-      activerecord (> 2.1.0)
-      badgeable (~> 0.5.0)
     bcrypt-ruby (3.0.1)
     bootstrap_forms (1.0.5)
     builder (3.0.0)
@@ -408,7 +417,8 @@ DEPENDENCIES
   annotate!
   awesome_nested_set!
   aws-s3
-  badgeable_active_record
+  badgeable!
+  badgeable_active_record!
   bootstrap_forms
   cancan
   coffee-rails (~> 3.2.1)
