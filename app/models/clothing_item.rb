@@ -63,6 +63,9 @@ class ClothingItem < ActiveRecord::Base
      select("clothing_items.*").joins(:activity_object => [:activities => [:channel,:audiences, :relations]]).includes(:heir).where(audience_conditions)
 
   }
+
+  after_create :give_user_points
+
   def photo_url
     self.photo.url
   end
@@ -160,6 +163,12 @@ class ClothingItem < ActiveRecord::Base
 
   def as_json(options)
     super(options.merge(:url =>self.photo.try(:url)))
+  end
+
+
+  private
+  def give_user_points
+    Point.award(user_author.user, "HCIT_add_clothing_item") if self.user_author
   end
 end
 
