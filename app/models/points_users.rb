@@ -12,6 +12,7 @@
 class PointsUsers < ActiveRecord::Base
   belongs_to :points
   belongs_to :user
+  
   extend Badgeable::Award
 
   badge "Shopholic Lvl 1" do

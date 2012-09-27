@@ -16,15 +16,15 @@ class Point < ActiveRecord::Base
   has_many :points_users, :class_name => "PointsUsers", :foreign_key => "point_id"
   has_many :users, :through => :points_users, :source => :user
   #has_and_belongs_to_many :users, :join_table => "points_users"
-
+  
   def self.award(user, action)
     
     point = Point.find_by_action(action)
     
     if point
-      point.users << user
+      point.points_users.create!(:user=>user)
       user.update_attribute(:points_earned_cache, user.points.sum(:value))
-      point.save!
+      #point.save!
       return true
     end
     
