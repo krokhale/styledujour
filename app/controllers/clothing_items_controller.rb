@@ -148,7 +148,7 @@ class ClothingItemsController < ApplicationController
            answer_queue = AskHCIT.unanswered.where(:receiver_id=>current_actor.id, :clothing_item_id=>@clothing_item).first
 
            if answer_queue
-             answer_queue.update_attribute(:user_scored_clothing_item_id,score)
+             answer_queue.update_attribute(:user_scored_clothing_item_id,@clothing_item.id) ## built incorrectly, but needed for now
            end
            
            respond_to do |wants|
