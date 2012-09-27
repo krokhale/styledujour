@@ -26,6 +26,7 @@ Styledujour::Application.routes.draw do
       post 'hcit/ask_user'
       get 'hcit/answer_queue'
       get 'hcit/my_asks_count'
+      get 'hcit/my_scores_count'
       get 'hcit/my_badges'
     end
   end
