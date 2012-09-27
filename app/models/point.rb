@@ -21,7 +21,7 @@ class Point < ActiveRecord::Base
     
     point = Point.find_by_action(action)
     
-    if point
+    if point  
       point.points_users.create!(:user=>user)
       user.update_attribute(:points_earned_cache, user.points.sum(:value))
       #point.save!
