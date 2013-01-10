@@ -24,6 +24,21 @@ user:
       - [ follow ]
       - [ create,  activity ]
       - [ read, activity ]
+  stylist:
+    name: stylist
+    permissions:
+      - [ follow ]
+      - [ create, activity ]
+      - [ read,   activity ]
+      - [ read,   clothing_item]
+      - [ create, clothing_item]
+      - [ delete, clothing_item]
+      - [ update, clothing_item]
+      - [ read,   closet]
+      - [ read,   outfit]
+      - [ create, outfit]
+      - [ delete, outfit]
+      - [ update, outfit]
 
 group:
   member:

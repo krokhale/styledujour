@@ -18,7 +18,7 @@
 //= require backbone_rails_sync
 //= require backbone_datalink
 //= require backbone/styledujour
-//=# require social_stream-base
+//= require social_stream-base
 //=# require social_stream-documents
 //=# require social_stream-events
 //=# require social_stream-linkser

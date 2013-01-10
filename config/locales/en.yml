@@ -546,5 +546,12 @@ en:
     none: "Language independent content"
   clothing_item:
     confirm_delete: "Are you sure?"
+    form:
+      title: "Clothing"
   outfit:
     confirm_delete: "Are you sure?"
+    form:
+      title: "Outfit"
+  linked_clothing_item:
+    form:
+      title: "Shopping Link"

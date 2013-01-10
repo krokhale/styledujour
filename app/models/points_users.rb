@@ -10,9 +10,9 @@
 #
 
 class PointsUsers < ActiveRecord::Base
-  belongs_to :points
+  belongs_to :point
   belongs_to :user
-  
+
   extend Badgeable::Award
 
   badge "Shopholic Lvl 1" do
@@ -34,5 +34,59 @@ class PointsUsers < ActiveRecord::Base
   	subject :user
   	count 30
   	icon '/assets/hcit/shpholic_3.png'
+  end
+
+  badge "Trendsetter Lvl 1" do
+  	thing PointsUsers
+  	subject :user
+  	count do
+  	  PointsUsers.joins(:point).sum("points.value") >= 100
+  	end
+  	icon '/assets/hcit/trndsttr_1.png'
+  end
+
+  badge "Trendsetter Lvl 2" do
+  	thing PointsUsers
+  	subject :user
+  	count do
+  	  PointsUsers.joins(:point).sum("points.value") >= 200
+  	end
+  	icon '/assets/hcit/trndsttr_2.png'
+  end
+
+  badge "Trendsetter Lvl 3" do
+  	thing PointsUsers
+  	subject :user
+  	count do
+  	  PointsUsers.joins(:point).sum("points.value") >= 400
+  	end
+  	icon '/assets/hcit/trndsttr_3.png'
+  end
+
+   badge "Style Icon Lvl 1" do
+  	thing PointsUsers
+  	subject :user
+  	count do
+  	  PointsUsers.joins(:point).sum("points.value") >= 800
+  	end
+  	icon '/assets/hcit/style_icon1.png' 
+  end
+
+  badge "Style Icon Lvl 2" do
+  	thing PointsUsers
+  	subject :user
+  	count do
+  	  PointsUsers.joins(:point).sum("points.value") >= 1600
+  	end
+  	icon '/assets/hcit/style_icon2.png'
+  end
+
+  badge "Style Icon Lvl 3" do
+  	thing PointsUsers
+  	subject :user
+  	count do
+  	  PointsUsers.joins(:point).sum("points.value") >= 3200
+  	end
+  	icon '/assets/hcit/style_icon3.png'
   end
 end

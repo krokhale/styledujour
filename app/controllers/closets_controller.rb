@@ -1,6 +1,6 @@
 load 'lib/backbone_responses.rb'
 class ClosetsController < InheritedResources::Base
-    belongs_to_subjects
+    #belongs_to_subjects
 
 	load_and_authorize_resource :find_by=>:find_by_slug, :except=>[:index]
 	#include BackboneResponses

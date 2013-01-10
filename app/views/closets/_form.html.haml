@@ -1,6 +1,6 @@
 .row
   .span16.columns
-    = form_for Closet.new, :url => "", :html => { :id => "#{form_type}_closet" } do |f|
+    = form_for @closet, :url=> resource_url, :html => { :id => "#{form_type}_closet" } do |f|
       %fieldset
         .clearfix
           = f.label :name
