@@ -69,7 +69,7 @@ group :development do
   gem 'nifty-generators'
   gem 'ruby_parser'
   gem 'heroku'
-
+  gem 'meta_request', '0.2.1'
 end
 
 group :test do
