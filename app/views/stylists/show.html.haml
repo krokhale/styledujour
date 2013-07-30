@@ -1,0 +1,33 @@
+%p#notice= notice
+
+%p
+  %b Actor:
+  = @stylist.actor_id
+%p
+  %b Youtube video:
+  = @stylist.youtube_video
+%p
+  %b About me:
+  = @stylist.about_me
+%p
+  %b Facebook:
+  = @stylist.facebook
+%p
+  %b Twitter:
+  = @stylist.twitter
+%p
+  %b Google:
+  = @stylist.google
+%p
+  %b Pinterest:
+  = @stylist.pinterest
+%p
+  %b Website:
+  = @stylist.website
+%p
+  %b Phone:
+  = @stylist.phone
+
+= link_to 'Edit', edit_stylist_path(@stylist)
+\|
+= link_to 'Back', stylists_path

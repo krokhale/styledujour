@@ -1,3 +1,15 @@
+# == Schema Information
+#
+# Table name: activities
+#
+#  id               :integer         not null, primary key
+#  activity_verb_id :integer
+#  created_at       :datetime
+#  updated_at       :datetime
+#  ancestry         :string(255)
+#  channel_id       :integer
+#
+
 # Activities follow the {Activity Streams}[http://activitystrea.ms/] standard.
 #
 # == {Activity Activities}, {Channel Channels} and Audiences

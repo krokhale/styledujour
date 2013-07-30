@@ -1,5 +1,20 @@
 Styledujour::Application.routes.draw do
 
+  resources :stylists do
+    resources :clients do
+      collection do
+        get 'statuses'
+      end
+      member do
+        get 'status'
+      end
+    end
+  end
+
+
+  resources :tasks
+
+
  devise_for :users, :controllers => {:omniauth_callbacks => 'users/omniauth_callbacks'}
 
   devise_for :users, :controllers=>{:sessions=>"api/v1/sessions"}, :skip=>[:sessions] do

@@ -1,3 +1,16 @@
+# == Schema Information
+#
+# Table name: contacts
+#
+#  id          :integer         not null, primary key
+#  sender_id   :integer
+#  receiver_id :integer
+#  created_at  :datetime
+#  updated_at  :datetime
+#  inverse_id  :integer
+#  ties_count  :integer         default(0)
+#
+
 # A {Contact} is an ordered pair of {Actor Actors},
 # and therefore two {SocialStream::Models::Subject Subjects}.
 #

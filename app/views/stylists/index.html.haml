@@ -1,0 +1,35 @@
+%h1 Listing stylists
+
+%table
+  %tr
+    %th Actor
+    %th Youtube video
+    %th About me
+    %th Facebook
+    %th Twitter
+    %th Google
+    %th Pinterest
+    %th Website
+    %th Phone
+    %th
+    %th
+    %th
+
+  - @stylists.each do |stylist|
+    %tr
+      %td= stylist.actor_id
+      %td= stylist.youtube_video
+      %td= stylist.about_me
+      %td= stylist.facebook
+      %td= stylist.twitter
+      %td= stylist.google
+      %td= stylist.pinterest
+      %td= stylist.website
+      %td= stylist.phone
+      %td= link_to 'Show', stylist
+      %td= link_to 'Edit', edit_stylist_path(stylist)
+      %td= link_to 'Destroy', stylist, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Stylist', new_stylist_path

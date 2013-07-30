@@ -1,0 +1,41 @@
+# == Schema Information
+#
+# Table name: stylists
+#
+#  id            :integer         not null, primary key
+#  actor_id      :integer         not null
+#  youtube_video :string(255)
+#  about_me      :text
+#  facebook      :string(255)
+#  twitter       :string(255)
+#  google        :string(255)
+#  pinterest     :string(255)
+#  website       :string(255)
+#  phone         :string(255)
+#  created_at    :datetime        not null
+#  updated_at    :datetime        not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  actor_id: 1
+  youtube_video: MyString
+  about_me: MyText
+  facebook: MyString
+  twitter: MyString
+  google: MyString
+  pinterest: MyString
+  website: MyString
+  phone: MyString
+
+two:
+  actor_id: 1
+  youtube_video: MyString
+  about_me: MyText
+  facebook: MyString
+  twitter: MyString
+  google: MyString
+  pinterest: MyString
+  website: MyString
+  phone: MyString

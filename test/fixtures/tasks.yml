@@ -1,0 +1,35 @@
+# == Schema Information
+#
+# Table name: tasks
+#
+#  id              :integer         not null, primary key
+#  title           :string(255)     not null
+#  description     :text
+#  due_date        :datetime
+#  completion_date :datetime
+#  is_complete     :boolean         default(FALSE)
+#  client_id       :integer
+#  created_at      :datetime        not null
+#  updated_at      :datetime        not null
+#  actor_id        :integer
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyString
+  description: MyText
+  due_date: 2013-02-01 12:01:56
+  completion_date: 2013-02-01 12:01:56
+  is_complete: false
+  user_id: 1
+  client_id: 1
+
+two:
+  title: MyString
+  description: MyText
+  due_date: 2013-02-01 12:01:56
+  completion_date: 2013-02-01 12:01:56
+  is_complete: false
+  user_id: 1
+  client_id: 1

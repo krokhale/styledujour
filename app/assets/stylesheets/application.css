@@ -12,5 +12,6 @@
  *=# require_tree .
  *= require base
  *= require imports
- *= require smoothness/jquery-ui-1.8.18.custom
+ *=# require smoothness/jquery-ui-1.8.18.custom
+ *= require bootstrap-datepicker
 */

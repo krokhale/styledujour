@@ -1,0 +1,815 @@
+Name,Address,City,State,Zip,Phone,Email,Hours,Capacity,Home based,License,Age Groups
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ Terri's Tots Day Care, 25 Taylor Ave., Battle Creek, MI, 49017, (616) 968-0686, shortymaek@aol.com, 4:30 a.m. to 4:30 - 5 days a week, 10, Home, DG130086263, all ages 
+ Donna's Daycare, 3772 Ermine Dr., Chino Hills, CA, 91709, (909) 597-5649, riverfunaddict@att.net, 6:30am - 5;00pm, 8, Home, 360918246, One year to 4 years old 
+ Teddy Bear Day Care, 106  Della Drive, Fenton, MO, 63026, (636) 349-5997, mrkdwn@swbell.net, 6am-5:30pm  m-f, 10, Home, 000792147, 1 year  to 12 years 
+ B.E.N.T. DAY CARE CENTER, 1704 OLD FM 440 ROAD, KILLEEN, TX, 76542, (254) 554-0855, babysitter31@hotmail.com, 12, 50, Center, 545240, all 
+ Kids Will Be Kids, 3554 153rd st west, Rosemount, MN, 55068, (651) 322-1095, donaldb.peterson@worldnet.att.net, varies, 10, Home, 233537-2-FCC, all 
+ Walnut Grove Child Care Centers, 14680 Gap Way, Gainesville, VA, 20155, (703) 754-3322, walnutgrove@worldnet.att.net, varies, 100, Center, Virginia Dept of Social Servic, all 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ Walnut Grove Child Care Centers, 9132 James Madison H, Warrenton, VA, 20186, (540) 349-9656, walnutgrove@worldnet.att.net, varies, 50, Center, Va. Dept of Social Services, all 
+ Walnut Grove Child Care Centers, 6653 Oak Shade Rd., Bealeton, VA, 22712, (540) 439-2500, walnutgrove@worldnet.att.net, varies, 100, Center, Va. Dept of Social Services, all 
+ Shanons Family Day Care, 79 Wayne Court, Staten Island, NY, 10310, (718) 816-8817, shanon_10310@yahoo.com, 8-5, 10, Home, 31472, infant to school age 
+ Palmetto Presbyterian Preschool, 6790 S.W. 56 St., Miami, FL, 33155, (305) 662-2863, alx30@aol.com, varies, 500, Center, C-9112, infant to school age 
+ R&M CHILDCARE&PRESCHOOL, 2608GIDEON CRESCENT, CHESAPEAKE, VA, 23324, (757) 545-2843, sexything175526@aol.com, varies, 10, Home, 2000-260, infants to 12 years old 
+ KARENS KIDDIE KARE, 118 LYNN RD., EXCELSIOR SPRINGS, MO, 64024, (816) 630-6269, sweetiek_2@excite.com, 24 Hours, 10, Home, 000668246, all 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ Little Farm Kids, 2719 Roberts Road, Richmond, IN, 47374, (765) 966-5013, richard@ednf.org, varies, 10, Home, 89-003562, all 
+ Play Pals Childcare, 237 Mercedes Rd, Fallbrook, CA, 92028, (760) 723-5133, playpalscc@aol.com, varies, 10, Home, 376606569, all 
+ STARLITE CHRISTIAN LEARNING CTR, 1238 EAST 10TH ST, CHARLOTTE, NC, 28204, (704) 334-8099, clarkstarlite@aol.com, varies, 20, Center, 60001190, all 
+ Kids R Us Daycare, 215 W. 12th Street, Elk City, OK, 73644, (580) 225-1467, kidsrus_73644@yahoo.com, varies, 20, Center, k8320943, infant to school age 
+ A Touch Of Bama Family Daycare, 147-43 Ferndale Ave., Jamaica, NY, 11435, (718) 297-1692, touchofbama@aol.com, 12 Hours, 10, Home, 00000, 0 
+ Kids Creative Learning Center," 1408 Ave. O, Bldg. C", Plano, TX, 75074, (972) 881-0216, kclc@flash.net, varies, 100, Center, 145193, all 
+ You & Me Childrens Center, 450 Hayes Lane, Petaluma, CA, 94952, (707) 762-8998, younmecc@yahoo.com, varies, 100, Center, 490103516, all 
+ Eileen s Fun Place, 4326 Woodland Drive, Tobyhanna, PA, 18466, (570) 894-5244, eileenmorales2002@yahoo.com, 6:00 am - 6:30Pm, 4, Center, in progress, 2 to 4 
+ Gayles Daycare And Preschool, 26030 Marlowe Place, Oak Park, MI, 48237, (248) 968-0152, gnovetsky@aol.com, varies, 10, Home, DG630062302, infant to school age 
+ Small Wonders Daycare, 5 Easy st, Poughkeepsie, NY, 12603, (914) 454-6726, rask454@aol.com, varies, 10, Home, 40339FT, all 
+ Kids Time Day Care, 4518 Vista Dr., Island Lake, IL, 60042, (847) 639-9438, pjsj5@yahoo.com, 6:30am. to 5:00pm., 6, Home, will give out when needed, all 
+ Beckys Daycare, 321 N9th Street, Coshocton, OH, 43812, (740) 622-3983, chance43812@hotmail.com, 24 Hours, 10, Home, Certified, all 
+ Activity Academy," 25 Lenglen Rd,Suit2", Newtn, MA, 02458, (617) 965-1705, activityacademy@mediaone.net, varies, 50, Center, 806703, 2 years to school age 
+ Little Kings & Queens Daycare, 1602 West Lakewood Ave, Durham, NC, 27702, (919) 402-0334, j77d79j96b99@aol.com, varies, 10, Home, 32000947, infants only 
+ Learn N Care Development Center, 93 Spruce Ave, Rochester, NY, 14611, (716) 279-0573, care49@juno.com, varies, 10, Home, 044752FT, 2 years to school age 
+ Future Generations, 12811 8th ave  E108, Everett, WA, 98204, (425) 438-1898, lnl9122@aol.com, 24 Hours, 100, Center, 097512, all 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ Heningers Child Care Center, 1382 No. Highway 89, Layton, UT, 84040, (801) 546-1613, hugshe69@msn.com, 5:30 AM until 7:00 PM, 49, Home, FCC-6804, 0 to 12 years 
+ Little Bugaboo Daycare, Strawberry Meadows, Troutdale, OR, 97060, (503) 618-0881, mizzymac97@aol.com, M-f 7:00am - 6:00pm, 10, Home, Rf054074, 1-10yrs 
+ Nicole Bartolomeo-Family Childcare, 29 Mason Street, Weymouth, MA, 02190, (781) 337-3494, colby7898@yahoo.com, 6:30a.m.-5:30p.m., 6, Home, 194803, infant to school age 
+ Kidz Konnect Family Day Care Center, 625 N. Webster Ave., Omro, WI, 54963, (920) 685-5392, kidzkonnect@prodigy.net, 6 am - 6 pm, 8, Home, 1000990, 6 weeks - 12 years 
+ SMILE DAY CARE CENTER INC., 57 DEVON LANE, WILLIAMSVILLE, NY, 14221, (716) 634-9467, smile-sofia@mailexcite.com, varies, 20, Home, 07734FT, infant to school age 
+ MAIN STREET CHILDRENS ACADEMY, 6320 MAIN STREET, WILLIAMSVILLE, NY, 14221, (716) 631-1166, smile-sofia@mailexcite.com, varies, 50, Center, 0235642dc, all 
+ Christian World Child Care Center, 3820 East Ave., Livermore, CA, 94550, (925) 455-5564, chworldch@aol.com, 6:30 AM -- 6 PM, 72, Center, 013414324, 18 months to 6 years 
+ Kiddie Kollege Kindergarden, 1919 N. Lee, Odessa, TX, 79761, (191) 332-6315, rah137@juno.com, M-F 6:30a.m through 6:00p.m, 153, Center, 062919," 3, 4, and 5 year olds "
+ Fun Time Day Care, 9 Market Street, Webster, MA, 01570, (508) 949-7661, rfunnybones@aol.com, 6 am to 7 pm, 5, Home, 196884, all ages 
+ None Yet, p.o. box 12892, Milwaukee, WI, 53212, (414) 449-9929, rotondat@hotmail.com, 6-6, 8, Home, none yet, all ages 
+ Apple Tree Learning Center, 115-A Elm Street, Enfield, CT, 06082, (860) 745-8361, patsy329@aol.com, varies, 70, Center, 15238, all 
+ Deanas Child Care, 2709 Collins Blvd, Garland, TX, 75044, (972) 495-0327, childcar@flash.net, 24 Hours, 1000+, Home, 518429, infants only 
+ Rainbow Connection Daycare Ctr Ltd, 2424 S Progress rd, Veradale, WA, 99037, (509) 928-1971, rainbowconnection@peoplepc.com, varies, 500, Center, 605330, 2 years and up 
+ Sabrinas Family Home  Daycare, Beach Club Apts. #206, Orlando, FL, 32839, (407) 858-1531, kenbrinaw@aol.com, 6:30 a.m- 6:00p.m, 10, Home, Please Call, 6 weeks-5 yrs. 
+ Haven Lane Day Care, 6330 n. Haven Lane, Flagstaff, AZ, 86004, (520) 526-0830, rmoyer@universalcomputerco.com, varies, 10, Home, sgh-8674, all 
+ Nichols Home Day Care, 56 Hallsway Lane, Bishopville, SC, 29010, (803) 428-6226, nicholsmv@ftc-i.net, 24 Hours, 10, Home, 9343, all 
+" Rabbit Patch, Inc.", 703 South Main St., Altamont, IL, 62411, (217) 483-5882, doris.bales@quebecorworld.com, 8-5, 50, Center, will give out upon request, all 
+ Leslies Daycare, 3811 N 88th Ave, Omaha, NE, 68134, (402) 571-8182, lesliebrown35@hotmail.com, 8-5, 10, Home, 93557501, all 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ Caridad Day Care, 524 St. Lawrence Ave, Bronx, NY, 10473, (718) 617-0795, caridaddaycare@aol.com, varies, 20, Home, 71225, all 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ Up And Growing Academy, 270 Glen Ave, Staten Island, NY, 10301, (718) 556-5621, alwayz123@aol.com, 8am - 5pm, 10, Home, 71404, 2 years - school age 
+ Smart Start Academy, 1808 Route 37 East, Toms River, NJ, 08753, (732) 818-4550, smartstartacademy@hotmail.com, varies, 100, Center, 15SMA0001, infant to school age 
+" Little Professionals, Inc.", 345 North Road, North Chelmsford, MA, 01863, (978) 251-1440, c.richards@lilpro.com, varies, 100, Center, OCCS - On File, infant to school age 
+" Little Professionals, Inc.", 304 Cambridge Road, Woburn, MA, 01801, (781) 937-9933, j.richards@lilpro.com, varies, 100, Center, OCCS - On File, infant to school age 
+ Pams Daycare, Joppatown, Harford County, MD, 21085, (410) 679-7054, dodgegirl679@aol.com, varies, 10, Home, 12-60903, all 
+ My After School Home, 344 Meridian Drive, Redwood City, CA, 94065, (650) 593-4362, lymitchell@earthlink.net, 24 Hours, 10, Home, 414000939, after school care 
+ Happy Medium Learning Center, 8546 Cedar St., Fox Lake, IL, 60020, (847) 587-4410, hmdaycare@a5s.com, 8-5, 10, Home, 318511-01, all 
+ Tenderstep Daycare," 26 st,& Mcdowell rd.", Phx, AZ, 85008, (602) 579-6230, coffy16@yahoo.com, 24 Hours, 10, Center,  8305, infant to school age 
+ POOHS CHRISTAN DAYCARE CENTER, 2384 MONTCLIFF ROAD, PARADISE HILLS, CA, 92139, (619) 267-6118, braxtonlashae@hotmail.com, varies, 10, Home, 376609749, 2 years to school age 
+ Wonders Of Love, 5734 Nasco Placeo, Baltimore, MD, 21239, (410) 323-6797, blessed2blessu@aol.com, 7:00 A.M. - 5:30 P.M., 08, Home, 30-96716, infant to 12 years 
+ Rainbow Day Care, 12 Stanley Place, Newburgh, NY, 12550, (914) 565-7598, rainbowdaycare@aol.com, varies, 10, Home, 41862FT, all 
+ Donnas Daycare, 146 N. OLIVE TERRACE, Porterville, CA, 93257, (559) 781-3570, honigirl45@hotmail.com, varies, 10, Home, 543802340, infant to school age 
+ Ann Maries Family DayCare, 236 Brookfield Rd, Charlton, MA, 01507, (508) 248-0690, shildaisy@aol.com, varies, 10, Home, 186552, all 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ Whites Christian Daycare, 1034 W. Andrews Avenue, Fresno, CA, 93705, (559) 226-3640, tamaraskidz@yahoo.com, 7:30am - 5:30pm, 8, Home, License # OA6721, Preschool to Kindergarten Ages 2 to 6 
+ THE CHAPMAN HOUSE, 1323 BOBING DRIVE, LEWISVILLE, TX, 75067, (972) 420-0029, chapmant@gte.net, varies, 10, Home, 547696, infant to school age 
+ Hollys Daycare, 15319 NE 25 Circle, Vancouver, WA, 98684, (360) 892-2869, hollyjohnson444@hotmail.com, 24 Hours, 10, Home, 67455, 2 years and up 
+ Peak-A-Boo, 608 Casey Creek Rd., Chesnee, SC, 29323, (864) 599-9395, apeak79147@aol.com, varies, 10, Home," 9,198", all 
+ Weekidz Childcare, 7804 Walkenhut Drive, Richmond, VA, 23294, (804) 918-1814, banna@peoplepc.com, varies, 10, Home, in process of obtaini license, 2 years and up 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ LEHNE-ARNOLD FCC, 16745 LACY ST, VICTORVILLE, CA, 92392, (760) 843-9356, missbeth4cc@aol.com, varies, 10, Home, 364807618, 2 years to school age 
+" Childcare Providers(Gar,Rich,Mes,plano)", 2709 Collins Blvd., garland, TX, 75044, (972) 496-4600, childcar@flash.net, varies, 10, Home, 14655907, all 
+ Awesome Kids Day Care, 15930 W Park Road, Hayward, WI, 54843, (715) 634-7152, gmrichsn@win.bright.net, 9-6, 10, Home, 392765831, 2 years and up 
+ Cuddly Bear Child Care, 58 Windsor Road, Sandwich, MA, 02563, (508) 833-0003, cuddlybear58@aol.com, 8-5, 10, Center, 182666, all 
+ The Childrens Tree & Learning Place, 84 Knothe Lane, Westbrook, CT, 06498, (860) 399-1292, mrcnlw@aol.com, 8-5, 10, Home, 491-70, all 
+ The Playpen, 6186 Rte. 434, Apalachin, NY, 13732, (607) 625-4526, ckellogg@pronetisp.net, varies, 10, Home, 042842FT, all 
+ Little Stars Daycare, 646 Washington Ave, Holland, MI, 49423, (616) 395-8775, tj314300@hope.edu, 7am-6pm, 10, Home, df700092519, infant to school age 
+ Stacies Day Care, 7402 Hendricks, Merrillville, IN, 46410, (219) 738-2186, sta1021cie@aol.com, 24 Hours, 10, Home, none, all 
+ Christas Daycare, 2227 11th Ave, Rockford, IL, 61104, (815) 229-5054, chrittab@aol.com, varies, 10, Home, 354539, all 
+ Lynnes DayCare, 27390 beechurst, Roseville, MI, 48066, (810) 773-9440, hbearmiss@aol.com, 9-6, 10, Home, DF500088331, infant to school age 
+ Brendas Sunny Day Daycare, 1819 Fawn Way, Finksburg, MD, 21048, (410) 876-7465, sbmortensen@webtv.ne, varies, 10, Home, 06-58646, infant to school age 
+ Tykes, 42 Hilltop Drive, Monroe, NY, 10950, (914) 496-9732, rakaraka@frontiernet.net, varies, 10, Home, 38757FT, all 
+ South  St Daycare, 4261 South St, Stanley, NY, 14561, (716) 526-1063, rpwiltse@cs.com, 8-5, 10, Home, 044419FT, all 
+ MISSANNES DAYCARE, 134 FIRST AVE., ALIQUIPPA, PA, 15001, (724) 378-1968, j.a.lay@worldnet.att.net, 24 Hours, 10, Home, REGISTATION, all 
+ Happy Days, 614 S. Grand, Gainesville, TX, 76240, (940) 665-5134, mcelreath@nortex.com, 8-5, 10, Home, 539189, all 
+ Terries Home Daycare," 409 N. High St., Ext", Smyrna, DE, 19977, (302) 653-5220, terriematt@aol.com, varies, 6, Home, 2000102929, 2 years to school age 
+ The Family Center, 9945 Sunset Dr., Miami, FL, 33173, (305) 279-6966, famcen@mailcity.com, 7:00am to 6:00pm, 136, Center, C-10087, infant to school age 
+ Karens Kiddie Korner Day Care, 315 4th Ave SW, Aberdeen, SD, 57401, (605) 229-1069, rkgibson2@home.com, 5:30a - 5:30p, 12, Home, 011100752, all 
+ Loving Arms, 490 S. Jeffery Apt 3, Calumet City, IL, 60409, (708) 862-2253, waddelldelite@aol.com, varies, 10, Home, will issue upon request, 6 weeks to 12 years 
+ Nanny Bs Daycare, 12065 Elmdale Dr.," Manchester,", MI, 48158, (734) 428-7771, lewlew@gateway.net, 24 Hours, 10, Home, DF810084107, infant to school age 
+ Debbies Daycare, Homer St, Plymouth, MI, 48170, (734) 844-8444, debkgng@hotmail.com, 24 hours, 6, Home, 820300900, All 
+" Kids Place, Inc.", 1776 Heard Road, Lake Charles, LA, 70677, (337) 855-6737, pckidz@aol.com, varies, 50, Center, 776, infant to school age 
+ Wee Care Day Care, 17 Hillside Road, Sloatsburg, NY, 10974, (845) 753-6726, sstev42661@aol.com, 7:30am - 5:30pm, 8, Home, Upon request, Infants and up 
+ LITTLE ANGELS DAYCARE, 24431 Casewell Court, Laguna Niguel, CA, 92677, (949) 215-4199, design523@earthlink.net, 7:00am-5:30pm, 6, Home, 304205404, infant to school age 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ Kinder Kids Christian Preschool, 5403 W. Pico Blvd., Los  Angeles, CA, 90019, (323) 933-5437, ladysampson@aol.com, varies, 50, Center, 197401220    and   197401230, infant to school age 
+ BAYBAYS KIDZ CHRITIAN DAYCARE, RANDALLSTOWN, RANDALLSTOWN, MD, 21133, (410) 922-0115, bayson@aol.com, 6;30am until 12midnight, 8, Home, 8501, 0-12yrs 
+ MCDOWELLS DAY CARE, 2931 MENLOPARK DRIVE, REX, GA, 30273, (770) 961-8001, tmcdowe4@netscape.net, 24 Hours, 10, Home, FR-000003487, 2 years and up 
+ Fullness Of Joy Day Care, 9456 Johnny Cake Rdg, Mentor, OH, 44123, (440) 255-9383, wwmarket@ameritech.net, varies, 10, Home, Ohio, 2 years to school age 
+ Your Little Blessings Day Care, 845 East 237th St., Euclid, OH, 44123, (216) 634-6059, mmin518775@2ol.com, varies, 10, Home, Certified Provider Ohio, all 
+ Martas Daycare Early Child Developement, 16246 Ilene, Detroit, MI, 48221, (313) 863-4145, platinumom@aol.com, 8-5, 10, Home, DG20063806, infant to school age 
+ Precious Tots Home Daycare, 2658 Brandon Rd., College Park, GA, 30337, (404) 766-0465, austinzettie10@cs.com, varies, 10, Home, FR-000001215, all 
+ Home Away From Home Daycare, 7  Boom road, Saco, ME, 04072, (207) 284-2373, rpc55@gwi.net, 24 Hours, 10, Home, in process, all 
+ B/K Daycare, 1321 Seabrook Dr., Plano, TX, 75023, (972) 517-1664, baugh@ev1.net, varies, 10, Home, 310787, infant to school age 
+ TRACEYS TOT STOP, R.R.#1 BOX 1151, HOP BOTTOM, PA, 18824, (570) 434-8687, chrza32@webtv.net, varies, 10, Home, LICENSED FAMILY DAYCARE, all 
+ Pams Little Family,  48th Ave., Mountlake Terrace, WA, 98043, (425) 640-2458, cticonst@gte.net, 7:00am -  5:30pm, 12, Home, 67223, 12 wks-  4yrs 
+ Loris Little Tykes, P.O. Box 163, St. Martin, MN, 56376, (320) 548-3602, judya@meltel.net, varies, 10, Home, Pending, all 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ Guardian Angel DayCare, 3934 Stepelworth Way, North Vernon, IN, 47265, (812) 346-5796, dianeross_@hotmail.com, varies, 10, Home, 40-000700, all 
+ Melissas Daycare, 505 McQueen Street, Johnston, SC, 29832, (803) 275-5213, melissaleep@aol.com, varies, 10, Home, 17207, all 
+ Enguillado Family Daycare, !, Suisun City, CA, 94585, (707) 422-7942, jairen@msn.com, 8-5, 10, Home, 480110464, infant to school age 
+ Well Koep Kids, 9091 Mccoy Ave, Sacramento, CA, 95829, (916) 689-8025, welkoepkds@aol.com, 7-530, 14, Home, 60969, 16months- school age 
+ MINI TOTS CHILDCARE, 15859 RUTHERFORD, DETROIT, MI, 48227, (313) 836-6352, barnestaraysha@hotmail.com, 6:00 a.m. - 6:00 p.m., 6, Home, DF820091986, 2 years to school age 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ Baby Bubbles Daycare, 202 lilian lane, Eau Claire, WI, 54701, (715) 832-2331, ibyronenz@yahoo.com, 8-5, 20, Center, 15399, all 
+ Rocheas Learning Center, 26683 S. River Park, Inkster, MI, 48141, (313) 359-0725, rochea1@aol.com, varies, 10, Home, DG820092364, 2 years to school age 
+ All About Children Childcare, 1632 South 13th Ave, Maywood, IL, 60153, (708) 343-0613, soni@corecomm.com, varies, 10, Home, 305644, infant to school age 
+ Dibbies Daycare, 620 lake st, Jaspon, MI, 49249, (688) 688-3435, miss.pigie@hotmail.com, 24 Hours, 10, Home, Alicia Dilyard, all 
+ Hands On Learning Preschool And Daycare, 11 Alcoma Drive, North Sioux, SD, 57049, (605) 242-4736, rhondatoben@cableone.net, varies, 10, Home, yes licensed, all 
+ Heathers Family Daycare Home, 5608 Carrollwood Mea, Tampa, FL, 33625, (813) 265-6773, rhnelson@hotmail.com, varies, 10, Home, F HC 430340, all 
+ New Beginnings Child Care, 2313 so.11th st., Lincoln, NE, 68502, (402) 477-3212, info@newbeginningslincoln.com, 24 Hours, 10, Center, 19819563, all 
+ Safehaven Childcare, 1524 Hansford ST., Charleston, WV, 25311, (304) 342-4634, felicitafataki@aol.com, 6am-1am/weekends, 12, Home, 92542085002, newborn - 12 years 
+ The Kids Playhouse, 5901 N. Carriage Ln, alexandria, IN, 46001, (188) 440-9407, the_kids_playhouse@hotmail.com, 9-6, 20, Home, 316-84-0504, infant to school age 
+ Play Center Daycare, 312 West First St, Fosston, MN, 56542, (218) 435-1015, bpwander@gvtel.com, 24 Hours, 14, Home, 235366-2-FCC, all 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ Country Kids Daycare, 256th Street, Winthrop, MN, 55396, (507) 647-2900, lisaw@means.net, 24 Hours, 10, Home, Renewal pending, all 
+ Salazar Family Daycare, 5909  Lemon Avenue, Long Beach, CA, 90805, (562) 428-3109, salazarmaelena@hotmail.com, 24 Hours, 8, Home, 191-60-5406, 0 - Kindergarden 
+ Just Like Home Childcare, 7916  230th Street Lane N, Forest Lake, MN, 55025, (651) 373-0181, please call, 6:00am - 5:00pm, 10, Home, Pending, All 
+ Nieves Daycare, 1819-55 Smyhte Ave., San Ysidro, CA, 92173, (619) 428-2299, jesusnieve@aol.com, 24 Hours, 10, Home, 376609997, all 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ Tinas Tots, 160  W Wickenburg, Wickenburg, AZ, 85390, (520) 684-0585, jeepin@furtureone.com, 8-5, 20, Center, cdc 5542, all 
+ Crystal Christain Day Care, 7955 San Felipe Street, San Diego, CA, 92114, (619) 460-3486, c6131970@cs.com, 24 hours, 8, Center, 376606277, All Age Groups 
+ Binky Computers For Kids!, PO BOX 530, Triangle, VA, 22172, (877) 528-4986, carol@binkypc.com, 24 Hours, 10, Home, binkypc.com, all 
+ Great Commission Daycare, 10718 Lionel Dr., little rock, AR, 72209, (501) 562-7067, macbone985836075@aol.com, varies, 10, Home, 14655, 2 years to school age 
+ Tammy Denekas, 220 W Beech Rd, Sterling, VA, 20164, (703) 450-3962, boneten@aol.com, 7:30 am to 5:30 pm, 5, Home, None, Infants to 4 yrs. old 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ Briannas Daycare, 438 Oxford St, Chula Vista, CA, 91911, (619) 585-3473, adrianna@starmedia.com, varies, 10, Center, 376605427, all 
+ A Mothers Friend, 1916 e ardmore drive, phoenix, AZ, 85040, (602) 304-1067, zlcw@uswest.net, 24 Hours, 10, Home, in process, all 
+ Love For Tots," 3709 Blair Ct,", Blasdell, NY, 14219, (716) 822-9650, redchili@webmailcatholic.org, varies, 10, Home, 041562ft, all 
+ PopTots Family Daycare, 225 Hall Street, Raynham, MA, 02767, (508) 823-4207, poptots@aol.com, 8-5, 10, Home, 195073, infant to school age 
+ Rebeccas Daycare, 1244 W. Staver St., Freeport, IL, 61032, (815) 232-6434, jkrk1244@mwci.net, 8-5, 10, Home, 351105, infant to school age 
+ Deanna DayCare, 212-29 Hillside Ave, Queens Village, NY, 11427, (718) 465-3942, wisdomcounts@webtv.net, 9-6, 10, Home, 80011, 2 years to school age 
+ Spot For Tots, 1373 Lily Cache Lane, Bolingbrook, IL, 60490, (630) 759-2555, yvette_knox@sbcglobal.net, 7am - 5:30pm, 8, Home, 356296-01, Infants to school age 
+ Smiling Stars, 434 north center st., royal oak, MI, 48067, (248) 547-6686, kimberlykuriluk@kimberlysmail.com, varies, 6, Home, df630092658, all 
+ Country Time Daycare, 205 Randolph Street, Melba, ID, 83641, (208) 495-1328, wolf-man@mindspring.com, 6:00am-6:00pm, 7, Home, n/a, Infant to school age 
+ Van De Blankevoort Family Daycare, 3785 Ermine Dr., Chino Hills, CA, 91709, (909) 597-2945, fawnlittlefawn@yahoo.com, 6:00 a.m. - 5:30 p.m., 14, Home, 360918198, Infant to school age 
+ The Beautiful Ones Day Care, 5802 Calico Court, Lithonia, GA, 30058, (770) 323-4875, myers612@flash.net, 9-6, 10, Home, FR-000008839, infant to school age 
+ Almost Home Childcare, 2325 Kinsman Rd NE, N.Bloomfield, OH, 44450, (330) 583-2907, styxgroupi@aol.com, 24 Hours, 10, Home, 51012104, all 
+ Smokeybear, 80 currier st, barre, VT, 05641, (802) 476-8702, dug1jan2@aol.com, varies, 10, Home, V96-061, all 
+ KidsWorld Daycare Home, 192 Huntfield Drive, Winston-Salem, NC, 27107, (336) 764-4693, lmwike@bellsouth.net, 7am - 5pm, 8, Home, 29000257, all 
+ DeeAnns Daycare, 809 Mindy Sue, Medford, OR, 97501, (773) 773-1069, kykendall@charter.net, 6am-6pm, 12, Home, RF008944, 0-12 
+ Mrs. J s Clubhouse, 1302 Sharon Green Dr., Columbus, OH, 43229, (614) 985-4997, janina@insight.rr.com, 4:00am to 6:00pm, 3-4, Home, 3-4 children, 6 weeks to 12 years 
+ Little Foot Daycare, Valley Woods Dr., Cherry Valley, IL, 61016, (815) 332-7529, chastidy21@aol.com, First and Second Shifts, 8, Home, 361784, infant to school age 
+ LittleSouls Family Day Care, 141 W 139th ST., New York, NY, 10030, (212) 862-4513, littlesoulsdaycare@verizonmail.com, varies, 12, Home, 37559, 2 - 5 
+ Karens Kare, 237 Malibu Drive, Bolingbrook, IL, 60440, (630) 739-1678, swrds@aol.com, varies, 10, Home, 204847-03, 2 years and up 
+ FRIENDLY FACE DAY CARE, 319 KINGSBORO 3 WALK, BROOKLYN, NY, 11233, (718) 467-4393, sandals63948026@aol.com, 24 Hours, 20, Home, 13185, infant to school age 
+ AGNEWS LEARNING CENTER, 3606 MAVERICK ST., WINSTON-SALEM, NC, 27106, (336) 922-3655, leak@alltel.net, 24 Hours, 10, Home, 34000449, all 
+ Totally Kids Daycare, 817 Capistrano Dr., Suisun City, CA, 94585, (707) 434-8825, casis4u@aol.com, varies, 10, Home, 483001184, 2 years to school age 
+ Little Angels Child Care, 807 south cedar, monticello, IA, 52310, (319) 465-6833, ecn8@excite.com, varies, 10, Home, 42-53-010, infant to school age 
+ Babysitting 5 Kids, 620 lake st., Addison, MI, 49220, (151) 688-3435, aliciadilyard@hotmail.com, 24 Hours, 20, Center, Sunnazze shurster, all 
+ Hipkinss Daycare, 58 Sycamore Dr, Northeast, MD, 21901, (410) 642-0144, chipkins@hotmail.com, varies, 10, Home, 07-93326, all 
+ Maggies DayCare, 5558 Neddleton ave, Dale City, VA, 22193, (703) 590-1864, eagyeme3@yahoo.com, 24 Hours, 50, Home, state, all 
+" Land Of The Little People Daycare,Inc", 273 Havana Hwy, Quincy, FL, 32351, (850) 627-2536, hall1110@aol.com, 6:30 thru 6:00pm, 64, Center, 2700, 6wks - 12yrs 
+ LITTLE CHEEKS DAYCARE, 1740 RT 26 S, Vestal, NY, 13850, (607) 748-5539, bwillet@stny.rr.com, varies, 10, Home, upon request, all 
+ Tlc Daycare, 15202 National Pike, Hagerstown, MD, 21740, (301) 582-4709, mccoysville@aol.com, 6am-5pm, 8, Home, 21-73695, 0-8 
+ UJIMAS DAYCARE, 7902 Montana street, Lemon Grove, CA, 91945, (619) 741-1939, ujimas@home.com, 7am-5pm, 8, Home, 376611729, infants thru schoolage 
+ Tenderfoot, 3223 Grafton Street, Manchester, MD, 21102, (410) 239-9822, sg6661@gateway.com, 24 Hours, 10, Center, 06-88146, all 
+ Melissas Family Daycare, 2158 Waltzer rd., Santa Rosa, CA, 95403, (707) 546-2422, domel2000@aol.com, 8-5, 8, Home, 3003086, all 
+ Sues Daycare, Ask on e-mail, Cornelius, OR, 97113, (503) 357-5325, suzsheep@aol.com, varies, 10, Home, RF021326, 2 years to school age 
+ TenderCare Pre-School/DayCare, 1059 Wood Hollow Cir, Fairfield, CA, 94533, (707) 429-4612, shelzsc@aol.com, varies, 10, Home, 480111705, 2 years to school age 
+ Wee Play Family Daycare, 2 Beatrice Lane, Medway, MA, 02053, (508) 533-9177, dlgsmith@comcast.net, 7:30am - 5:30pm, 10, Home, 2087199, Infant to kindergarten 
+ Brendas Daycare, 1235 Chelsea Wy, Stockton, CA, 95209, (209) 957-4657, cmikebrenda@aol.com, varies, 10, Home, 393605246, all 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ Tans Tiny Tots, 1427 S 14TH Avenue, Maywood, IL, 60153, (708) 615-9032, martez98@aol.com, varies, 10, Home, 317611, all 
+ TOTS LEARNING CENTER, 820 BRYAN ROAD, BRANDON, FL, 33511, (813) 689-2036, pmsifl@tampabayrr.com, 24 Hours, 100, Center, CHC430231, infant to school age 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ London Bridges Daycare, 520 Benforest West, Severna Park, MD, 21146, (410) 544-1825, nicoleduckett@webtv.net, 7am-6pm, 8, Home, 02-88954, infant to school age 
+ Adventure Land Day Care, 34 Boyle road, Bar Mills, ME, 04004, (207) 929-3507, advdc@ime.net, varies, 10, Home, in renewal, after school care 
+ Jans Day Care For Children, 351 N. Squirrel Road, Auburn Hills, MI, 48325, (248) 299-3747, janjuds@hotmail.com, varies, 10, Home, DF630092696, infant to school age 
+ Cradles To Crayons Childcare & Learning, 4 Countryside Lane, Ringwood, NJ, 07456, (973) 962-1432, cbruno@webusa1.com, 24 Hours, 100, Center, 16CRA0001, all 
+ Wendys Home DayCare, 156 West Rocks Road, Norwalk, CT, 06851, (203) 846-4499, numikmess@aol.com, 24 Hours, 10, Home, 36867, all 
+ Happy Days Daycare, 333 Paula Lane NE, Cedar Rapids, IO, 52402, (319) 294-9658, kcoral6@aol.com, varies, 10, Home, 294201325, all 
+ Enchanted Garden Pre-School & Child Care, 1171 N. Alta Ave., Dinuba, CA, 93618, (559) 591-8013, enchantedgarden@hotmail.com, 24 Hours, 50, Center, 543801687, all 
+ Sweet Dreams Daycare Home, 6511 SW Brookline Ave, Lawton, OK, 73505, (580) 510-0690, sweetdreamsdch@aol.com, 24 Hours, 10, Home, K8236015, all 
+ Heavens Little Angels, Call, Patterson, CA, 95363, (209) 892-1670, buster@iol25.com, varies, 10, Home, 503604780, 2 years and up 
+ Graceland Child Development Center, 10636 Bellefontaine, St. Louis, MO, 63137, (314) 869-1222, gbruce@hopechurch.org, 24 Hours, 200, Center, 43-1085569, all 
+ Lecretias Day Care, 1924 1st street, Wasco, CA, 93280, (661) 758-6429, mskitty001999@yahoo.com, 8-5, 10, Home, 153804770, infant to school age 
+ Perry Public Schools Child Care, 2775 W. Britton Rd, Perry, MI, 48872, (517) 625-0109, shellej@perry.k12.mi.us, varies, 20, Center, DC780023408, 2 years to school age 
+ Our Learning Center, 9000 NE M.L.K. Blvd, Portland, OR, 97211, (503) 286-3176, camr72@juno.com, 24 Hours, 10, Home, RF053466, all 
+ Angelas Family Day Care, Centreville Area Near Stone Rd., Centreville, VA, 20120, (703) 968-8117, amp3_3@yahoo.com, 6:30am - 6:30pm, 5, Home, 10080, all 
+ Sunrise Daycare, 1043 Ltl Britain Rd, New Windsor, NY, 12553, (914) 567-3315, bettybyrnes@yahoo.com, varies, 10, Home, Please Call, 2 years to school age 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ All Day Family Daycare, 3144 32nd St., San Diego, CA, 92104, (619) 563-5680, alldayfamdaycare@aol.com, 24 Hours, 10, Home, 376610095, all 
+ The Foundation For Creative Life, 7251 S.Shore Dr., Chicago, IL, 60649, (773) 731-3143, erth921@cs.com, varies, 10, Home, 361267-01, all 
+ Ollie And Friends Daycare, 23002 63rd Ave West, Mountlake Terrace, WA, 98043, (425) 775-6508, lbstaab@aa.net, varies, 10, Home, 35729, all 
+ Rachels Home Daycare, 31574 Metcalf Road, Louisburg, KS, 66053, (913) 837-3933, manilofan@aol.com, varies, 10, Home, 001-881-021492, infant to school age 
+ Luke s Playmates, 2546 Boston St, Woodburn, OR, 97071, (503) 982-2644, jenny@profirefighter.com, 7 a.m. to 6 p.m., 10, Home, rf055524, 3 months to 12 years 
+ Tricias Place Of Childcare, 6309 Rustic Glen Dr., Garland, TX, 75043, (972) 226-4584, triciawhitmire@hotmail.com, varies, 10, Home, N/A, all 
+ New Beginnings Child Care," 915 Cherokee Trail,", Smyrna, GA, 30080, (770) 438-0146, judy_gri@bellsouth.net, 7:00 a.m. to 6:00 p.m., 6, Home, FR-000008827, 3 mos to 8 years 
+ Janice's Home Daycare, 1210  W. Donovan, Houston, TX, 77091, (713) 682-0531, Jans_Home_Daycare@att.net, 6 a.m. to 6 p.m., 12, Home, 538032, 6 weeks to 12 years 
+ Tees Daycare, 17 n 13th st, new baden, IL, 62265, (618) 588-2070, mainebound_00@yahoo.com, 24 Hours, 10, Home, 297923, all 
+ Shelis Daycare Services, 117 S. 195th East Av, Tulsa, OK, 74108, (918) 266-7371, sheli0998@aol.com, varies, 10, Home, waiting to be Certified, all 
+ Gissellas Daycare, 600 Stony Meadow Drive, Nampa, ID, 83686, (208) 461-3759, gissellaandrus@yahoo.com, varies, 10, Home, basic day care license, 2 years and up 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ HUGS & KISSES CHILDCARE, 2052 139th LN NW, Andover, MN, 55304, (763) 862-5042, pattieschnack@hotmail.com, varies, 10, Home, call, infant to 10 years. 
+ Moyer Group Home Child Care, 6330 N. Haven Lane, Flagstaff, AZ, 86004, (520) 526-0830, pokey74@primenet.com, varies, 10, Home, sgh-8674, infant to school age 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ Heavenly Angels Daycare, 4812 N.Hollywood Ave, Muncie, IN, 47304, (765) 741-8561, atkinslittlet@aol.com, 24 Hours, 10, Home, pending, all 
+ Toodles N Tweedles Too, 3113 Peoria Street, Aurora, CO, 80010, (303) 364-3776, toodlesntweedles@excite.com, varies, 50, Center, 42587, infant to school age 
+ La Milagrosa Day Care, 79 Emerald Ave., Willimantic, CT, 06226, (860) 423-4420, lourdescorrea25@hotmail.com, 8-5, 10, Home, 51875, all 
+ Angelas Lil Angels Pre-School Of Devel., 60call for address, Tampa, FL, 33634, (813) 290-0695, angelaslilangels@mail.com, varies, 10, Home, F-HC 1371, infant to school age 
+ Lees Parent/Child Center, 3402 S.W. Morgan St., Seattle, WA, 98126, (206) 937-7919, childcaredrlee@aol.com, 24 Hours, 10, Home, 936855, all 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ KIDS PARADE, 10110 HUMMINGBIRD ST, ELLERSLIE, MD, 21529, (301) 759-3007, tcsmith@hereintown.net, varies, 10, Home, 0192247, 0-12 
+ Huggables Childcare, 241 South C. Street, Hillsboro, TN, 37342, (931) 596-4500, mhcntrygrl@aol.com, 5:30 a.m. to10:30p.m., 15, Home, FV0188T, 6 mo - 12 years 
+ CUTE LITTLE HANDS DAY CARE, 380 E. Linwood Ave, TURLOCK, CA, 95380, (209) 656-1473, csepulveda1@seeyouonline.com, varies, 10, Home, 503604377, all 
+ Cock A Doodle Doo Daycare, 4825 W. Roscoe, Chicago, IL, 60641, (773) 481-1823, ivettebuckham@hotmail.com, 24 Hours, 50, Home, Not licensed., all 
+ Tarshas Little Angels, 107-11 111st, S. Richmondhill, NY, 11419, (718) 641-1338, teelips@aol.com, 8-5, 10, Home, 80050, all 
+ Special Blessings Daycare, 1006 Jane Dr, Sparta, WI, 54656, (608) 269-1424, schreiers@centurytel.net, varies, 8, Home, 1004246, all 
+ Shans Child Care House Of Fun, 18211 N 40th pl #1, Phoenix, AZ, 85032, (602) 923-9804, buzzin5@aol.com, 24 Hours, 10, Home, In the process of being certif, all 
+ 1ST Steps Kiddie Daycare, Forest Village Park Development, Forestville, MD, 20747, (301) 808-0007, gmosby@hotmail.com, M-F 6:30a-6p, 8, Home, Pending, 0 - 5yrs 
+ Miss Heathers Nest, 8015 NW 104th St, Oklahoma City, OK, 73162, (405) 722-5791, hthr506@cs.com, 7:30A.M. to 5:30P.M., 7, Home, K8237110, Infants to 4 years old. 
+ Yours And Mine Childcare, 3659 timber trail, orlando, FL, 32808, (407) 532-3157, urdaycare@aol.com, 24 Hours, 10, Home, avail upon request, all 
+ Todays Child Family Home Daycare, 66 Bancroft Street, Providence, RI, 02909, (401) 946-9012, snowivory@aol.com, varies, 10, Home," 31,313", all 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ Little Tots Daycare, 510 horizon ave, newburgh, NY, 12550, (914) 566-4606, jeangrc@aol.com, varies, 10, Home, 000000, infant to school age 
+ Kreegers Kids Day Care, 1129 Cottontail Rd., Vista, CA, 92083, (760) 598-2532, baabieboo@aol.com, varies, 10, Home, 376609573, all 
+ WEE ARE THE WORLD FAMILY CENTER, 2121 PICKETT AVE, ORLANDO, FL, 32808, (407) 296-2232, atruedestiny@aol.com, 24 Hours, 20, Home, avail. upon request, all 
+ CARE-A-LOT HOME DAY CARE, 108 ALCALA AVE, LEHIGH ACRES, FL, 33936, (941) 368-0819, dad6442@peoplepc.com, varies, 10, Home, 081105, all 
+ Precious Years, 1613 Barnett Rd., Roanoke, VA, 24017, (540) 562-4680, carol853@aol.com, 50 hours per week, 12, Home, N/A, Infants to five years of age. 
+ Helens Daycare, 43800 Natl Rd, Belmont, OH, 43718, (740) 782-1357, street5@1st.net, 24 Hours, 10, Home, type B, all 
+ Samitras Day Care, 2512 Camino de Las Palmas, lemon grove, CA, 91945, (619) 303-6907, robinson5@home.com, 2:00pm to 12:00am, 8, Home, 376609310, 0-12 yrs old 
+ Annas Angels Daycare, 6 Kullen Dr., Newark, DE, 19713, (302) 454-1375, alogan1676@aol.com, 6:00a.m.-5:30p.m., 4, Home, 173313, 6 wks-12yrs. 
+ LIL TYKES DAYCARE CENTER INC, 617 LINCOLN AVE., PITTSBURGH, PA, 15202, (412) 734-4955, vtykes15@aol.com, 6:30AM - 6:30PM MONDAY / FRIDAY, 96, Home, 464810, 6 WEEKS TO 5 YEARS OF AGE..WITH PRESCHOO 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ Kids Kingdom Child Care Center, 102 Harris Street, Ashland City, TN, 37015, (615) 792-6070, mgillock@juno.com, varies, 100, Center, V9-0572-A-11, infants to 12 years old 
+ Happy Hands Daycare, 3112 Sheridan Rd, Bellevue, NE, 68123, (402) 91--4731, kmmadison@earthlink.net, 7:00a-6:00p, 10, Home, 96592400, 6mo-13year 
+ Shinning Light Christian Day Care LLC, 481 Main Street, East HAven, CT, 06512, (203) 466-7101, jbal819564@aol.com, 7am-6pm, 6 Full time 3 Before, Home, 36857, infant-school age 
+ Kountry Kiddie Land, 1965 Mills Lane, Charlottesville, VA, 22902, (804) 296-9011, smills@cstone.net, 7:30 a.m.-5:30 p.m., 10, Home, VLO-99-321, 2-5 
+ Caring Touch Home Daycare, 5951 W. Iowa, Chicago, IL, 60651, ((77) 26--8887, caringtouch@uss.net, 6am-6pm, 8, Home, Call, 6wks-12yrs 
+ KinderTots, 1416 Aiken St., Staunton, VA, 24401, (540) 886-6581, cbff@hotmail.com, 7:30 am-5:30 pm, 12, Home, Va. State Licensed, infants- school age 
+ New Frontiers Learning Center, 7388 McKinley Street West, Homosassa, FL, 34448, (352) 621-7711, nflc@hitter.net, Always Open, 20, Home, Call, 6 wks. to 13 yrs. 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ Iron Mountain Public School Child Care P, P.O. Box 280, Iron Mountain, MI, 49801, (906) 779-2600, webmaster@imschools.org, 6:45 am to 5:30 pm, 60, Home, , Iron Mountain Public School-age children 
+ Bailey FCC, 513 Cement Hill Road, Fairfield, CA, 94533, (707) 429-5703, whippapeal@aol.com, 24 hours, 8, Home, 483003041, 0-12 
+ Deborah Congden, 15 Northwick Drive, Rochester, NY, 14617, (716) 544-2431, jdcongden@aol.com, 7:30 am to 5:15 pm, 5 full time +2 schoo, Home, 032791FT, 6 weeks to 12 years 
+ Kellys Family Style Daycare, 1030 Cunningham Drive, Victor, NY, 14564, (716) 924-0313, kwise@rochester.rr.com, 7am-5:30pm, 12 Children, Home, 042628FT, 6weeks-12years 
+ Little Angels Daycare, 6 Dennison Crossroad, Southbridge, MA, 01550, (508) 765-9094, dixychken@aol.com, 7am - 6pm, 5 children limit, Home, pending, 2 years + 
+ Martin Campbell World Of Learning, 2306 Bemiss Road, Valdosta, GA, 31602, (912) 242-4343, brianni@surfsouth.com, 6:00 a.m. - 5:30 p.m., 71, Home, 58-2228501, 11 months to 13 years old 
+ Bizzy Bee Family Daycare, 9216 4th Avenue, Inglewood, CA, 90305, (323) 777-0782, jennifer.l.jones@kp.org, M-F 24hr. Care, 8, Home, 197405393, 6wks. - 10yrs. of age 
+ JULIAS CHRISTIAN HOME DAYCARE, 14721 DEARBORN, DOLTON, IL, 60419, (708) 849-4279, dcprovid@aol.com, 6 a.m. to 6 p.m., 12, Home, 188555-03, 6 weeks to 12 years old 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ Tender Loving Childcare, 13881 Green Rd, Walton, KY, 41094, (606) 363-8822, b.watkins@fuse.net, 1st - 3rd shift, 6, Home, 293582766, 6wks 4 yrs. 
+ Querin Family Daycare, 22260 Shandin rd, Apple Valley, CA, 92307, (760) 240-9581, llquerin@cs.com, 24 Hours, 8, Home, 364805201, all 
+ YOUNG&TENDER CHILDCARE, 3421 FRAMINGHAM DR., LITHONIA, GA, 30038, (770) 322-0786, iinhomedaycare@aol.com, varies, 10, Home, FR9900108580, all 
+ The Childrens Center Of Asheboro LLC, 1267 E. Salisbury Street, Asheboro, NC, 27203, (336) 626-2901, thechildrenscenter@yahoo.com, 6am-11:30pm Monday-Friday, 136, Center, 7655094, 6 weeks - 12 years 
+ Jeff And Jess, 2510 B Randelman Road, Greensboro, NC, 27406, (336) 691-8133, asurg10484@aol.com, 5 am- 2am(1st and 2nd shift), have more than one c, Home, Call, infant up to 12 
+ KATHYZ KIDZ, 10695 HARDING ROAD, LAUREL, MD, 20723, (301) 776-4232, katcheak@aol.com, 6:00-  6:00, 8, Home, 13 80925, INFANT  THRU  13 YEARS 
+ NU KIDS ON THE BLOCK, 112 MOCKINGBIRD DRIVE, Albany, GA, 31705, (912) 878-6006, elaineburns@yahoo.com, 6:30 a.m. - 5:30 p.m., 6, Home, FR9900104070, 6 weeks to 4 YEARS OLD 
+ Jessicas Family Childcare, 1883 Fort Stockton Drive, San Diego, CA, 92103, (619) 291-7117, jessicadcl@home.com, 7:30am  6:00pm, 12 plus, Home, 370816691, 6 wks. through early school age 
+ Kalynns Kid Care, 123 S. 3rd Street, Le Sueur, MN, 56058, (507) 665-4346, ckallen@prairie.lakes.com, varies, 10, Home, 1008600-1-FCC, infant to school age 
+ TREASURED ONES HOME DAYCARE, 235 CHARLOTTE LANE, BOLINGBROOK, IL, 60440, (630) 739-1977, araidermom@aol.com, 7:00 AM-5:30PM, 12, Home, 176601-05, ALL 
+ NEW BEGINNINGS DAYCARE CENTER, Call, Staten Island, NY, 10314, (718) 698-1068, stelletteo3@aol.com, 7 am to 4 pm extended hours to 6pm, 1 infant and 4 toddl, Home, 30622, 6 weeks to 5 years old 
+ Kidz Kastle Childcare, 4918 E. Colby Street, Mesa, AZ, 85205, (480) 807-6074, labyd@aol.com, 6:00 am to 6:30 pm, 5 Children, Home, Call, All Age groups 
+ Gary Richardson Enrichment Center, 1508 Liberty Street, Durham, NC, 27703, (919) 680-6618, shalom77777758@cs.com, Monday-Friday    24 Hours, 21, Home, 32000913, 0-12 years 
+ Turtle Tots Preschool And Daycare, 411 Miller St., Christiansburg, VA, 24073, (540) 381-3979, dawn.m.knight@gte.net, 7am-6pm, 12, Home, RO  99-016, 1yr + 
+ M And M Daycare, 351 First Street, Rosholt, WI, 54473, (715) 677-6988, fleming@triver.com, 6:30 A.M.-6:30 P.M., 8 Children, Home, 1000708, From 6 Weeks through 10 Years 
+ Sigrids Kinderstube, 322 1st. St. SW, Waverly, IA, 50677, (319) 352-0973, kinder58mk@aol.com, 6:30AM-5:00PM, Group home Daycare, Home, 4209091, Infant - elementery 
+ Childrens Korner, 211 Railroad St, Fuquay Varina, NC, 27526, (919) 552-9525, robincrumpton@ivillage.com, 6-6, 3 centers 100 each, Home, Call, 6 weeks to 13 years 
+ RENEES DAY CARE, 19 SPRANCE ROAD, DOVER, DE, 19901, (302) 736-5490, coguanuo@aol.com, 6AM -6PM, 9, Home, Call, infants to 12 years old 
+ Conry Family Daycare, 7449 Eucalyptus Drive., Highland, CA, 92346, (909) 862-8895, patricia.conry@mailcity.com, 24 Hour Care, 14, Home, 364801736, 0-12 
+ Small Steps Daycare, 5117 North Hwy 21, Union City, TN, 38261, (901) 885-8699, bran&jef@rnet.net, 7-5:30 p.m., 7 per shift, Home, Call, 6wks-12 yrs old 
+ Lindas Licensed Daycare, 1355 Adams St. So., Cambridge, MN, 55008, (612) 689-8529, ronvonjon@aol.com, 6:00 a.m. to 9:00 p.m., 10, Home, 231682, 6 weeks to 12 years 
+ Paulas Daycare, 8148 Palomar, Yucca Valley, CA, 92284, (760) 365-5141, teamlee3@webtv.com, 5:30a.m. - 5:30p.m, 8, Home, 364804106, Newborn to 6th grade 
+ Circle Of Friends Child Development Ctr., 5928 Wood Ave, Kansas City, KS, 66104, (913) 788-8193, prickscott@juno.com, varies, 20, Center, 36195-2, 2 years and up 
+ Little Munchkins, 1202 Donald Dr, Hays, KS, 67601, (785) 628-3935, dgish@dailynews.net, 24 Hours, 10, Home, 42261-1, all 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ Hildas Family Child Care, Please Call, Riverside, CA, 92504, (909) 275-9110, imcrls@cs.com, 6-5:30pm, 14, Home, 334805048, 1-12years 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ Fun Time Daycare, 1605 Ellis Lake Drive, Marysville, CA, 95901, (530) 741-3060, kend@sunset.net, 6am to 6pm  Monday - Friday, 14, Home, 585402329, 1 - 12 
+ Erika L Busby, 2762 East Sherman Hollow, Penn Yan, NY, 14527, (315) 36--9260, busbybe@hotmail.com, 7:30am-5:30pm, 8, Home, Call, Have openings for ages 2 through 4 years 
+ Miss Angies Daycare, 7281 Zane Court, Brooklyn Park, MN, 55429, (763) 549-2636, ajpx2@uswest.net, varies, 10, Home, 1004930-1-FCC, 2 years and up 
+ Heaven Sent Early Learning Center And Pr, 2024-26 6th Avenue, Altoona, PA, 16602, (814) 940-8222, lugarita@aol.com, 6am-6pm, 45, Home, 306061, 6 weeks thru 13 years 
+ Peanuts Daycare, Call, Lansing, MI, 48911, (517) 394-6271, troymorrish@aol.com, 7:00a.m. to 6:00 p.m. flexable, 6, Home, df, all ages 
+ Grandmoms Rocking Chair, 3424 Itaska, St louis, MO, 63111, (314) 353-2102, patnik9@aol.com, 6:30am-6:00pm, 6, Home, pending, 6weeks-2years 
+ FIRST STEPS DAY CARE, 1632 PINE ACRES BLVD., BAY SHORE, NY, 11706, (631) 436-9141, firsteps4@cs.com, 7:30 TO 5:30 PM, 8, Center, 036938FT, 2 YEARS AND UP 
+ Irene Van Uum, 28657 Glen Hollow Lane, Olmsted Township, OH, 44138, (440) 235-8221, michellevanuum@yahoo.com, 7:00 am - 6:00 pm, 3 infants/toddler, Home, Call, infant (6 weeks) to school age 
+ Cradles To Crayons, 533 First Avenue North, Sleepy Eye, MN, 56085, (507) 794-2788, tdzinniel@sleepyeyetel.net, 7:30 am - 5:30 pm, 10, Home, 1000185-1-FCC, 6weeks - 12 years 
+ Anns Daycare, 7842 New Battle Grove Rd, Baltimore, MD, 21222, (410) 477-4009, navymom122@home.com, 6:30 Am till 5:30 Pm, 8 total, Home, 03-74385, Infant to 13 
+ The Childrens Place, call or email for directions, Vancouver, WA, 98682, (360) 944-6525, sbmortensen@webtv.net, 24 Hours, 8, Home, 60015, 2-12 
+ SUES LICENSED DAYCARE, 2604 HARVARD ST, Ft Collins, CO, 80525, (970) 223-2259, joesamha@aol.com, 7AM - 4PM  5 Monday - Friday, 6, Home, 34105, 2 through 5 
+ WEST FAMILY DAY CARE, 1005 N. 68TH STREET, PHILADELPHIA, PA, 19151, (215) 215-5879, shawnconnelly@aol.com, D(7:00A.M.-6:00P.M.)E(2:00P.M.-11:30P.M., (6 DAY CARE)-(6 EVEN, Home, 000906, AGES 1.5 TO 13 YEARS OLD (OLDER CHILDREN 
+ Little Critters Daycare, 2918 East B, Torrington, WY, 82240, (307) 532-4820, harley_ford@altavista.com, 7:00A.M. till 5:30P.M., 10, Home, 5307, birth thru 12yrs 
+ Marlas Daycare, 513 South Main, Sweetser, IN, 46987, (1-7) 84--5535, ricmart@bpsinet, 6:30-5:30, 10, Home, 27-1870, 0-6 and before & after school care 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ Debbies Daycare, 373 State Route 104B, Mexico, NY, 13114, (315) 963-3917, deblyss@aol.com, 6am - 6pm, 3, Home, 039555ft, 2 and up 
+ The Chapman House, 1469 Bregenz Lane, Lewisville, TX, 75067, (972) 420-9693, chapmant@gte.net, 7:00 A.M. - 6:00 P.M., 6, Home, 547696, INFANTS - 12 YRS. 
+ Dianes Tots And Play, 9751 E. 2200 N., Ferdinand, IN, 47532, (812) 67--2864, rickelman@freewwweb.com, 6:00 a.m. 4:00 p.m., 12, Home, Call, All 
+ Baby Roses Family Child Care, 526 Ponmderosa Drive, Bear, DE, 19701, (302) 836-9744, babyrosesfcc@aol.com, 6:30-5:30  Monday-Friday, 6+3 School Age, Home, 28583, 6 weeks to 10 yrs.old 
+ Pixie Playground, 13411 Flagstone Lane, Dallas, TX, 75240, (972) 387-8182, pixieplayground@aol.com, 7-6, 12, Home, 456232874, 2-13 
+ HOOKS FAMILY CHILDCARE, 831 N. ACACIA ST., INGLEWOOD, CA, 90302, (310) 672-0065, ms.hooks@webtv.com, 24 HOURS MONDAY-FRIDAY, 14, Home, 197406919, 3 MONTHS TO 12 YEARS 
+ Bini Bears Daycare, 11460 Pearl Street, Los Angeles, CA, 90064, (310) 479-3789, binibears@aol.com, 7AM to 6PM, 8, Home, 197407269, 6 weeks to 5 years 
+ Babes & Tots Daycare, 1703 Woodland Drive, Cedar Park, TX, 78613, (512) 259-4535, jjordan29@austin.rr.com, 6:30am to 6:00pm Mon.-Fri., 8, Home, 823988, Infant to age 8 
+ Kid Kare, 647 Saltzman Rd, Severna Park, MD, 21146, (410) 544-7215, hhelsel@aol.com, varies, 10, Home, 02-41395, all 
+ Melodys Tender Touch Daycare, 7400 Catterick Court, Baltimore, MD, 21244, (410) 594-9039, melodysdaycare@yahoo.com, 7:00am - 5:30pm, 8, Home, 03-94486, Infants and up 
+ Bookers Family Daycare, 1205 1/2 Pollock Avenue, New Castle, PA, 16101, (724) 657-0589, lady_bout_doe@hotmail.com, 24 Hours, 20, Home, 2002, all 
+ Bright Beginnings Early Learning Center, 368-70 Palisade Ave, Jersey City, NJ, 07307, (201) 610-0090, brightbelc@aol.com, 7:30am-6:00pm, 30, Center, 09bri0001, 2 1/2 - 5 
+ Beary Cute Kids, 2821 Meadowlark, Fort Collins, CO, 80526, (970) 223-7158, cfmf90@prodigy.net, 8-5, 10, Home, 17127, all 
+ WeeCare Daycare, 28 Bellevue Avenue, North Smithfield, RI, 02896, (401) 769-0144, d714c@aol.com, varies, 10, Home, 40.541, infant to school age 
+ Learn-n-Share Daycare, 521Constant Ridge Ct, Abingdon, MD, 21009, (410) 569-7973, davmadamy@cs.com, varies, 10, Home, 12-93201, 2 years and up 
+ Home Away From Home DayCare, 204 PEACHTREE ST, FORT VALLEY, GA, 31030, (912) 825-4078, shelbycobb30@yahoo.com, 7:30am to 5:30pm, 50, Home, FR9105100400, all 
+ Debbies Daycare, p.o. Box464, Emporia, KS, 66801, (316) 342-8076, dbarrett1961@hotmail.com, varies, 10, Home, 41535-1, all 
+ Looking Glass Childrens Center, 16 Bellevue Avenue, Bloomfield, NJ, 07003, (973) 338-0264, xylia@aol.com, varies, 50, Center, 07LOO0003, all 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ Jennifers Littles Angels, 20131 Chipplegate, Hunble, TX, 77338, (281) 548-1673, jlsjsmith@aol.com, varies, 10, Home, 526659, all 
+ Valdivia Family Day Care, 24th & Hampshire, San Francisco, CA, 94110, (415) 285-2838, vfamilydc@aol.com, 7am - 6pm, 6, Home, 384000643, 0-3 
+ The Three Bears, 321 Hallowell Road, Pownal, ME, 04069, (207) 688-2285, phillip2@prodigy.net, varies, 10, Home, Pending, all 
+ Mrs. H. Modan, 3 Ascot Place, North Brunswick, NJ, 08902, (732) 828-9389, sajrx@aol.com, varies, 10, Home, T121240, all 
+ Little Angels II, 5117 N. Lincoln Ave., Chicago, IL, 60625, (773) 334-1414, littleangels2@ohgolly.com, 24 Hours, 50, Center, 334256, all 
+ Little Angels, 6407 N. Maplewood, Chicago, IL, 60645, (773) 338-9770, wereon2@aol.com, 24 Hours, 50, Center, 338096, all 
+ Lighthouse Daycare/ Karen Brown, 126 Carter, Emporia, KS, 66801, (316) 343-2027, brown@osprey.net, varies, 10, Home, 0036708-001, infant to school age 
+ Jeremys Kids Daycare, 104-53 92nd Avenue, Richmond Hill, NY, 11418, (718) 849-2853, krhb4@aol.com, varies, 10, Home, 39849, 2 years and up 
+ The Ladder 4 Learning, 2210 Southland Rd, Baltimore, MD, 21207, (410) 298-6306, ladder4learning1@hotmail.com, 7am- 6pm, 8, Home, 03-92414, 2  to 12yrs. old 
+ Bright Star Daycare, 3003 Maryland, Dallas, TX, 75216, (214) 375-6110, trenialewis@earthlink.net, varies, 10, Center, n/a, all 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ Lil Tykes Child Care, 2092 Clliffview Driv, Eagan, MN, 55122, (651) 454-3966, dbhansmeie@aol.com, 8-5, 10, Home, 2049361FCC, infant to school age 
+ Donnas Daycare, b116-5th ave N.E., Belmond, IA, 50421, (515) 444-7404, jdpeyton@frontiernet.net, 8-5, 10, Home, 4299018, 2 years and up 
+ Jeri-LYnns Daycare, 11508 N. Heights Dr., Coon Rapids, MN, 55433, (763) 754-2257, repete@aol.com, varies, 10, Home, pending, all 
+ PRAISE AND WORSHIP DAYCARE, 888 Summit St N.W, WARREN, OH, 44485, (330) 394-4551, praiseandworship1@excite.com, 24 Hours, 6 at one time, Home, STATE CERTIFIED, all 
+ The Learning Tree, 3401 Valley Ridge Rd, Middleton, WI, 53562, (608) 831-0927, tcaputo@hotmail.com, varies, 50, Center, 391853950, infant to school age 
+ Coles  Family Day Care, 671  E. 52nd Place, Los Angeles, CA, 90011, (323) 232-1878, deborahcarolina@cs.com, varies, 10, Home, 192002126, 2 years and up 
+ Country Kids Daycare, 2458 Lake Forest Dr., Oak Harbor, WA, 98277, (360) 279-8761, gtstrass@whidbey.net, varies, 10, Home, 67269, 2 years to school age 
+ Saras Daycare, 21780 W 178th Terr, Olathe, KS, 66062, (913) 592-3961, sjosno@aol.com, 8-5, 10, Home, 41807-1, 2 years and up 
+ Karyns Kare, 509 Castlerock Ct., West Columbia, SC, 29170, (803) 739-1533, kferres446@cs.com, varies, 4, Home, registered, 1-3 
+ LOVES DAY CARE, 513 Nelson Drive, Jacksonville, NC, 28540, (910) 346-8064, chris@phoenix.com.net, varies, 10, Home, 67000447, all 
+ Casies Child Care, 5383 Great Woods Dr., Indianapolis, IN, 46224, (317) 381-0482, sccstates@prodigy.net, varies, 10, Home, 49 025509, all 
+ A Time To Explore Childcare, 2162 W. Speedway Blvd #4104, Tucson, AZ, 85745, (520) 903-9280, renee98_99@hotmail.com, varies, 6, Home, Licensed Home - please call, all 
+ Circle Of Friends Learning Center, 4429 Shalimar Drive, New Orleans, LA, 70126, (504) 244-3438, brazil14@excite.com, varies, 50, Center, 6919, infant to school age 
+ C&L Family Day Home, 6100 Taverneer Ln, Spotsylvania, VA, 22553, (540) 582-7496, cclass30@yahoo.com, 24 Hours, 12, Home, WO-99-397, infant to school age 
+ Sandy's Learning House, 1106 Regency Lane, Carol Stream, IL, 60188, (630) 540-1455, s6011@hotmail.com, 7am - 5pm, 8, Home, 265761-02, 6 weeks -12 years 
+ Teach A Tot Childcare, 807 Engleside Drive, Arlington, TX, 76018, (817) 557-8756, prpitts2@juno.com, 6:30am-6:30pm, 6, Home, 550194, 6 weeks and up 
+ Gods Little Angels Daycare, 10122 Fidelity Ave., Cleveland, OH, 44111, (216) 961-1866, dianaisa26@yahoo.com, 7:00am to 5:30pm, 5, Home, State liscensed; cda credentia,  6 weeks to 12 yrs. 
+ Academics & More Learning Center, 1237 Ohio Avenue, Dunbar, WV, 25064, (304) 766-9351, academicsnmore@aol.com, 24 Hours, 50, Center, 550768188, all 
+ Anytime Daycare, 2877 Wonder Valley C, Decatur, GA, 30034, (770) 808-8812, cooperfel@yahoo.com, 24 Hours, 10, Home, 000005248, infants only 
+ Tiny Tots Daycare, 1262 shadow ln., Gaylord, MI, 49735, (517) 731-4947, tkmorris@voyager.net, varies, 10, Home, DF690092805, infant to school age 
+ Debs Family Daycare, 1345 W. State Rd., Lansing, MI, 48906, (517) 485-4453, myshaken@aol.com, varies, 10, Home, DG190095646, 2 years and up 
+ Garden Gate Day Care, 28893 N. Darrell Rd., Island Lake, IL, 60050, (847) 526-5506, ggchildcare@aol.com, 6:30 AM-6:00 PM, 6, Home, 360216-01, infants to 12 years old 
+ Ritas Christian Family Daycare, 2361 South Lenox St., Milwaukee, WI, 53207, (414) 481-8446, saltytheclown@bbs.sen.com, 8-5, 10, Home, 91854, all 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ Golden Rule Daycare, 1269 sequoia dr, lake arrowhead, CA, 92352, (909) 337-5852, jadedfrog1@aol.com, varies, 20, Center, 364802536, all 
+ Small Wonders Learning Center, 2625 Bayberry Lane, Euless, TX, 76039, (817) 355-1997, allenmac@bigfoot.com, varies, 8, Home, 550534, all 
+ Auntie Sallys Childcare, 294 Lowell Street, Somerville, MA, 02145, (617) 625-0417, cidalia92358@aol.com, 8-5, 10, Home, 184944, all 
+ Robins Nest Kid-care, Provided Upon Tour Request For Safety, Chatsworth, CA, 91311, (818) 885-6378, robinsnest4kids@aol.com, 7:15am - 5:30pm, 14, Home, 197407155, 3 months to 5 years 
+ BlessingsFromAbove, 1420 Alturas Rd. #28, Fallbrook, CA, 92028, (760) 451-0993, blessingsfrmabov@aol.com, varies, 10, Home, 376609862, all 
+ Child Care Cazan, 53 Buena Vista St., Stamford, CT, 06907, (203) 358-8529, evangelcazan@yahoo.com, 24 Hours, 10, Home, 33370, infant to school age 
+ Denises Daycare, 19 Heather Lane, Casco, ME, 04015, (207) 655-5476, dbabednh@aol.com, 24 Hours, 10, Home, to be given, all 
+ Tender Love And Care Inc, 1703 Hardie St, Greensboro, NC, 27403, (336) 855-6248, tlchayes@aol.com, varies, 10, Home, 41000081, infant to school age 
+ Julies Daycare, 528 E. Nebraska St., Pierce, NE, 68767, (402) 329-4641, jonson@ptcnet.net, 24 Hours, 10, Home, 23407, all 
+ Londono Family Child Care, Jacqueline Lovest, Pasadena, CA, 91104, (626) 577-2166, jacquelinelovest@aol.com, 24 Hours, 10, Home, 198005000, infant to school age 
+ Tanya's Daycare, 2707 North Highlands, Fort Wayne, IN, 46808, (219) 483-3254, tanyahansj@aol.com, varies, 10, Home, NONE, all 
+ Humble Beginners Day Care & Academy, 3917 Collingsworth, Houston, TX, 77026, (713) 673-2229, lifetime@2.com, varies, 100, Center, 518717, all 
+ MANZOS FAMILY CHILD CARE, Ave 51, COACHELLA, CA, 92236, (760) 398-5628, lost_1b@webtv.com, varies, 10, Home, 334807221, infant to school age 
+ CIRLE OF FRIENDS, 2280 THOMPSON, SELMA, CA, 93662, (559) 891-2014, rosie0562@hotmail.com, 8-5, 10, Home, 0A6656, infant to school age 
+ C And V Daycare, 1700 NW 58th Terrac, Sunrise, FL, 33313, (954) 533-4142, cgayle2522@aol.com, 24 Hours, 10, Home, f3025, all 
+ Little Learners, 45701 17th st. west, lancaster, CA, 93534, (661) 940-7548, littlelearners_tonia@yahoo.com, varies, 8, Home, 192002120, 2 years and up 
+ Home Away From Home Daycare, 6627 Queens Road, Alexandria, VA, 22306, (703) 765-8725, cmoonen741@aol.com, 7am - 5:30pm, 10, Home, 6646, all 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ Marias Family Daycare, 320 Winford ct, Winter Garden, FL, 34787, (407) 654-7414, soy_chula@altavista.com, varies, 10, Home, 065254, all 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ Peggys Many Cultures Activities Center, 3627 Cleveland Ave., Lincoln, NE, 68504, (402) 467-4779, pegcurry@hotmail.com, varies, 10, Home, 99330068001, infant to school age 
+ CHILDRENS PLACE DAYCARE, KINGSFORD AREA, OSWEGO, NY, 13126, (315) 342-2852, johntanya1@aol.com, 8-5, 10, Home, WILL HAVE NEXT WEEK, 2 years and up 
+ Little Lambs Daycare, 212 Walnut, Neosho Rapids, KS, 66864, (316) 343-6747, littlelambs@osprey.net, 5:00a.m.-5:00p.m., 10, Home, 0032118-002, all 
+ KIDDIELAND CHILD CARE CENTER INC, 2680 MAIN ST, BUFFALO, NY, 14214, (716) 838-9830, dominion30@aol.com, 6AM TIL 12MID-NITE, 81 DAYS AND 81 IN TH, Center, Call, INFANT I AND INFANT II TODDLERI &II PRE- 
+ Skribbles Family Daycare, 99 ODonnell Avenue, Shrewsbury, MA, 01545, (508) 890-2266, skribbles@skribbles.com, 8:00am - 6:00pm, 6, Home, 190214, All Ages 
+ Bluebird Preschool And Daycare Of Royal, 1717 West 13 Mile Road, Royal Oak, MI, 48073, (124) 288-4520, bluebird28845@cs.com, Mon-Fri   7:00 AM - 6:00 PM, 54, Center, DC630091428, 6 Weeks to 6 years old 
+ Aunt Susan's Daycare, 3245 Carver Rd., Modesto, CA, 95350, (209) 575-3203, svictor694@aol.com, 7:00A-5:45P, 14, Home, 500312681, 0-12 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ JANETS HOME DAY CARE, 1410 NATHANIEL MITHCELL RD, DOVER, DE, 19904, (302) 267-8821, janetsdc@aol.com, 6AM - 6PM, 9, Home, 133658, 12mo. - 5yrs. 
+ Sues Daycare, 297 Aspen, Warren, OH, 44483, (330) 847-6317, jekfritch@cs.com, 6:00A.M. - 5:00P.M., 6 children, Home, Call, Infant - 5 yrs. old 
+ Kathys Home Daycare, 29 Jefferson Street Building 18, Poughkeepsie, NY, 12601, (914) 452-3462, kbenn67655@aol.com, 8:30 a.m. to 6:00 a.m., 5 openings, Home, FDC27892, 3 years old to 12 years old 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ Amintas Day Care Center, 308 W. Oscar Gonzalez Ave., Elsa, TX, 78543, (956) 262-2026, kaila@gateway.net, 24 hours, 12, Home, see me in person, 0-12 years 
+ Little Buckaroos Childcare & Preschool, 2151A East 3950 North, Filer, ID, 83328, (208) 326-5047, buckaro1@cyberhighway.com, 7a.m. - 6p.m., 12, Center, state & city, Newborn to 10 yrs. 
+ Shady Acres Child Care Center, 312 S. Front St., Bellville, TX, 77418, (409) 865-5651, hkpts@aol.com, 7a.m.  - 6 p.m., 52, Center, Call, 18 months thru 12 yrs old. 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ Tammys Hug A Bear Daycare, 10012 Clay St., Denver, CO, 80260, (303) 466-6659, hugabear35@aol.com, 6:00 A.M.  To  6:00 P.M., 6+2, Home, 03064, all ages 
+ CHARS PLAY N LEARN, 12010 FOREST WAY, THORNTON, CO, 80241, (303) 252-7322, seastariam@aol.com, 6:30A.M.  to  5:30P.M., 8, Home, 86416, NEWBORN TO SCHOOL-AGE 
+ KIDS DAYCARE, 22313 Meridian Ave. S, Bothell, WA, 98021, (425) 486-6838, kristiskorral@yahoo.com, 7:00 - 5:30, 12, Home, call, 1-1/2 to 11 years 
+ Noras Daycare, 2304 Turner, Lansing, MI, 48906, (517) 485-4427, norasdaycare@cs.com, 6:30-5:30, 12, Home, DG330094359, infant-5yrs 
+ Little Ones Daycare, 153 Alshir Rd, Colchester, VT, 05446, (863) 863-2399, dpope11111@aol.com, 11, 10, Home, R95-432, infant through 10 years 
+ Canfields Stay N Play Daycare, 411 N. Commercial, Emmett, ID, 83617, (208) 365-6171, ribrriner@aol.com, 24, 12, Home, call, 0-12 
+ Simones Playhouse, 5725 Buffington Road, College Park, GA, 30349, (404) 762-7331, dp0915@yahoo.com, 6:00 am to 7:00 pm, 12, Home, fr-000004798, all 
+ Elizabeths Daycare, 838 Nancy Lane, Chico, CA, 95926, (530) 894-2677, havilah@juno.com, 24 hours, 6, Home, 045400330, 0-4 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ Nancys Daycare, 407 Kansas Ave., Holton, KS, 66436, (785) 364-2437, nana123abc@hotmail.com, varies, 20, Home, 0003787001, all 
+ Children Are The Future, 3037 Wilmington Pike, Kettering, OH, 45429, (937) 298-7162, mjgmgm@yahoo.com, 6:30 AM - 6:00 PM, 90, Center, 204091," Infants, Toddlers, Preschoolers, and "
+ Kriss Kiddie Kare, 8233 Charles Place, California City, CA, 93505, (760) 373-3381, bunny@as.net, 6am - 6pm  Monday - Friday, 8, Home, 153802068, 6 and under 
+ THE CHILDRENS PLACE, 3215 CRYSTAL FOREST, CONROE, TX, 77306, (936) 264-1393, debbiec@txucom.net, varies, 50, Center, 545107, infant to school age 
+ Jeans Daycare, 7129 Lyman Rd., Kaleva, MI, 49645, (231) 889-4983, djba@webtv.net, 6:30am-7:00pm, 4, Home, DF510044147, 18 months and up 
+ PRECIOUS MOMENT DAYCARE CENTER, 911 RICHMOND AVE, DAYTON, OH, 45405, (937) 275-3794, jharris@harris.com, 3:P.M. UNTIL 7:00A.M, 10, Home, Call, infant to school age 
+ Chars Daycare, 4680 Mia Ccircle, San Jose, CA, 95136, (408) 281-3571, eestr34394@aol.com, 6am-5:50pm Mon.-Fri., 6, Home, 430758405, 1 thur 4 
+ Cindis Daycare, 16117 Lakeview Ave SE, Monroe, WA, 98272, (360) 863-9202, hidnic1213@aol.com, varies, 10, Home, 68657, 2 years and up 
+ Pams Daycare, 2530 East Avenue, Rifle, CO, 81650, (970) 625-5128, pamsalaz@rof.net, 6:45am-6:00pm, 6 plus 2 after schoo, Home, 97515, all 
+ A Busy Child Daycare, 51st and Peoria, Denver, CO, 80239, (720) 935-0364, babettesdaycare@yahoo.com, 6:30 am to 6:00pm, 8, Home, 1515102, 12 months and up 
+ HAND IN HAND DAY CARE, 6100 SOUTH 6TH ST FRONTAGE ROAD, SPRINGFIELD, IL, 62707, ((21) 29--8180, admin@handinhanddaycare.com, 6:30am - 6:00pm, 250, Home, 332157-02, 6weeks through 12 years 
+ BUTTONS AND BOWS DAYCARE, 49 Chapel Ridge Road, Vevay, IN, 47043, (812) 534-2125, shrichards@seidata.com, 6:00 A.M. TO 11:30 P.M., 10, Home, 78-820, NEWBORN TO 12 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ Noahs Ark Daycare, 2809 E River Rd, Twin Lake, MI, 49457, (231) 744-0753, pjahn54@cs.com, 24, 6, Home, DF610085540, 6 weeks to 12 years 
+ MY LOVING CARE DAYCARE, Call, cleveland, OH, 44128, (216) 921-6901, al-vet@msn.com, 6AM-9:30pm, 10, Home, 0788410c, 3yrs-12yrs. 
+ PEEWEES HOME DAYCARE, 841 N. TRIPP, CHICAGO, IL, 60651, (773) 227-2289, wadine@earthlink.net, 6AM-5:30PM, 8, Home, call, varies 
+ PJs Daycare, Call, Chicago, IL, 60619, (773) 994-1938, stepie@juno.com, 6:30am - 6:00pm, 6, Home, 353065, 3 months - 4 years 
+ Jeannies Child Care, 4610 Janie Drive, Cookeville, TN, 38501, (931) 525-3845, jshrum@cookeville.total-web.net, 24 Hours, 10, Home, 412-06-1753, all 
+ Little Hands Early Learning Center Inc, 6408 W. Colonial Drive, Orlando, FL, 32818, (407) 292-7600, pendestup@aol.com, 6:15am - 6:00pm, 40, Center, 396-13, Infants - 12 yrs (before/after school) 
+ Conchitas Family Day Care Home, 39-A Hatchee Road, Eglin AFB, FL, 32542, (850) 651-3410, conchitamartinez@msn.com, 6:30 am to 5:00 pm, 6, Home, 9806507, 12 months through five years old 
+ Oneal Daycare, 34 fidelis way#567, brighton, MA, 02135, (617) 787-1836, hiraoneal@hotamail.com, 6 to 6, 6, Home, 197996, 3 meses en adelante 
+ Shelleys Happy Home Daycare, 7380 Canosa Ct., Westminster, CO, 80030, (303) 427-3032, schllers@aol.com, individually contracted, 8, Home, 11934, newborn-12 years 
+ Pierces PlayPen, 3929 S. Nebraska St., Chandler, AZ, 85248, (480) 895-5987, geoffreydp@earthlink.net, 6:30-5:30 Mon.-Fri., 6 children only 2 un, Home, available upon request., 6 mos. to 6 years 
+ Little Christian Daycare Inc, 1283 Waycross Road, Cincinnati, OH, 45240, (513) 825-6521, kingdom2b@aol.com, 24 hours, 12 per shift, Center, call, 0-12 
+ TINY TALKERS DAYCARE, 131 CLEVELAND ST, PROVIDENCE, RI, 02909, (401) 621-5905, rita4kids@aol.com, 6AM TO 6 PM, 6, Home, 40975, 0 TO 6 YEARS 
+ JUST FOR KIDS, 103 HORN LANE, SHELBYVILLE, TN, 37160, (931) 294-5891, dsjohnson@cafes.com, 7:00 a.m. to 5:00 p.m., 10, Home, call, new born to 5yrs 
+ Sharons Family Daycare, 18 Beach Street 2nd floor, Fairhaven, MA, 02719, (508) 991-5286, rrstp@netzero.net, 7:30a.m.-5:00p.m., 6, Home, 182845, All 
+ CLCS TLC CHILD CARE, 4357 BLUEFLAX DR., PUEBLO, CO, 81001, (719) 545-0621, clcchildcare@aol.com, 6:00A.M. TO 6:00P.M., 6, Home, 37451, 18 MO. & UP 
+ FRESH DAYCARE, 4616 223RD ST CT E, SPANAWAY, WA, 98387, (253) 847-2891, bkimbrell@compuserv.com, 6AM-6PM, 9, Home, 47175, 0-11 
+ Busy Bees 24 Hour Childcare, 3021 Brent Road, Summit, MS, 39666, (601) 250-4777, lizamagee@hotmail.com, 24 Hours, 11, Center, CD2501, Toddlers 1-3 
+ ST MATTHEWS GREENBRIER SCHOOL, 5701 WEDGWOOD DRIVE, FORT WORTH, TX, 76133, (817) 292-5592, stmgs@flash.net, 7AM-6PM, 130, Center, 416823, 6WEEKS-5YEARS 
+ Lil Rainbow Daycare, 1717 Shire st, Pflugerville, TX, 78660, (512) 989-0342, ewiley01@aol.com, 7am-6pm m-f, 6, Home, 341456, 18mo - 4years 
+ Stacy Daycare, 45 Beal Street, Rockland, MA, 02370, (781) 878-3795, stacym53@cs.com, 7am to 5pm, 6, Home, 183992, two years to eight years 
+ Milky Way Galaxy Day Care, 19 Terners Drive #31, Sausalito, CA, 94965, (415) 225-6433, basima30@aol.com, 7:30 A.M -5:30 P.M., 8, Home, 209925, 1-5 years of age 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ Lindas Daycare, 22 Sylvanus Wood Lane, Woburn, MA, 01801, (617) 935-6872, gasmask420@aol.com, 6:00-5:00, 2, Home, 193335, 2+ 
+ Hosanna  Group  Daycare, 67b West Church St, Lexington, TN, 38351, (731) 967-7574, eyb31@aol.com, 600amto 600pm monday-friday, 15, Center, V1113315a, 6weeksto12years 
+" ""All In One"" Learning & Fun!", 421 Floyd Ave, Coopersville, MI, 49404, (616) 837-5020, mtolar@aol.com, varies, 10, Home, Pending, all 
+ Childrens Wonderland, 3700 Granada Blvd, Columbia, MT, 65203, (573) 449-2315, kooky@hotmail.com, 10 hours a day, 28, Center, call, 2-10 years 
+ THE KIDS LEARNING STATION, 2799 SAINT PAUL ST., ATLANTA, GA, 30318, (404) 799-0431, learning@excite.com, 6AM-7PM, 85 KIDS, Center, 00876534, 6 WEEKS THRU 12 YEARS 
+ Clark Forest Hill Montessori, 831 Forest Hill Blvd., West Palm Beach, FL, 33405, (561) 588-8339, clarkmontessori@aol.com, Mon - Fri     7am - 6pm, 27, Center, 8323002639, 2years (potty trained)- 5years 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ Small Steps Family Daycare, 97 Ferndale Drive, Berkeley Heights, NJ, 07922, (908) 508-0338, missrehana@yahoo.com, Flexible, 8, Home, In process, Infant to school age 
+ PERERA FAMILY DAYCARE, 12623 PUTNAM STREET., WHITTIER, CA, 90602, (562) 440-3584, caro_513@hotmail.com, 7:30am - 5:30pm, 7 children, Home, 198006505, 0 - 4 years 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ GERRIE DAYCARE, 7718 W OSBORN, PHOENIX, AZ, 85033, (602) 245-0263, gerrie1024@uswest.com, 4PM-5AM, 3, Home, call, 4-10YRS 
+ Teeny Weeny Day Care, 1502 Bryn Mawr Lane, Rockford, IL, 61107, (815) 397-1506, scurtis1502@msn.com, M-F 6AM - 6PM (Off-Hours Available), 11, Home, call, Infants  12 Years 
+ Lorries Day Care, 25925 Harmon Street, St. Clair Shores, MI, 48081, (810) 775-5929, droser_crco@ameritech.net, 7:00 a.m. - 7:00 p.m., 6, Home, DF 500043253, Infants to 5 years 
+ Mrs Lisas Daycare, 8327 Western Winds Dr., Baltimore, MD, 21244, (410) 655-8866, tbear710@aol.com, 7:00am - 5:30pm, 8, Home, 03-60445, 8 weeks to age 12 years 
+ Happy Days Daycare, 143 South Broad Street, Norwich, NY, 13815, (607) 336-4366, french@ascent.net, 7am - 6pm, 12 Children, Home, 036691FT, infant-school age 
+ TIGGERS TWOS DAYCARE, 721 5TH ST, TELL CITY, IN, 47586, (812) 547-2536, maggidoodles@aol.com, 5AM TO 5PM  & 5PM TO 2AM, 12, Home, 62-000330, ZERO TO 3YRS FOR 1ST SHIFT 
+ Vickies Daycare, 5826 corinthian pl, Lancaster, CA, 93536, (661) 718-0607, vickiesdc@aol.com, 6am-6pm, 8, Home, 192006976, 0-5years 
+ Brenda's Caring Hands, 1537 S. Linden Ave., Alliance, OH, 44601, (330) 821-1551, bzinda@neo.rr.com, 24hrs./7 days a week, 12, Home, Pr075-76, All 
+ Mommy Sues Daycare, 1853 Buckingham, Lincoln Park, MI, 48146, (313) 381-7576, smbridgins@home.com, 7am-5:30pm, 6, Home, DF820072352, infant-4 years 
+ Mothers Choice, 7428 Chapman Rd., North Richland Hills, TX, 76180, (817) 514-7151, jaymejarvis@mindspring.com, 7:00a.m.-6:00p.m., 6, Home, 507208, 18 mos. to 5yrs. 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ KERRIS DAYCARE, 2 Lakeside Ave, Webster, MA, 01570, (508) 943-3252, kerri6977@aol.com, 7:00-6:00, 4, Home, 189793, All ages 
+ Kids Incorporated, 1528 - 16th Ave, Moline, IL, 61265, (309) 762-1310, genc52471@qconline.com, 24 Hours, 10, Home, 348653-01, all 
+ Panda ChildCare And Preschool, 702 Sunset Court, Shelton, WA, 98584, (360) 426-4103, knorton123@cs.com, 7AM-530PM, 12, Home, 31374, 2-6 
+ Abbys Playtime, 4514 West Pioneer, Irving, TX, 75061, (972) 313-8770, mrmister@ev1.net, 6:00a.m. -6:30p.m.     Mon.-Fri., 4, Home, call, Ages 2 and up 
+ NISEYS RAINBOW OF FRIENDS, 27013 ELDON DRIVE, EVANS MILLS, NY, 13637, (315) 629-5284, daisyladymissydj@cs.com, MON -FRI 6:00 A.M.-6:00 P.M., 6, Home, 7407, MULTI-AGE 
+ Martin Family Child Care, 506 Perkins Hill Road, East Wakefield, NH, 03830, (603) 522-8759, buck14@worldpath.net, 7:00 am-4:30 pm, 12 preschool age 5 s, Home, 5115, varies 
+ Valdez Family Daycare, 25801 Antelope Road, Romoland, CA, 92585, (909) 928-1212, evaldez@compaq.net, 6am to 6pm, 14, Home, 334802144, newborn to 5 year 
+ Loving Arms Home Daycare, 205 N Taylor St., Nashville, GA, 31639, (229) 686-3036, cersey1@planttel.net, 6:30am 5pm, 6 full 2 parttime(2, Home, FR-000008758, one and up 
+ Noahs Ark Daycare, 431 N. Beech Road, Osceola, IN, 46561, (219) 674-4359, gqandme@aol.com, 6:30a.m.-6:00p.m., 60, Center, call, 6 weeks to 5 grade 
+ SUES TLC FAMILY CHILD CARE, 13 LILLIAN WAY, CARVER, MA, 02330, (508) 866-9322, shall2420@hotmail.com, 7:00 TO 5:00, 4, Home, 183271, INFANTS TO AGE 4 
+ Pathway Daycare And Preschool, 1945 Tamarack Rd, Owensboro, KY, 42301, (270) 686-7633, rushwind@bellsouth.com, 6AM to 8:30 PM, 220, Center, call, 6weeks  to 12 years 
+ LYN LYNS PLAYHOUSE, 404 Grover St., Joliet, IL, 60433, (815) 723-5736, lynara1@hotmail.com, 6AM-6PM, 7, Home, 387371, 0-12 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ Kids Cottage Playschool, 200 Main Street, Oshkosh, NE, 69154, (308) 772-4555, bethfricke@earthlink.net, 6:30 AM - 5:30 PM, 12, Home, 11458416, 6 weeks to 13 years 
+ ABC DAYCARE, 31 Couch St., Plattsburgh, NY, 12901, (518) 561-1726, ernst@together.net, 6:30am-5:15pm, 10+2 before & after, Home, 031086FT, 6wk-12yrs 
+ Byrds Nest, 11312 Fielding, Detroit, MI, 48228, (313) 838-0931, clazact@aol.com, 7:00AM-5:30PM, 12, Home, DG820077399, 18 mos. - 6 years 
+ Villines Family Day Care, 907 W. Willow Street, Hanford, CA, 93230, (559) 589-0568, rnvill@aol.com, 5:30am-6:00pm, 14, Home, 163804477, 0-13 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ MISS TRACYS FUNCARE, 1308 Vinewood Dr., Mansfield, TX, 76063, (817) 453-1566, spacylael2@gateway.net, 6:30-6:00, varies, Home, 539564, after school care 
+ Happy Tots Daycare Services, 23 Palentine Ave.," Newburgh,", NY, 12550, (914) 562-6127, happytots123abc@aol.com, varies, 10, Home, 41911FT, all 
+ Tiny Tots, 5312 43rd Ave W, Bradenton, FL, 34209, (941) 794-2184, snug359@yahoo.com, varies, 10, Home, FG-41-540, infant to school age 
+ Humboldt Parkway Child Care, 32 Regina Place, Buffalo, NY, 14208, (716) 883-5542, nicholle@emails.pce.net, varies, 20, Home, 038317FT, all 
+ Rainbow Daycare, CALL, NORMAL, IL, 61761, (309) 454-2019, rainbowdaycare@cs.com, varies, 10, Home, 298592-01, 2 years to school age 
+ Lisas Home Daycare, 17144 Gannon Way, Rosemount, MN, 55068, (952) 431-7619, tlschmidt96@aol.com, varies, 10, Home, 214510-01FCC, all 
+ Tawnyas Family Child Care Inc., 5101 New York Avenue, Cypress, CA, 90630, (714) 995-7656, tawnya@scrimpsher.com, 6am - 6pm, 14, Home, 30420446, all 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ Phoebes Technology Daycare, 1820 Laurelgrove Lane, Tracy, CA, 95376, (209) 835-3042, plmyles@inreach.com, 5:30AM - 6:00PM, 8, Home, 393608560, 1 - 12 years old 
+ D.J&Pals Home Child Care, P.O box 523, Hawthorne, FL, 32640, (325) 481-2187, lacey__00@hotmail.com, 24 Hours, 10, Home, 015100872, all 
+ NEW BEGININGS DAYCARE, 5252 ORANGE AVE #612, SAN DIEGO, CA, 92115, (619) 286-4293, christina_y_99@yahoo.com, 6am to 6pm, 10, Home, #376606480, infant to school age 
+ Pat Schmoekel, 1415Moody, Whitehall, MI, 49461, (231) 894-2070, pattismokey@aol.com, varies, 10, Home, Df610046226, 2 years to school age 
+ Orangethorpe Methodist Pre-School, 2351 W. Orangethorpe, Fullerton, CA, 92833, (714) 871-3176, oumps@aol.com, varies, 50, Center, 300600756, 2 years to school age 
+ Tiny Tykes Family Child Care Home, 76 Dunn Hill Road, Durham, CT, 06422, (860) 349-3746, mamattyker@aol.com, varies, 10, Home," 13,908", infant to school age 
+ Backpack Adventures Club, 4131 S. Harvard Ave, Tulsa, OK, 74135, (918) 742-0882, info@backpackadventuresclub.com, 8-5, 50, Center, new facility, after school care 
+" 
+         
+           ",704 East Main Street, West Plains, MO, 65775, (417) 256-9682, wonderland@townsqr.com, 6:00 a.m. - 6:00 p.m, 75, Center, 000747035, 0-12 years 
+ Ms. Beverlys Childcare, 2703 Hickory Knoll, Odenton, MD, 21113, (410) 695-1212, ms.beverly@att.net, 24 Hours, 10, Home, 02-88958, all 
+ Anchors Away Daycare, 142 Biscayne Blvd., Montpelier, OH, 43543, (419) 459-4742, calmeg@frontiernet.net, 4am-5pm, 6, Home, call, Any 
+ Kids Come 1ST, 979 Central Ave. N, Valley City, ND, 58072, (701) 845-8223, stearns@daktel.com, 6:45am - 5:45pm, 63, Center, call, 0-12 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ Lisa, 107 Chargeur Road, Reisterstown, MD, 21136, (410) 526-0458, llpbabe2@aol.com, 7:00am - 6:00pm, 8, Home, 03-72452, 2 and up 
+ Precious Angels Family Child Care, 85A Huckleberry Turnpike, Plattekill, NY, 12568, (914) 566-0079, preciousangelsdc@aol.com, 6am to 6pm, 8, Home, 43164FT, infants to 12 years old 
+ Laurie Renshaw, 10 Thornapple Circle, Rutland, MA, 01543, (508) 886-6732, 5ren@datastreamdesigns.net, 7:30-5:00 M-F mornings, 2, Home, not licensed, newborn-5yrs. 
+ Adeyans Daycare, 796 Minerva Street, Hayward, CA, 94544, (510) 780-9512, acameron@best.com, 6am to 6pm M-F, 8, Home, 013414499, 1 1/2yrs. to kindergarden 
+ Educated Chid Learning Place, 9530 Beaverland St., Detroit, MI, 48234, (313) 255-6736, kimlachelclark@aol.com, 6am-6pm, 6, Home, DF820084691, 2-5 years 
+ Kids Little Play House, 4004 grand ave, Omaha, NE, 68111, (402) 934-7529, fpr@nfinity.com, 5:30am to 7:00pm, 32, Center, call, 6 week to 13yrs old 
+ CHILDRENS PALACE HOME DAY CARE, 4236 EMERSON AVE. NO.#1, MINNEAPOLIS, MN, 55412, (612) 588-0923, adwaybadway@cs.com, 6AM.-6PM., 10, Home, Call, INFANTS-TODDLERS-PRESCHOOLERS 
+ Kids Just Like Us, 214 N. Nashville, Sheffield, AL, 35660, (256) 383-7926, opendoorchurch@mindspring.com, 5:30 a.m. til 5:30 p.m., 50, Center, certified church ministry, 0-15 yrs 
+ Ms.Phylliss DayCare, 3440 Mondawmin Ave, Baltimore, MD, 21216, (410) 624-0054, kentpkent@cs.com, varies, 8, Home, 30-15136, all 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ Little Peoples World, 4558 Walnut, Kalamazoo, MI, 49009, (616) 372-0652, andrewhudson@yahoo.com, varies, 10, Home, Df390081123, infants to 12 years old 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ Yvonnes Christian Daycare, 1538 Redfield Rd., Bel Air, MD, 21015, (410) 879-0604, kara_h_99@yahoo.com, 7:30 to 5:30, 8, Home, 12-76580, infants to 12 years old 
+ Dayna Care Daycare, 8400 Jergen Avenue South, Cottage Grove, MN, 55016, (651) 769-0552, dahultgren@juno.com, varies, 10, Home, In Process, all 
+ Roses Daycare, 137-40 45th Ave. Apt. #4K, Flushing, NY, 11355, (718) 762-2152, j.ward-brew@worldnet.att.net, 24 Hours, 10, Home, 02135, infants to 12 years old 
+ Honeybee Daycare, 396 Ashby Road, Ashburnham, MA, 01430, (978) 827-4220, honeybeedaycare@aol.com, 8:00 a.m. - 5:00 p.m, 7, Home, 204196, Infant to school age 
+ LITTLE ONES CHILD CARE, P.O. BOX 1202," RAVEN,", VA, 24639, (276) 991-0194, blueeyes24639@yahoo.com, 24 HOURS -- 7 DAYS, 12, Home, WLO-01-054, NEWBORN -- 12 YEARS 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ CHUCKLE BUNNIES DAYCARE, P.O. BOX 2282, WEAVERVILLE, CA, 96093, (530) 623-8606, weaverbally@yahoo.com, 8-5, 10, Home, 535401568, 2 years and up 
+ Cheris Home Daycare, 310 Denim Dr., Erwin, NC, 28339, (910) 897-8788, ncsweet97@aol.com, Mon.-Fri. 6AM-6PM, 8, Home, 28339," Infants, Preschool, School Age "
+ BROWNS DAY CARE HOME, 8403 S. ABERDEEN STREET, CHICAGO, IL, 60620, (732) 224-1849, jean8400@aol.com, varies, 10, Home, 205796-04, infant to school age 
+ UNIQUE CREATIONS PRE-SCHOOL, 726 W. MACON, CARTHAGE, MO, 64836, (417) 358-2440, uniquecreationsps@cs.com, 9-6, 20, Home, UNKNOWN, all 
+ Lauries Day Care, 233 Front st, Binghamton, NY, 13905, (607) 771-4999, bhunter39@hotmail.com, 24 Hours, 10, Home, 039080FT, infants to 12 years old 
+ Tiny Blossoms Daycare, 2101 N Fernwood Drive, Savannah, GA, 31404, (912) 356-1537, raemontyhaily3@yahoo.com, 24 Hours, 10, Home, FR-000001312, infant to school age 
+ GIPSONENTERPRISE, 3643Tennessee.ave, ST.LOUIS, MO, 63118, (314) 664-6092, mary@robertson.com, 24 Hours, 10, Center, 465-65-0615, infants only 
+ The PlayStation, Blueridge Drive, Medford, NY, 11763, (631) 696-2616, playstation1@hotmail.com, varies, 10, Home, in progress, all 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ HOME GROWN TOTS DAYCARE, 611 FLOYD AVENUE, ROME, NY, 13440, (315) 337-5790, homegrowntots@aol.com, varies, 10, Home, 038814FT, infants to 12 years old 
+ The Rainbow Room Small Family Daycare, 7100 Glass Slipper Way, Citrus Heights, CA, 95621, (916) 721-7890, solorzano@accessbee.com, 6:30am to 6:30pm, 6-8, Home, sac56326fcch, 18mo.-4yrs. 
+ Bennie Robinson Daycare Services, 200 W 143st.  #19e, New York, NY, 10030, (917) 507-0010, bennie_robinson@hotmail.com, Varies, 3, Home, 37037, 1& up 
+ NANNYS PLAYHOUSE CENTER, 112 EAST ALLEGHENY STREET, MARTINSBURG, PA, 16662, (814) 793-9654, jprice1061@aol.com, varies, 50, Center, 355700, all 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ Jackies Family Daycare, 14109 Maverick Court, Dale City, VA, 22193, (703) 580-0238, jkulick@hotmail.com, varies, 5, Home, in the process, 2 years and up 
+ Tammys Daycare, 4613 Morningstar Lane, Salida, CA, 95368, (209) 543-0904, in2eg@aol.com, varies, 10, Home, 503603711, infants to 12 years old 
+ Kiddie Planet Home Daycare, 9520 Axehead Court, Randallstown, MD, 21133, (410) 922-5996, kiddieplanet@aol.com, varies, 08, Home, 03-91112, infants to 12 years old 
+ Little Brook Daycare, 608 Millbrook Road, Rome, NY, 13440, (315) 336-3411, lilbrookdaycare@aol.com, 5:30 am-5:30 pm, 16, Home, 00263066gfdc, 6 weeks - 12 years 
+ Tinas Daycare, 120 East Bayard St, Seneca Falls, NY, 13148, (315) 568-2889, tinaderosia@hotmail.com, 6am - 6pm, 7, Home, 041001FT, infant to school age 
+ Moheet Family Day Care, 2905 Woodwardia Drive, Los Angeles, CA, 90077, (310) 470-8849, moheet@prodigy.net, 24 Hours, 10, Home, 197405167, all 
+ Donnas Daycare, 01980 Country Club Rd., Walloon Lake, MI, 49796, (231) 535-2823, dmwagner@gtlakes.com, M-F 6:30 a.m. - 6:00 p.m., 6, Home, DF150017191, infants to 12 years old 
+ Little Mountain Christian Child Care, 3144 Hwy 155, Stockbridge, GA, 30281, (770) 474-1732, littlemountainchildcare@intuit.com, varies, 100, Center, DL0001003323, infants to 12 years old 
+ The Tot Stop, 30 Harding Road, Gorham, ME, 04038, (207) 839-6603, lgrandst@maine.rr.com, 7-5:30, 12, Home, available to view upon request, infant & up 
+ Learning Links Childcare, 880 Thieriot Ave, Bronx, NY, 10473, (718) 620-3306, kebkm@aol.com, varies, 10, Home, 40041, 6 weeks- 12 years old 
+ The Childrens Place, 616 Linden Ave., Oxford, NC, 27565, (919) 603-0911, mmidyette@earthlink.net, 6:30-6:00pm, 77, Center, call, infants to 12 years old 
+ Portland Child Enrichment Center, 803 North Broadway, Portland, TN, 37148, (615) 325-4500, dmorrisy2k@cs.com, varies, 100, Center, call for center number, all 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+" Little Rascals Childcare, Inc.", 61 Grizzle Street, Royston, GA, 30662, (706) 245-7170, pvckids@aol.com, 6:30-5:30, 63, Center, Licensed through state of ga, infants to 12 years old 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ Berts Christian Day Care, 709 Platinum Street, Fayetteville, NC, 28311, (910) 488-4533, fhfbaybay@aol.com, 24 Hours, 10, Home, 26000632, all 
+ Holcomb Family Child Care, 1415 22nd St., Niceville, FL, 32578, (850) 729-2230, jasenjenn@cs.com, 24 Hours, 10, Home, FR-4567-O, infants to 12 years old 
+ KIDS-THYME, 7714 N MERRIMAN RD, WESTLAND, MI, 48185, (734) 458-4928, deegirl68@hotmail.com, 24 Hours, 10, Home, DF820088968, infant to school age 
+ D&d In-house Christian School, 100 Woodsong Ct., Fayetteville, GA, 30214, (770) 461-9278, danddchrisschool@cs.com, 6:00 a.m. to 6:00 p.m. mon thru fri, 10, Home, Fr-000004349, 6wks-12 years of age 
+ Shelbys Daycare, 4481 Sapphire CT NE, Salem, OR, 97305, (503) 856-8370, shelbyhansen@home.com, varies, 10, Home, RF055666, 2 years and up 
+ Audreas Family Daycare, 1030 E. Main," Benton Harbor, Michigan", MI, 49022, (616) 925-4317, williamsc666@aol.com, varies, 20, Home, df110082111, infant to school age 
+ EVELYNS HOME DAY CARE, 3OO2 AKRON STREET, DALE CITY, VA, 22193, (703) 730-3105, eve5sam@home.com, varies, 10, Home, WLO-99-250, after school care 
+ Kids Korner Family Daycare, 5531 Fortuna Pkwy, Clay, NY, 13041, (315) 699-0940, kidskornercare@hotmail.com, Monday - saturday, 8, Home, 032675ft, 6wks -  12yrs. 
+ Wilsons Family Child Care, 1904--27th Ave. Dr. E., Bradenton, FL, 34208, (941) 746-2025, shirle53@worldnet.att.net, 7am to 6pm  Mon-Fri, 10, Home, FG41-158, infant to school age 
+ KIDS FIRST CHILD-CARE, 24024 N. LOWER SACRAMENTO Rd., ACAMPO, CA, 95220, (209) 368-0482, abczamora@netscape.com, 6 AM THROUGH 6 PM AND OVERNIGHT, 14 CHILDREN, Home, 393606265, FROM 0 THROUGH 12 YEARS OF AGE 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ Circle Of Friends Child Care, 15 Kenilworth Drive, Clinton, CT, 06413, (860) 669-9797, cmc888@aol.com, 7 a.m. - 4:30 p.m., 6, Home, 20031, 15 mo. to 8 years old 
+" 
+         
+           ",4684 Nw 103 Avenue, Sunrise, FL, 33351, (954) 572-2900, vstella@netscape.net, 6:30 am - 8:00pm weekdays, 200, Center, 46004, Infants (2 months) - pre-k 
+ Angela Kenyon, 2711 Cantania Place, Lakeridge, VA, 22192, (703) 492-7393, dakotah@clark.net, varies, 10, Home, not licensed, infants to 12 years old 
+ Mrs.Goodies Daycare, 145 Martin L.Ling drv., Flomaton, AL, 36441, (334) 513-2002, rickey@net1inc.net, varies, 10, Home, onfile, 2 years and up 
+ A Touch Of Home Family Daycare, Golden Beach Road, Mechanicsville, MD, 20659, (301) 884-5409, ggarr@erols.com, 5:30am-5:30pm, 8, Home, 18-30020, infant to school age 
+ Hayden Family Daycare, 1433 Naranca Avenue, El Cajon, CA, 92021, (619) 334-1216, haydendaycare@prodigy.net, 24 Hours, 10, Home, 376608607, all 
+ Marys Daycare, 5205 S. Clifton #607, Wichita, KS, 67216, (316) 524-3696, mary1960@excite.com, varies, 10, Home, 36022-3, infants to 12 years old 
+ A B C Daycare, 11555 sw 135th ave #55, tigard, OR, 97223, (503) 590-9945, heidi37@aol.com, 24 Hours, 10, Home, do not have a ccd # yet., infants to 12 years old 
+ Sonyas Family Daycare, 500 Chalet West Drive, Millersville, MD, 21108, (410) 729-2513, smbar123@aol.com, varies, 10, Home, 02-41375, all 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ Bundles Of Joy, 44 Gilroy Ave, Uniondale, NY, 11553, (516) 565-5397, bunjoy1@aol.com, 7:30-5:30, 8, Home, 040067ft, all 
+ Country Daycare, 64020 Deschutes Mkt Rd, Bend, OR, 97701, (541) 382-8428, ctrydaycar@aol.com, 6:30a-6:00p, 12, Home, K000595, 1-8 
+ Graham Krackers Day Care, 610 Kerlin Street, Chester, PA, 19013, (610) 876-0384, gkdc93@aol.com, 7:30until5:30, 12, Home, 104410, 3-6 yrs.old 
+ D & P Rainbow Daycare, 12693 Cottonville Road, Norwood, NC, 28128, (704) 474-9408, peggygrace@hotmail.com, 24 Hours, 20, Home, 84000146, infants to 12 years old 
+ DEBORAHS CHILDCARE, 700 RADNOR COURT, GLEN BURNIE, MD, 21061, (410) 969-3094, dran555999@aol.com, 24 Hours, 10, Home, 02-83586, all 
+ ABSOLUTE CARE DAYCARE, 26620 RIDGEMONT, ROSEVILLE, MI, 48066, (810) 498-9020, cutie7198@prodigy.net, 7:00AM-5:30PM, 5, Home, DF500091861, all 
+ Jo Jos Home Daycare, 1408 Swan St., Greensboro, NC, 27407, (336) 292-7797, rls92178@aol.com, 24 Hours, 10, Home, 41000396, all 
+ Heathers Home Child Care Services, 4971 Harwich Ct., Kettering, OH, 45440, (937) 291-3427, heatherann1124@yahoo.com, M-F 6am to 6pm (extended care available), 6, Home, Type B, infant to school age 
+ Little Hearts And Hands Child Care, 6414 Starbuck Drive, OFallon, MO, 63366, (636) 978-5520, top250@aol.com, varies, 10, Home, 000827930, infants to 12 years old 
+ Shelles Home Day Care, 3110 54 street north, St.Pete, FL, 33710, (727) 527-3826, shellesdaycare@aol.com, 8-5, 10, Home, 371980473, infant to school age 
+ Lynettes Home Day Care, 867 Listie Road, Friedens, PA, 15541, (814) 445-5222, lynettegrimm@icqmail.com, varies, 10, Home, 352085, infants to 12 years old 
+ My Guardian Angel, 352 East Pope, Monticello, AR, 71655, (870) 367-9151, candyg@ipa.net, 7-5, 10, Home, 14808, 2 years and up 
+ Happy Angels Child Daycare, 641 Willow Street, Waterbury, CT, 06710, (203) 753-8706, happyangels641@aol.com, varies, 10, Home, 50609, all 
+ BACk 2 The Basics Enrichment Center, 4017 South Third Street, Memphis, TN, 38109, (901) 786-1243, dbasics1@bellsouth.net, 24 Hours, 500, Center, 000, infants to 12 years old 
+ Learn And Play Day Care, 3204 Sir Lancelot Ct., Chesapeake, VA, 23323, (757) 487-7916, tammymorse@webtv.net, 8-5, 10, Home, ERO-98-603, 2 years and up 
+ Rugrats Family Daycare, HC 71 Box 515 H, Mountain View, AR, 72560, (870) 269-5922, jordan/yanda@mvtel.net, varies, 10, Home, 14874, all 
+ Bizzyplay Daycare, 6456 South M St, Tacoma, WA, 98408, (253) 471-2707, sschztz99@aol.com, 24 Hours, 10, Home, 248434, infant to school age 
+ Caring Hearts Family Childcare, not listed for safety reasons, Apopka, FL, 32712, (407) 000-0000, tracyschildcare@cfl.rr.com, 6:00AM - 5:30PM, up to 10, Home, 07A454, infants to 5 years old 
+ Aunt Penny's House, 1701 Tricorn Ct., Potterville, MI, 48876, (517) 645-7748, beauty92@cablespeed.com, 24 hour, 12, Home, 6232441, All 
+ Copeland Family Day Care, 4900 Westham Way, Elk Grove, CA, 95758, (916) 399-9029, copedaddy@prodig.com, 7am to 6pm, 8 children, Home, sac57686fcch, 0yrs to 12yrs 
+ Shirleens Daycare, 2324 N.w 49th St, Lincoln, NE, 68524, (402) 470-2559, nebraskachick24@webtv.net, 6am till 6pm, 10 to 12, Home, 3611, 1yr to 4yr old 
+ Part-Time Or Temporary Day Care, Sterling Park/Sterling Elementary Area, Sterling, VA, 20164, (000) 000-0000, mzdmnr@aol.com, 7-5, 4, Home, ---------------------, Age 2 and Under ONLY 
+ Twinkle LIttle Star Family Childcare, 14537 Yucca Street, Hesperia, CA, 92345, (760) 949-6193, ykoeppen@aol.com, 8-5, 10, Home, 364807147, infants to 12 years old 
+ Just Like Home Daycare, 2408 Tennessee St, Vallejo, CA, 94591, (707) 643-1285, stephanienelsonn@aol.com, varies, 10, Home, 483003179, infants to 12 years old 
+ Judys Family Daycare, 4024 34th street, San Diego, CA, 92104, (619) 283-3740, president2001@earthlink.net, varies, 10, Home, 376609981, 2 years and up 
+ Care-A-Lot Child Care & Preschool, 10495 County Line Rd, Spring Hill, FL, 34609, (352) 686-1993, carealot@bellsouth.net, 6:30 AM - 6:00 PM, 160, Center, 130278, 6wks - 5th Grade 
+ Loris Daycare, 2963 Center Street, Sioux City, IA, 51103, (712) 234-1231, lori2j@ia.freei.net, 8-5, 10, Home, 4297214, all 
+ Munchkins Day Care, 30 fougeron st, buffalo, NY, 14211, (716) 896-6326, lvsmith30@gateway.net, varies, 10, Home, 038940ft, infant to school age 
+ Circle Of Friends Preschool And Daycare, 4429 Shalimar Dr., New Orleans, LA, 70126, (504) 244-3438, ybuc994177@aol.com, varies, 20, Center, 6919, infants to 12 years old 
+ Little Hands And Feet Day Care, 775 East 152nd Street, Cleveland, OH, 44110, (216) 268-0880, littlehands_feetdaycare@onebox.com, 6:30 am - 6:00 pm, 250, Center, can provide in person, 18 months to 12years 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ Its A Small World, 1475 Wythe Pl #4L, Bronx, NY, 10452, (718) 538-4904, melbamoorev@netscape.net, varies, 10, Home, 36193, all 
+ Ramseys Rainbow Rascals, 21860 Sussex, Oak Park, MI, 48237, (248) 546-7587, elnora15@flash.net, 24 Hours, 10, Home, 630067572, all 
+ BONNIES KIDS DAYCARE, 4740 Glenwood Dr., Decatur, IL, 62521, (217) 864-4942, greeneyedgrandma@hotmail.com, 8-5, 10, Home, 361899-01, infants to 12 years old 
+ Hazimin," mmu,melacca.malaysia", ayer keroh, MA, 75450, (045) 551-5205, col_ge@hotmail.com, 24 Hours, 20, Home, 4397, all 
+ Alpha Academy Christian Learning Center, 2 Executive Drive, Moorestown, NJ, 08057, (856) 235-2252, natalenina@aol.com, 7:00 a.m. - 6:00 p.m., 70, Center, 03ALP0001, infant to school age 
+ Terris Daycare, 110 Northwood Drive, Mattydale, NY, 13211, (315) 455-2696, tboo692@twcny.rr.com, varies, 10, Home, 043817FT, all 
+ Kids  N Corp," 27327 ROBINSON ROAD ,SUITE # 12", CONROE, TX, 77385, (281) 363-2955, bunny4473@aol.com, 6:30 A.M. - 6:30 P.M., 50, Center, #548139, 6 WKS TO 12 YRS 
+ Time For Tots Home Day Care, 3263 Green Pasture Dr., Florissant, MO, 63031, (314) 830-1955, a10momma@aol.com, 7 A.M. to 6 P.M., 10, Home, 000715346, infant to school age 
+ Shanons Daycare, 3227 United Dr. #9, Cameron Park, CA, 95682, (530) 676-0871, koenigs4@directcon.net, varies, 10, Home, 093605685, infant to school age 
+ Kris Daycare, 104 Runestone Place, Alexandria, MN, 56308, (320) 762-8659, kmhirsch2000@ivillage.com, 8-5, 10, Home, 232650-1-FCC, infants to 12 years old 
+ Cobbs Family Daycare, 338 springbrook Dr., Vallejo, CA, 94591, (707) 642-0799, cobbsdaycare@aol.com, varies, 10, Home, 483002937, infant to school age 
+ Little Inspirations, 1128 W Monroe Street, Decatur, IN, 46733, (219) 724-9019, lliechty@adamswell.com, 6am-4:30pm, 12, Home, 01-000930, 2-5 
+ Deb s Childcare, 3715 Clayborn Drive, Hephzibah, GA, 30815, (706) 792-0733, debsbusinessday@aol.com, 24 hrs, 8, Home, N/A, 6 weeks - 12 years 
+ SPECIAL TOUCH DAYCARE, 902 NEBRASKA, VALLEJO, CA, 94590, (707) 557-1102, msnina06@aol.com, varies, 20, Home, 483001979, 2 years and up 
+ Little Hearts Child Care Inc., 71 Manhatten Ave, Roosevelt, NY, 11575, (516) 223-9740, jcole@optonline.net, varies, 10, Home, 041242ft, all 
+ Susans Kid Care, 2906 Ivydale St., Wheaton, MD, 20902, (301) 346-5519, a7257@erols.com, 8a.m.-5:30p.m., 06, Home, 15-82075, infants to 12 years old 
+ Angels Among Us, not listed, Kaufman, TX, 75142, (972) 932-8868, j-braddock@juno.com, varies, 10, Home, 539899, all 
+ Ms. Jessies Home Day Care, 3681 East 146th Street, Cleveland, OH, 44120, (216) 921-4973, msjessiesdaycare@cs.com, 24 Hours, 10, Home, 0002464cd, all 
+ Angel Babies Daycare, 715 Joes Lake Road, Cambridge, MN, 55008, (763) 689-9454, ajrussom@excite.com, 6:00 a.m. - 5:30 p.m., 10, Home, 1005578-A-FCC, 6 weeks and up 
+ Madeline Daycare, 707 10th Ave N.W., Austin, MN, 55912, (507) 433-3259, mmlorent@smig.com, 24 Hours, 10, Home, 215058-1-FCC, all 
+ Kims Child Care Home, 1083 El-Paso Drive, Los Angeles, CA, 90042, (323) 344-1550, gabuissa@aol.com, 24 Hours, 10, Home, 198004918, all 
+ Little Munchkins Day Care, 12995 Peacock Rd., Leslie, MI, 49251, (517) 589-5938, carmerkc@juno.com, 8-5:30, 6, Home, DF380077284, infants to 12 years old 
+ Childrens Care, 5380 bahama terrace, cincinnati, OH, 45223, (513) 542-8749, echeryll@webtv.net, varies, 10, Home, certified, infant to school age 
+ Mary Poppins Family Daycare, for privacy no listing, Chuckey, TN, 37641, (423) 000-0000, mpoppinsdaycare@aol.com, varies, 10, Home, registered no license number, all 
+ Peoria Presbyterian Preschool, 10236 N. 83 Ave., Peoria, AZ, 85345, (623) 979-5264, teddybea@uswest.net, varies, 50, Center, 1363, 2 years and up 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ The Angel Inn, 199 Forest Street, Westbrook, ME, 04092, (207) 854-6263, rhicks2@maine.rr.com, varies, 10, Home, on file, all 
+ Elise  Family Daycare, 411 S.W. 3rd ST., Gainesville, FL, 32604, (352) 379-8165, ttirton@aol.com, 8-5, 10, Home, 015101518, all 
+ Mini Minds Child Care, 10911 Hulda Ave, Cleveland, OH, 44104, (216) 721-6944, menikwan@aol.com, 24 Hours, 10, Home, Can Provide In Person, infants to 12 years old 
+ Precious Child, Middletown, ny, NY, 10941, (123) 456-7890, sue@citlink.net, varies, 10, Home, upon request, all 
+ First Friends Family Childcare, Please Call, Wichita, KS, 67207, (316) 685-6988, sawcolo@cs.com, varies-7 am to 5:30 pm-varies, 10, Home, 24426-8, 2m -5 years 
+ Stacis House, 215  Versailles Street, Garber, OK, 73738, (580) 863-2890, goss5@pldi.net, 5:30am - 6:30pm, 12, Home, K8232562, birth thru 12 yrs 
+ Friendship Learning Center, 4952 Friendship Road, Buford, GA, 30518, (678) 546-9002, friendshiplc1@cs.com, varies, 200, Center, DL-000002386, infants to 12 years old 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ The Kids' Club, 4511 E. Ustick, Caldwell, ID, 83605, (208) 453-1421, nkrush7@aol.com, 6am-6:30pm, 140, Center, V26937, 1-12 years 
+ Dollys Day Care, 3034 Masonwood St., San Jose, CA, 95148, (408) 270-7322, snewimage@cs.com, 8am - 5pm, 16, Home, 430757431, infant to 6yrs 
+ Kimmyes DAYCARE, 4409 Walther Ave. Apt BSMT, Baltimore, MD, 21214, (410) 426-6046, unitylikewhoa@hotmail.com, varies, 10, Home, 3095924, infants to 12 years old 
+ IvyWood Daycare Center, 958 Maplewood Dr. NE., Cedar Rapids, IA, 52402, (319) 369-6964, cc68whisper@hotmail.com, varies, 10, Home, 458-58-0000, 2 years and up 
+ TRACEYS TOT STOP, R.R.#1 BOX 1151, HOP BOTTOM, PA, 18824, (570) 434-8687, chrzan32@webtv.net, 6-AM TO 5-PM, 6, Home, FAMILY HOME DAY CARE, 6 WEEKS TO 12 YEARS 
+" 
+         
+           ",3014 Stafford St., Irving, TX, 75062, (972) 594-6095, tinyjewelscare@aol.com, 7a.m. until 6p.m., 6, Home, 281384, 6 weeks through age 5. 
+ Sharp Family Child Care, 1090 N. Ventura Ave., Oakiview, CA, 93022, (805) 649-1968, tamisharp@cs.com, 24 Hours, 10, Home, 5662060900, infant to school age 
+ Loris Loving Daycare, 922 E. Berridge ln, Phoenix, AZ, 85014, (602) 279-2595, stark922@msn.com, varies, 10, Home, none, all 
+" THE HOME WITH A HEART DAYCARE,INC.", 16149 SE 170TH AVENUE, WEIRSDALE, FL, 32195, (352) 821-4345, rose@aol.com, 24 Hours, 10, Home, 130681, all 
+ P B Childrens Academy, 3504 church ave, brooklyn, NY, 11203, (718) 941-1102, massogona@aol.com, varies, 200, Center," 5437, 5561", all 
+ Kids Count Too, 1611 Alfred Road, Lyman, ME, 04002, (207) 499-7705, kimballx5@cybertours.com, varies, 12, Home, as of 8/4/00 waiting for the #, infant to school age 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ Sandys Home Day Care, 11300 Windmill Place," Oklahoma,City", OK, 73162, (405) 720-9458, farmer5@home.com, 24 Hours, 20, Home, in progress, all 
+ KIDDZTOWN FAMILY DAYCARE, MORRIS AVENUE, BRONX, NY, 10451, (718) 665-6555, prahser@aol.com, 9-6, 10, Home, 13023, 2 years and up 
+ LITTLE SMILES, 720 HAZEL, COUNCIL BLUFFS, IA, 51503, (712) 328-2681, pkkubs@aol.com, varies, 10, Home, 4278433, infant to school age 
+ Baby Bear Infant Care, 2904 Jasmine St, Titusville, FL, 32796, (321) 264-0172, lvandrey1999@yahoo.com, Negotiable, 3 infants 0-18 month, Home, 07B946, 0-18 months 
+ First Step Daycare North, 1895 N. Kansas Ave., Springfield, MO, 65802, (417) 866-5405, dbjb62098@yahoo.com, 24 Hours, 50, Center, DCL-406-565, 2 years and up 
+ The Living Word Tabernacle Daycare, 4212 46th Ave N, Birmingham, AL, 35217, (205) 841-3110, livingwordtab@yahoo.com, 24 Hours, 500, Center, Church Tax Emempt, infant to school age 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ ANN MCCORMICKS DAYCARE, 4 TROON COURT, SARATOGA SPRINGS, NY, 12866, (518) 587-9863, mrskebo53@aol.com, 8-5, 10, Home, 036198FT, infants to 12 years old 
+ Sumu Learning Center, 1203 Harwich Drive, Carol Stream, IL, 60188, (630) 830-2396, naazkhan786@aol.com, varies, 7, Home, 057467-06, infant to school age 
+ Bev's Day  Care, 12402 West 100th Place, Lenexa, KA, 66215, (913) 888-1220, bevannogle@cs.com, 7:30a to 5:30p, 12, Home, 491482315, Infant to school age 
+ Lyndas Play And Learn Too, 314 N.E. Railroad Street, Wallace, NC, 28478, (910) 285-6818, buddy2@intrstar.net, varies, 100, Center, cant remember, infants to 12 years old 
+ Lativa Reeds Family Care, call, Pontiac, MI, 48342, (248) 338-2283, pitbull626@juno.com, 24 Hours, 10, Home, DF630093355, infants to 12 years old 
+ FEED MY LAMBS CHRISTIANS DAYCARE, 5200 VALLEY ROAD, FAIRFIELD, AL, 35064, (205) 785-2005, stanto2@bellsouth.net, 7:00 A.M. - 5:30 P.M., 20, Center, 017349, infant to school age 
+ Little Rascals Child Care, 32 Manning Ave, Troy, NY, 12180, (518) 273-4877, sixkid@earthlink.net, varies, 10, Home, 45374FT, 2 years and up 
+ WASHINGTONS DAY CARE, 2113 S. MOUNTAIN, DUARTE, CA, 91010, (626) 303-5505, marylynntoo@cs.com, 24 Hours, 8, Home, 198005436, infant to school age 
+ Tender Years Daycare, 7338 Washington St., Sutter, CA, 95982, (530) 755-2177, pebbleshell@yahoo.com, varies, 10, Home, 510002547, all 
+ Lyndas Family Daycare, 231 N. Tumbleweed Rd., Bishop, CA, 93514, (760) 872-3456, forunnr@aol.com, 24 hours, 8, Home, 140000564, All 
+ Colleens Crayon Box, 1365  Cliff Barnes, Kalamazoo, MI, 49009, (616) 353-2021, keepers@mi.freei.net, varies, 10, Home, df800079184, infants to 12 years old 
+ Country Road Daycare, 29730 County Hwy O, Richland Center, WI, 53581, (608) 647-2705, hmwilson@webtv.net, 24 Hours, 10, Home, County Certified, all 
+ THE WAY TO PROSPERITY DAYCARE, 299 OAKMONT AVE, BUFFALO, NY, 14215, (716) 837-8226, rajeannine@aol.com, varies, 10, Home, 033570FT, all 
+ Adas Daycare, 1234 Clifford Ave.," Rochester,", NY, 14621, (716) 323-9746, arosario62257115@aol.com, 24 Hours, 10, Home, 46007FT, infants to 12 years old 
+ Tasitys Daycare, 423 Bayview Drive, Oakley, CA, 94561, (925) 679-0750, shamoo824@cs.com, varies, 10, Home, 073402406, 2 years and up 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ LASONIAS HOUSE, 276 KEITH COURT, MILLERSVILLE, MD, 21108, (410) 729-2932, smbar123@aol.com, varies, 10, Home, 02-97764, all 
+ Erikas Child Care, 3380 Tuers Rd, San Jose, CA, 95121, (408) 225-6368, erikaschildcare@aol.com, 24 Hours, 10, Home, 434403815, all 
+ Baby Palace, 4304 Williamson Lane, Carrollton, TX, 75010, (469) 892-2311, claudiaward2@verizon.net, 7:00 am- 6:30 pm, 12, Home, 850028, Infant (6 weeks) to  5 years 
+ Stepping Stone School I, 1710 Richcreek, Austin, TX, 78757, (512) 459-0247, info@steppingstoneschool.com, varies, 100, Center, 128315, all 
+ Lorraines Daycare, near Cherry vale, Cherry Valley, IL, 61016, (815) 332-3214, all4mineagain@hotmail.com, varies, 4, Home, 337175-01, infant to 5 years 
+ Around The Corner Daycare, 416 S. Pearl St., Tecumseh, MI, 49286, (517) 424-4146, jawenger@freeweb.com, 8-5, 10, Home, 460088810, infant to school age 
+ THE YOUNG AND THE RESTLESS, 642 S. OAKLAND AVE., DECATUR, IL, 62522, (217) 422-8153, giraffelady123@aol.com, 24 Hours, 10, Home, 263498, all 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ Hester Family Daycare, 28125 Sunny Slope Road, Desert Hot Springs, CA, 92241, (760) 342-5483, maryannandgary@cs.com, varies, 10, Home, 334807159, infant to school age 
+ Jesus Cares Day Care, 721 Michigan Avenue, Bellport, NY, 11713, (631) 286-1532, isolina_r@hotmail.com, 9-6, 10, Home, 1266336, all 
+ Pooh And  Friends Playhouse, 3231 177th PlNE, Arlington, WA, 98223, (360) 653-7093, kjmiller22@yahoo.com, varies, 6, Home, 70314, infant to school age 
+ Kids Are My Business, 1825 Hamilton Street, Holt, MI, 48842, (517) 694-6024, steelerlyn@aol.com, 7-6, 10, Home, dg330073600, infant to school age 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ Filion Childcare, 1110 west 4th st, Port Angeles, WA, 98363, (360) 417-2004, mrsmuffins@aol.com, varies, 10, Home, 18278, all 
+ HAPPY HOME DAYCARE, 600 HEMPHILL ST., STANTONSBURG, NC, 27883, (252) 238-3239, h_home2000@yahoo.com, 24 Hours, 20, Home, 984075, infants to 12 years old 
+ Care4child, 9116 Huntington Drive Unit F, San Gabriel, CA, 91775, (626) 614-8037, mancebee@aol.com, 7am-6pm, 08, Home, 198005959, all 
+ Rug Rats Welcome, 2057 Edison Ave, Sacramento, CA, 95821, (916) 564-2440, junecaruso@sbcglobal.net, 5:30 AM- 5:30 PM, 8, Home, SAC56509, 6 weeks & up 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ Munchkinland Day Care, 139 East Delaware, Redkey, IN, 47373, (765) 369-8511, kktrmiller01@cs.com, 24 Hours, 10, Home, 38-000775, all 
+ Denises Family Daycare, 637 Fairfield Avenue, Elmhurst, IL, 60126, (630) 993-0929, deedeleen@aol.com, 24 Hours, 10, Home, 360199-01, 2 years and up 
+ The Marshalls Family Day Care, 2358 Betsy Drive, Jacksonville, FL, 32210, (904) 695-2870, tbo940@cs.com, 24 Hours, 10, Home, 044797, all 
+ Little Inspirations Child Care, 4308 S.W. Anthony Wayne Dr., FORT WAYNE, IN, 46806, (219) 745-4853, djjdas@home.com, 24 Hours, 10, Home, 10, all 
+ Rowley Family Daycare, Janice Rowley, Pasadena, CA, 91104, (626) 794-8027, janrowley@hotmail.com, 24 Hours, 10, Home, 191214402, infants to 12 years old 
+ YOUNGS FAMILY DAYCARE, 396 N. Almond Valley Road, Arkport, NY, 14807, (607) 295-7018, youngs@infoblvd.net, varies, 10, Home, 043473FT, all 
+ Amelia Hauck, 622 Guildford Ave., San Mateo, CA, 94402, (650) 572-8859, mibubby@aol.com, 8-5, 10, Home, 410509120, infant to school age 
+ Family Daycare, 14 Emerton Ave, Randolph, MA, 02368, (781) 961-3139, luckyj810@aol.com, varies, 10, Home, 192988, infants to 12 years old 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+" Imagination Station, Early Learning Cent", 5858 LaGorce Circle, Lake Worth, FL, 33463, (561) 966-3229, lnwell@msn.com, varies, 100, Center, pending, infant to school age 
+ DEERING RIDGE HOME DAYCARE, 4620 DEERING RIDGE ROAD, E. WATERBORO, ME, 04030, (207) 247-4662, deering_ridge_daycare@yahoo.com, 7:00-5:30, 11, Home, 253101, all 
+ Miss Rockys Playskool, 15 Heritage Drive, Bristol, VA, 24201, (540) 669-7974, billyja@earthlink.net, varies, 50, Center, 00000000, infants to 12 years old 
+ Honeys Early Childhood Development Cent, 1085 Green Wilson Rd, Frankfort, KY, 40601, (502) 223-8379, honeys49@hotmail.com, varies, 50, Center, will have this week, infants to 12 years old 
+ Bielcas Babies, 1318 York Street, San Francisco, CA, 94110, (415) 377-8593, bielca@yahoo.com, varies, 20, Home, 384000512, infant to school age 
+ COURTS ENRICHMENT CENTER, 1312 LARKIN ST., GREENSBORO, NC, 27406, (336) 272-4435, e_courts@netzero.net, 24 Hours, 10, Center, 4105969, 2 years and up 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ Bobbis Homedaycare, 406 South East, Jacksonville, IL, 62650, (217) 243-6859, alpho5@aol.com, 8-5, 10, Home, 352940-01, all 
+ Teresas Tots, 730 E Street, Charleston, IL, 61920, (217) 348-6152, livin@one-eleven.net, 24 Hours, 10, Home, 337027-01, infants to 12 years old 
+ Tendertime   Daycare, 607  Pearl  St., Richmond, IN, 47374, (765) 965-5517, sally.tharp@gte.net, 5:30am-5:30pm, 10 at any time, Home, IN  State  Licensed, 6 weeks - 9 years 
+ Young Smiling Faces, 627 County Rd 88, Abbeville, AL, 36310, (334) 585-6765, keelahm@msn.com, varies, 10, Home, 77, infant to school age 
+ The Happy Child Daycare Center, 2103 Branch Pike #8, Cinnaminson, NJ, 08077, (856) 303-9006, erlich5@yahoo.com, 24 Hours, 20, Center, RA1545, all 
+ Kids On Board, 3824 Mitchell Ave., Bakersfield, CA, 93306, (661) 872-8508, obatts@aol.com, varies, 10, Home, 153803435, infants to 12 years old 
+ Dawn Daycare, 411 Sherman Street, Good Thunder, MN, 56037, (507) 278-4093, malecek@gotocrystal.net, 6am to 4:30, 12, Home, 234436-2-FCC, 6 weeks to age 10 
+" First Steps To Learning, Inc.", available upon request, Indianapolis/Fishers, IN, 46220, (317) 849-4331, mhneiheisel@aol.com, 7:15 - 5:30, 10, Home, 49-022159, 2 years and up 
+ Chris Child Care, 32 Carriage lane, Niles, MI, 49120, (616) 684-7519, cmon6900@aol.com, 24 Hours, 10, Home, DF140093400, all 
+ Tina's Family Daycare, 20008 48th Dr. Ne, Arlington, WA, 98223, (360) 403-0463, tinasfamilydaycare@yahoo.com, 5:00am to 5:30pm, 12, Home, 51667, Infants to 11 years old 
+ Ds Little Angels, 7155 Ben Davis Drive, Michigan City, IN, 46360, (219) 879-6201, tyeris23@aol.com, 6:30am - 5pm, 10, Home, 46-002444, infant to school age 
+ Jack And Jill Family Daycare, 50 Thompson Street, Sanford, ME, 04073, (207) 324-7429, choude@s-way.com, varies, 10, Home, 391219, infant to school age 
+ Little People Child Care, 21230 Great Mills Road, Lexington Park, MD, 20653, (301) 862-9697, jpayne@tqci.net, 24 Hours, 20, Center, 18-30976, 2 years and up 
+ Craig Child Care Center, 2nd & Main St., Craig, AK, 99921, (907) 826-3228, cccc@ptialaska.net, 7 AM -6 PM, 64, Center, Call, 6Wks- 30Ms _ 30Mos- 5 Yrs_K-12Yrs 
+ Kiddie Kampus, 1410 South Suite C, Mabank, TX, 75147, (903) 887-8687, nelda@kiddiekampus.net, varies, 100, Center, 516466, all 
+ TOTS SPOT DAYCARE, 833 Ransom road, WINSTON-SALEM, NC, 27106, (336) 760-8455, annarou@bellsouth.net, 24 Hours, 10, Home, 34000295, all 
+ Proffessional Childcare, 6313 Scenic Wy, Bakersfield, CA, 93309, (661) 834-6049, ryker@hotmail.com, 8-5, 10, Home, 19663452888, infant to school age 
+ Vickis Daycare, 5891 S. 5000 W., Hooper, UT, 84315, (801) 985-3555, probusinesservices@yahoo.com, varies, 10, Home, FCC-3191, infants to 12 years old 
+ Bundle Of Joy, 83 South Oakwood Lane, Henderson, NC, 27536, (252) 438-9531, carolyn336@ncol.net, varies, 10, Home, 910087, infants to 12 years old 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ Grandma House, 4893 Clover Ln, Homer, AK, 99603, (907) 235-0568, jeanacotney@webtv.net, varies, 10, Home, BL 276997 LOB 62, all 
+ Kellies Family Daycare, 117 Goodrich Street, Lunenburg, MA, 01462, (978) 582-7953, chriskellienava@netzero.net, varies, 10, Home, 195911, all 
+ MY BUDDIES CHILD CARE, 2141 PLAINFIELD NE, GRAND RAPIDS, MI, 49505, (616) 447-8328, cjl5@prodigy.net, varies, 10, Home, DF410094980, all 
+ Helmly s Child Care & Learning Center, 4490 county road 13 south, Elkton, FL, 32033, (904) 692-2860, rhelmly@aol.com, varies, 50, Center, 044643, all 
+ Christus Health St. Joseph Hosptial, 1804 Austin, Houston, TX, 77002, (713) 757-7415, club@juno.com, 9-6, 200, Center, 240968, infant to school age 
+ Jennifer Hetricks Family Daycare, 2148 East View Place, Martinez, CA, 94553, (925) 228-1593, jhet412186@aol.com, varies, 10, Home, 073402423, infant to school age 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ A New Beginning Child Care, 3110 Southfield Dr., Saginaw, MI, 48722, (517) 746-9262, anewbeginning@aol.com, 24 hrs 7 days, 6, Home, DF730091762, infants to 12 years old 
+ Connies Licensed Daycare, 7141 148th Lane, Ramsey, MN, 55303, (763) 576-9735, happy75887@aol.com, varies, 10, Home, Licensed, all 
+ Rest-A-Sure Daycare, 468 Lisbon, Buffalo, NY, 14215, (716) 836-5416, rverse@buffmet.net, 24 Hours, 10, Home, 037808FT, all 
+ OConnor Daycare, 103 Daywood Drive, Baldwinsville, NY, 13027, (315) 638-7342, oconda8@msn.com, 24 Hours, 10, Home, 044063FT, all 
+ Growing Kids Family Day Care, 22 Putnam St., Albany, NY, 12202, (518) 426-8941, makeebac@yahoo.com, varies, 10, Home, 546632616, all 
+ Genesis Wonderland, 8813 Ramona St., Bellflower, CA, 90706, (562) 630-0989, lekeshiagrant@latimes.com, varies, 10, Home, 192002020, infants to 12 years old 
+ Freemans Day Care, 7537 Barn Stone Drive, Charlotte, NC, 28227, (704) 545-2835, freedcare@aol.com, varies, 10, Center, 60000503, infants to 12 years old 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ TODDLER TALES DAYCARE HOME, 511 EMSLIE ST., BUFFALO, NY, 14212, (716) 855-3019, dacraig@webtv.net, 24 Hours, 10, Home, 033473FT, all 
+" 
+         
+           ",2403 Adelia Lane, St. Charles / West Chicago Area, IL, 60185, (630) 587-4071, teresadh2@yahoo.com, 7:00am - 5:15pm, 8, Home, 494672-01, Infant to school age 
+ Tinas Daycare, 3812 Redbud Rd NE, Cedar Rapids, IA, 52402, (319) 294-5200, tcscents@aol.com, 7am - 5:30 pm, 4 Openings, Home, Have not received yet, 1 year and older/before and after school 
+ Ninas  ABC 123 Daycare Center, 88 Hull Street, Brooklyn, NY, 11233, (718) 342-0490, pretty122469@cs.com, 8-5, 10, Home, 33524, infants to 12 years old 
+" Primary Colors Childrens Centre Of NE,", 75 Centre of NE Blvd, Coventry, RI, 02816, (401) 823-9800, pricolne@aol.com, varies, 100, Center, 460, all 
+ Barbaras Kids Daycare, 1769 N. 1220 W., Clinton, UT, 84015, (801) 774-9234, thescrappylady@hotmail.com, 6a.m.-6p.m., 14, Home, fcc-6005, all 
+ McPherson Daycare, 9223 Hoffman Rd. Sw, Amanda, OH, 43102, (740) 969-3560, krm9223@aol.com, 24 Hours, 10, Home, type B, all 
+ Y2KID CARE, 140 CRESCENT AVENUE, STATEN ISLAND, NY, 10301, (718) 815-6768, y2kidcare@hotmail.com, 24 Hours, 10, Home, 71449, infant to school age 
+ CHILDRENS PLACE DAYCARE," KINGSFORD PARK AREA,", OSWEGO, NY, 13126, (315) 342-2852, tzampi@twcny.rr.com, 6:30 AM -5:00 PM, 14, Home, 046176FT, 2 AND UP 
+ First Impressions Inc, 104 east 126 street apt#1, new york, NY, 10035, (212) 860-4787, firstimpressioninc@yahoo.com, 7-6pm, 30, Center, 021, 1-4 
+ Our Little Playhouse, 5815 - 138th Place NE, Marysville, WA, 98271, (360) 659-4737, babyimhome@aol.com, 6:00 - 5:30, 8, Home, 482975, 2 years and up 
+ Miss Mary Anns Home Daycare, 4 Paula Dr., St. Charles, MO, 63301, (636) 940-0498, capunoma@aol.com, varies, 10, Home, 000609667, all 
+ Wayes Babyes Christian Daycare, 8630 Bristlecone, San Antonio, TX, 78240, (210) 256-8722, twaye@sbcglobal.net, Mon-fri  5:30a-6:30p, Large, Home, 813290, Infants-school-age 
+ Tot Town Child Development Center, 1340 South St, Beaumont, TX, 77701, (409) 832-2163, tottownkids@sbcglobal.net, 7:00 am - 6:00 pm, 67, Center, 550410, All 
+ FAMILY DAY CARE, 119 Hamilton Street, Worcester, MA, 01604, (508) 792-9055, maryannmae@prodigy.net, varies, 10, Home, working on getting it, infant to school age 
+ KELLIES FAMILY DAYCARE, 80 & Antelope, CITRUS HEIGHTS, CA, 95621, (916) 721-3968, daycare@rcsis.com, 24 Hours, 10, Home, SAC55232FDCH, all 
+ Not Just Babysitting, 9346 Buck Haven Trail, Tallahassee, FL, 32312, (850) 894-2005, nitax2@aol.com, 8am - 5pm, 10, Home, G99281900076, infant to school age 
+ My Kidz-N-Home Childcare, 5638 W. 41 Place, Indianapolis, IN, 46254, (317) 347-1096, imf0112@yahoo.com, Mon - Fri 6am - 6pm, 12, Home, 49-27042, all 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ What About The Children DayCare Inc, 232 Loring Ave, Buffalo, NY, 14214, (716) 883-1061, allen@ecc.edu, varies, 10, Home, waiting on license, all 
+ Castellanos Family Child Care, 14342 Jeanette Lane, Baldwin Park, CA, 91706, (626) 338-2332, castellanosdaycare@yahoo.com, 6am to 12midnight, 8, Home, 192010466, 1 month - 11 yrs 
+ Kessies Kiddy Kare, 606 N Cedar St, Jefferson, IA, 50129, (515) 386-8809, kessie@netins.net, 8-5, 10, Home, 42-37-176, infant to school age 
+ Sunshine Daycare, 26 South Gate Dr, Poughkeepsie, NY, 12601, (914) 462-0388, danimoore9@aol.com, varies, 10, Home, 40311FT, all 
+ Johnsons Daycare, 16495  W  Madison  Rd, South Bend, IN, 46614, (219) 633-1225, pjsdaycare@aol.com, 8-5, 20, Home, 63 1497, infant to school age 
+ Always Learning, 3198 Riva Road, Riva, MD, 21140, (410) 956-0650, sandi956@aol.com, varies, 10, Home, 02-91822, after school care 
+ Little Treasures Learning Center, 10220 N. 32nd Street (32nd & Shea), Phoenix, AZ, 85028, (602) 992-4500, daycaredave@uswest.net, varies, 100, Center, CDC-8156, all 
+ Above & Beyond Daycare, 615 Howard Ave , Biloxi, MS, 39530, () Ple-ase , info@carouseloflearning.com, varies, 20, Center, Please Email, infant to school age 
+ Room To Grow Daycare, 3925 Linda St., Muskegon, MI, 49444, (231) 733-9452, straightfan10@cs.com, varies, 10, Home, DG610093497, infant to school age 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ Anew Family Day Care, 3721 Elkader Road, Baltimore, MD, 21218, (410) 243-8066, gharrington@blackplanet.com, varies, 10, Home, 30-96684, 2 years and up 
+ Kellys Kids Home Daycare, 41 Pine Street, Lunenburg, MA, 01462, (978) 582-6234, m.g.white@inetmail.att.net, 8-5, 10, Home, 193980, infant to school age 
+ Ms. Shawna Wisercare, 20941 Paseo Olma, Lake Forest, CA, 92630, (949) 462-3218, shawna.wiser@cox.net, 7 a.m - 5:00p.m., 12 - with a full tim, Home, 304205410, Infant to school age 
+ Miss Debbies Little Pony Child Care, 1213 Deer Antler Rd., Clayton, DE, 19938, (302) 659-3555, millfash2@aol.com, varies, 10, Home, 29319, infant to school age 
+ Gladys Crums In Home Day Care, Rt 5 Mudfork Road, Verdunville, WV, 25649, (304) 752-8758, love-2001@webtv.net, 24 Hours, 10, Home, West Va. Certicate, all 
+ Sue Leary Child Care, 49 Louis Dr., Meriden, CT, 06450, (203) 237-4652, sleary@snet.net, 8-5, 10, Home, 23220, all 
+ All Hours Child Care, Philadelphia Road (rt. 7), Rosedale, MD, 21237, (410) 866-3905, marshella@yahoo.com, All hours, 7, Home, 03-70907, All 
+ Michelles Daycare, 410 3RD AVE NW, Winnebago, MN, 56098, (507) 893-3369, mweringa@bevcomm.net, varies, 10, Home, 5360, all 
+ Nicoles Childcare, 5128 Belle Drive, Antioch, CA, 94509, (925) 756-7334, mnbg97@aol.com, 7:00 a.m. 6:00 p.m., 8, Home, 073402385, 0 - 12 
+ Elissas Christian Home Day Care, 2007 Braley Point Ct., Odenton, MD, 21113, (410) 674-1865, elissa37@hotmail.com, 8-5, 10, Home, 02-97496, after school care 
+ Lindas Daycare, 22 Sylvanus Wd Ln, Woburn, MA, 01801, (781) 935-6872, lmlucia@mediaone.net, varies, 10, Home, 193335, all 
+ DIANES DAYCARE, 1506 GLENWOOD, MOORE, OK, 73160, (405) 799-7688, dianergiff@aol.com, varies, 10, Home, K8214075, infants to 12 years old 
+ Before The Bell Preschool And Daycare, 2414 Kennington Rd, Raleigh, NC, 27610, (919) 828-1717, dyjana@aol.com, Varies, 12, Home, 920001201, Infants to 12 years old 
+ Building Block Family Daycare, 427 Curtis Corner Road, Wakefield, RI, 02879, (401) 783-6976, jenn1561@cox.net, 8:00 am-5:30 pm, 6, Home," 41,554", 18 months & up 
+ Kollmann Care, 301 North Oak, trenton, IL, 62293, (618) 224-9920, wifeofatrucker@yahoo.com, varies, 10, Home, 000000000000000, all 
+ Family Daycare, 403 w cherry st, ch, IL, 62822, (618) 724-9842, ajbssk3@hotmail.com, varies, 10, Home, none, all 
+ CHILDRENS PLACE, 61 Conn. Heights Rd., Charlestown, NH, 03603, (603) 826-5506, honeydomntn@aol.com, varies, 10, Home, 4467, infant to school age 
+ Shaorns Early Learning And Home Day Car, 7506 Jaffrey Road, Fort Washington, MD, 20744, (301) 248-7904, sharon407@exite.com, 9-6, 10, Home, 16-29323, 2 years and up 
+ Childs Play Day Nursery, 15939 Dorset Road, Laurel, MD, 20707, (301) 490-9338, childsplayday@aol.com, 7:00am - 5:30pm, 8, Home, 16-71093, 18 months - 4 years 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ JUST A LITTLE LOVIN DAY CARE, 6823 QUAIL BRANCH, SAN ANTONIO, TX, 78250, (210) 520-5673, elbaqpr@yahoo.com, 8-5, 10, Home, 0000000, infant to school age 
+ Eves Home Day, 3002 Akron Street, Dale City, VA, 22193, (703) 730-3105, eve5sam@home.com, varies, 10, Home, WLO-99-250, after school care 
+ Bright And Morning Star CCLC, 2207 NW 10th Street, Gainesville, FL, 32605, (352) 271-0301, robinlc@shands.ufl.edu, varies, 50, Center, 01-51-01556, 2 years and up 
+ Angie Hicks, 3549 E. National Cem Rd. Lot 46, Florence, SC, 29506, (843) 667-1622, angie@warmhearts.net, 6:30 am - 6:30 pm, 6, Home, 6, 6 weeks to 5 years 
+ DaycareProvider, 32 Sanford  St., EastHaven, CT, 06512, (203) 469-7381, tufanobgdg@aol.com, 7:00am-7:00pm, 6 children, Home, 20586, 3months to 13years old 
+ Kids Country Club, 1369 Hwy 1, Kalona, IA, 52247, (319) 656-5437, logos@kctc.net, varies, 20, Center, 4192035, infants to 12 years old 
+ Kiddy Kats Play House, 1307 S. Hudson, Aurora, MO, 65606, (417) 678-9135, jscholbrock@mo-net.com, 9am - 6pm, 10, Home, 001472928, 2 years and up 
+ The School Zone Academy, 105 Doyle Street, Howe, TX, 75459, (903) 532-5437, misskathleen@texoma.net, varies, 100, Center, 190929, all 
+ Little Hands And Feet, 1083 Christian Ave, Noblesville, IN, 46060, (317) 776-2492, tgcox247@cs.com, 730-430pm, 10, Home, 29-1401, All ages 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ Rias Daycare, 3915 E. Garnet Lane, Highlands Ranch, CO, 80126, (303) 683-9569, paulbanerjee@att.net, varies, 10, Home, 87913, all 
+ Donnas Family Daycare, 27 Winslow Rd., Brookline, MA, 02446, (617) 738-9344, uvmfenway@aol.com, 8am - 5pm, 10, Home, 602480, infant to school age 
+ ~facility_name~, ~address~, ~city~, ~state~, ~zip~, (~area_code~) ~phone~, , ~hours_open~, ~capacity~, Home, ~license~, ~age_groups~ 
+ Little Feet Child Development Center, 8815 Maywood Ave, Silver Spring, MD, 20910, (301) 495-3338, lilft@aol.com, varies, 50, Center, 1539107, infant to school age 
+ Farrar Family Daycare, 748 N Madison Ave, Bradley, IL, 60915, (815) 936-9488, lauraldove24@aol.com, 24 Hours, 10, Home, 000000000, 2 years and up 
+" E.L.F. Childrens Center, Inc.", 5200 E. 31st Street South, Wichita, KS, 67210, (316) 684-1700, bjhunt@hotmail.com, varies, 200, Center, 0013372-001, all 
+ THOSE KIDS DAY CARE, 2203 SENATOR AVENUE, DISTRICT HEIGHTS, MD, 20747, (301) 420-6612, thosekidsdaycare@aol.com, varies, 20, Center, 16-91597, 2 years and up 
+ Ladd Day Care, 1301 Ladd Road, Waynesboro, VA, 22980, (540) 943-3907, jennc@cfw.com, 8-5, 10, Home, In Process of getting, infants to 12 years old 
+ TAMMYS TOTS, 11605 BAYMEADOWS LN., bakersfield, CA, 93312, (661) 588-8346, tammyl@onemain.com, 24 Hours, 10, Home, 153805020, all 
+" MAGNIFICO PLAYHOUSE, INC.", 4248 N. GRACE ST., SCHILLER PK., IL, 60176, (847) 671-3192, magnificorick@aol.com, varies, 50, Center, 332587, infant to school age 
+ Susans Quality Care, 36 Emerson Street, Medford, MA, 02155, (781) 396-0284, dcare901@aol.com, varies, 10, Home, 188314, infant to school age 
+ ASAP Delridge Youth GR., 8808 Delridge Wy SW, Seattle, WA, 98106, (206) 764-1933, debra55@foxinternet.net, varies, 10, Center, 626263, after school care 
+ AMADAGABRIELS     DAYCARE, 14 GALIVAN   STREET, WATERBURY, CT, 06706, (203) 759-5917, tweetyyluv@aol.com, 8-5, 10, Home, 51870, infant to school age 
+ Babes In Wonderland, 1631 San Bruno St., Fairfield, CA, 94533, (707) 429-1562, sweetyoli@aol.com, 24 Hours, 10, Home, 483002999, all 

@@ -1,22 +1,78 @@
-.navbar.navbar-top
+.navbar.navbar-inverse.navbar-fixed-top
   .navbar-inner
     .container
-      %a.btn.btn-navbar{:data=>{:toggle=>"collapse", :target=>".nav-collapse"}}
+      %button.btn.btn-navbar{"data-target" => ".nav-collapse", "data-toggle" => "collapse", :type => "button"}
+        %span.icon-bar
+        %span.icon-bar
         %span.icon-bar
       =link_to image_tag("logo.png"), root_path, :class=>"brand"
-      .nav-collapse
+      .nav-collapse.collapse
         %ul.nav
-          %li=link_to "HCIT?", hcit_index_path
-     
+          .imstyle
+            =link_to image_tag("imstylist.png"), "#"
+          %li.active
+            %a{:href => "#"} Feed
           %li.divider-vertical
-          -if user_signed_in?
+          %li
+            =link_to "Play", hcit_index_path
+          %li.divider-vertical
+          %li
+            %a{:href => "#contact"} Create
+          %li.divider-vertical
+          %li
+            %a{:href => "#contact"} Stylists
+        .navbar-form.rightTopmenu
+          %ul.topnav
+            %li
+              %a{:href => "#"} Message
+              %span.message 4
+            %li
+              %span.user
+                =image_tag("userthumb.jpg")
             
+            -if user_signed_in?
+              %li
+                .dropdown
+                  %a#dLabel.dropdown-toggle{"data-target" => "#", "data-toggle" => "dropdown", :href => "/page.html", :role => "button"}
+                    =current_user.name[0..15]
+                    %b.caret2
+                  %ul.dropdown-menu{"aria-labelledby" => "dLabel", :role => "menu"}
+                    %li
+                      %a{:href => "#"} Friends
+                    %li
+                      %a{:href => "#"} Profile
+                    %li.active
+                      %a{:href => "#"} Account Settings
+                    %li.divider
+                    %li
+                      %a{:href => "#"} About
+                    %li
+                      %a{:href => "#"} Help
+                    %li.divider
+                    %li
+                      =link_to "Sign Out", destroy_user_session_path, :method=> :delete 
+            -else
+              %li.nav-text
+                =link_to "Sign In", new_user_session_path
             
-            %li.nav-text
-              ="Welcome, #{current_user.name}"
-            %li=link_to "Sign Out", destroy_user_session_path, :method=> :delete 
-          -else
-            %li.nav-text
-              Welcome Guest
-            %li=link_to "Sign In", new_user_session_path
+          .topsearch
+            %span.icon-search{:style => " position:absolute; z-index:1; left:5px; top:20px; opacity:0.5;"}
+            %input#prependedInput{:placeholder => "Search", :style => "width:205px; padding-left:25px;", :type => "text"}/
+        / /.nav-collapse
+.subnav.navbar.navbar-fixed-top
+  .navbar-inner
+    .container
+      %ul.nav
+        %li.active
+          %a{:href => "#"} Following
+        %li.divider-vertical
+        %li
+          %a{:href => "#about"} Top
+        %li.divider-vertical
+        %li
+          %a{:href => "#contact"} New
+        %li.divider-vertical
+        %li
+          %a{:href => "#contact"} Browse
+
  

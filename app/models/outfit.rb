@@ -45,6 +45,11 @@ class Outfit < ActiveRecord::Base
   	self.outfit_image.to_s
   end
 
+  # For Activity Atom Stream
+  def text
+    self.name
+  end
+
   private
 
   def setup_photo

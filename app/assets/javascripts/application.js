@@ -25,4 +25,6 @@
 //=# require social_stream-presence
 //=# require_tree .
 //= require twitter/bootstrap
+//= require bootstrap-datepicker/core
+//= require bootstrap-slider
 //= require ga

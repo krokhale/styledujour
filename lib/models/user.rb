@@ -10,6 +10,8 @@ module UserExtended
     belongs_to :actor
     has_and_belongs_to_many :points, :join_table => "points_users"
     has_many :closets, :through => :actor
+    has_one :address, :as=>:addressable
+    has_many :tasks, :through => :actor
     include Badgeable::Subject
     before_save :update_email
     

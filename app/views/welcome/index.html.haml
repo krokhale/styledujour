@@ -1,14 +1,147 @@
-.row-fluid
-  .span12
-    .hero-unit
-      %h1 What's Your Style du Jour?
-      %h2 
-        Come
-        =link_to "play", hcit_index_path, :class=>"btn"
-        the game.
-.row-fluid
-  .span4
-  
-  .span4
-  
-  .span4    
+.banner
+  #myCarousel.carousel.slide
+    %ol.carousel-indicators
+      %li{"data-slide-to" => "0", "data-target" => "#myCarousel"}
+      %li{"data-slide-to" => "1", "data-target" => "#myCarousel"}
+      %li{"data-slide-to" => "2", "data-target" => "#myCarousel"}
+      %li{"data-slide-to" => "3", "data-target" => "#myCarousel"}
+      %li{"data-slide-to" => "4", "data-target" => "#myCarousel"}
+    .carousel-inner
+      .item.active.left
+        =image_tag "carsulimg1.jpg"
+        .carousel-caption
+          .span2.captionText
+            %h1 Main Slideshow 1
+            %hr/
+            %p Loveseat and chaise lounge
+            %br/
+            %button.btn.btn-large.btn-primary{:type => "button"} view more
+          .span2.captioncolor
+            %p News, trends, collections, outfits and whatever you want to highlight.
+      .item
+        =image_tag "carsulimg1.jpg"
+        .carousel-caption
+          .span2.captionText
+            %h1 Main Slideshow 2
+            %hr/
+            %p Loveseat and chaise lounge
+            %br/
+            %button.btn.btn-large.btn-primary{:type => "button"} view more
+          .span2.captioncolor
+            %p News, trends, collections, outfits and whatever you want to highlight.
+      .item
+        =image_tag "carsulimg1.jpg"
+        .carousel-caption
+          .span2.captionText
+            %h1 Main Slideshow 3
+            %hr/
+            %p Loveseat and chaise lounge
+            %br/
+            %button.btn.btn-large.btn-primary{:type => "button"} view more
+          .span2.captioncolor
+            %p News, trends, collections, outfits and whatever you want to highlight.
+      .item
+        =image_tag "carsulimg1.jpg"
+        .carousel-caption
+          .span2.captionText
+            %h1 Main Slideshow4
+            %hr/
+            %p Loveseat and chaise lounge
+            %br/
+            %button.btn.btn-large.btn-primary{:type => "button"} view more
+          .span2.captioncolor
+            %p News, trends, collections, outfits and whatever you want to highlight.
+      .item
+        =image_tag "carsulimg1.jpg"
+        .carousel-caption
+          .span2.captionText
+            %h1 Main Slideshow5
+            %hr/
+            %p Loveseat and chaise lounge
+            %br/
+            %button.btn.btn-large.btn-primary{:type => "button"} view more
+          .span2.captioncolor
+            %p News, trends, collections, outfits and whatever you want to highlight.
+    %a.left.carousel-control{"data-slide" => "prev", :href => "#myCarousel"}
+    %a.right.carousel-control{"data-slide" => "next", :href => "#myCarousel"}
+    .clearfix
+.home2
+  %ul.thumbnilPrdoct
+    %li
+      =image_tag "homethumb2.jpg", :alt=>"Product Image", "data-src" => "holder.js/300x200", :style=> "width: 229px; height: 152px;"
+      .caption
+        %h3 Title
+        %p Co ugar plum croissant. Jelly lollipop powder muffin halvah cheesecake sugar plum.
+    %li
+      =image_tag "homethumb2.jpg", :alt=>"Product Image", "data-src" => "holder.js/300x200", :style=> "width: 229px; height: 152px;"
+      .caption
+        %h3 Title
+        %p Cotton candy sugar plum croissant. Jelly lollipop powder muffin halvah cheesecake sugar plum.
+    %li.signup
+      .title Call to action for signup/in
+      %form.form-signin{:url=>""}
+        %p
+          Cotton candy sugar plum croissant jelly lollipop powder muffin halvah.
+        %div{:style => "position:relative;"}
+          %span.icon-user{:style => " position:absolute; z-index:1; top:13px; left:5px;"}
+          %input.input-block-level{:placeholder => "Email address", :type => "text"}/
+        %div{:style => "position:relative;"}
+          %span.icon-cutom-key{:style => " position:absolute; z-index:1; top:13px; left:5px;"}
+          %span{:style => "position:absolute; z-index:1; top:13px; left:auto; right:10px"}
+            %a{:href => "#"} Forgot Password
+          %input.input-block-level{:placeholder => "Password", :type => "password"}/
+        %label.checkbox.pull-right
+          %input{:type => "checkbox", :value => "remember-me"}/
+          %em Remember me
+        %label.pull-right
+          %button.btn.btn-large.btn-primary{:type => "submit"} Sign in
+          %button.btn.btn-large{:type => "button"} Sign Up
+  .clearfix
+  %ul.thumbProduct2
+    %li
+      .title1 Trending
+      .thumbnail
+        =image_tag "home2thumb.jpg"
+      .title2
+        Title of something that’s trending- News
+      %hr/
+      %p Cupcake powder jujubes macaroon liquorice tiramisu marzipan biscuit sesame snaps.
+      %p.pull-right
+        %a{:href => "#"} Read more
+      .clearfix
+      %p
+        =image_tag "btn_pinit.gif"
+        =image_tag "btn_fbshare.gif"
+        =image_tag "btn_tweet.gif"
+    %li.divider-vertical
+    %li
+      .title1 Collections
+      .thumbnail
+        =image_tag "home2thumb.jpg"
+      .title2
+        Title of something that’s trending- News
+      %hr/
+      %p Cupcake powder jujubes macaroon liquorice tiramisu marzipan biscuit sesame snaps.
+      %p.pull-right
+        %a{:href => "#"} Read more
+      .clearfix
+      %p
+        =image_tag "btn_pinit.gif"
+        =image_tag "btn_fbshare.gif"
+        =image_tag "btn_tweet.gif"
+    %li.divider-vertical
+    %li
+      .title1 Stylists
+      .thumbnail
+        =image_tag "home2thumb.jpg"
+      .title2
+        Title of something that’s trending- News
+      %hr/
+      %p Cupcake powder jujubes macaroon liquorice tiramisu marzipan biscuit sesame snaps.
+      %p.pull-right
+        %a{:href => "#"} Read more
+      .clearfix
+      %p
+        =image_tag "btn_pinit.gif"
+        =image_tag "btn_fbshare.gif"
+        =image_tag "btn_tweet.gif"

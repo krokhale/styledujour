@@ -1,34 +1,43 @@
 !!!
-%html
-
+%html{:lang => "en"}
   %head
-    %title
-      = yield(:title) || "Untitled"
-    %meta{"http-equiv"=>"Content-Type", :content=>"text/html; charset=utf-8"}/
+    %meta{:charset => "utf-8"}/
+    %title= yield(:title) || "Untitled"
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+    %meta{:content => "", :name => "description"}/
+    %meta{:content => "", :name => "author"}/
     %link{:rel=>"shortcut icon", :href=>"/assets/favicon.ico"}
     = stylesheet_link_tag "application"
-    =# javascript_include_tag "https://www.google.com/jsapi"
+    :css
+      body {
+        padding-top: 170px; /* 60px to make the container go all the way to the bottom of the topbar */
+        background:url(/assets/pgaebg.gif);
+      }
+    / HTML5 shim, for IE6-8 support of HTML5 elements
+    /[if lt IE 9]
+      %script{:src=>"../assets/js/html5shiv.js"}
+    / Fav and touch icons
+    %link{:href => "../assets/ico/apple-touch-icon-144-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "144x144"}/
+    %link{:href => "../assets/ico/apple-touch-icon-114-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "114x114"}/
+    %link{:href => "../assets/ico/apple-touch-icon-72-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "72x72"}/
+    %link{:href => "../assets/ico/apple-touch-icon-57-precomposed.png", :rel => "apple-touch-icon-precomposed"}/
+    %link{:href => "../assets/ico/favicon.png", :rel => "shortcut icon"}/
     = csrf_meta_tag
     = javascript_include_tag 'https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'
     = yield(:head)
-
   %body
     %header
       =render :partial=>"shared/header"
-      .container
-        .row-fluid
-          .span12
-            - flash.each do |name, msg|
-              = content_tag :div, msg, :id => "flash_#{name}", :class=>"alert alert-#{name}"
+      .row-fluid
+        .span12
+          - flash.each do |name, msg|
+            = content_tag :div, msg, :id => "flash_#{name}", :class=>"alert alert-#{name}"
     .container
-      .row
-        - if show_title?
-          %h1= yield(:title)
-      .row
-        = yield
-    %footer.footer
+      = yield
+    .clearfix
+    %footer
       =render :partial=>"shared/footer"
     = javascript_include_tag "application"
-    = javascript_include_tag 'https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.6/jquery-ui.min.js'
-    = yield(:scripts)
+    = yield(:scripts) #should switch to just 'javascript'
+    = yield(:javascript)
     = yield(:templates)

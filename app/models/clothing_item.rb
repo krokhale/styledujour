@@ -165,7 +165,10 @@ class ClothingItem < ActiveRecord::Base
     super(options.merge(:url =>self.photo.try(:url)))
   end
 
-
+  # For Activity Atom Stream
+  def text
+    self.description
+  end
   private
   def give_user_points
     Point.award(user_author.user, "HCIT_add_clothing_item") if self.user_author

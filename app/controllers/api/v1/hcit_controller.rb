@@ -3,7 +3,7 @@ class Api::V1::HcitController < ApplicationController
 	before_filter :authenticate_user!
 
 	def ask_user
-		@invite = AskHCIT.new
+		@invite = AskHcit.new
 		@invite.sender = current_actor
 		@invite.receiver_id = User.find_by_id(params[:receiver_id]).try(:actor).try(:id)
 		@invite.clothing_item = ClothingItem.find_by_id(params[:clothing_item_id])
@@ -21,7 +21,7 @@ class Api::V1::HcitController < ApplicationController
 	end
 
 	def answer_queue
-		@invites = AskHCIT.unanswered.where(:receiver_id=>current_actor.id)
+		@invites = AskHcit.unanswered.where(:receiver_id=>current_actor.id)
 
 		respond_to do |wants|
 

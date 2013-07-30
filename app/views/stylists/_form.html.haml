@@ -1,0 +1,37 @@
+= form_for @stylist do |f|
+  -if @stylist.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@stylist.errors.count, "error")} prohibited this stylist from being saved:"
+      %ul
+        - @stylist.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :actor_id
+    = f.number_field :actor_id
+  .field
+    = f.label :youtube_video
+    = f.text_field :youtube_video
+  .field
+    = f.label :about_me
+    = f.text_area :about_me
+  .field
+    = f.label :facebook
+    = f.text_field :facebook
+  .field
+    = f.label :twitter
+    = f.text_field :twitter
+  .field
+    = f.label :google
+    = f.text_field :google
+  .field
+    = f.label :pinterest
+    = f.text_field :pinterest
+  .field
+    = f.label :website
+    = f.text_field :website
+  .field
+    = f.label :phone
+    = f.text_field :phone
+  .actions
+    = f.submit 'Save'

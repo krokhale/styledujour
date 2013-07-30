@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.11'
+ruby "2.0.0"
+gem 'rails', '3.2.12'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -13,10 +14,10 @@ group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
   gem 'less'
-  gem 'less-rails', '>= 2.0.0'
-  gem 'less-rails-bootstrap', '>=2.0.0'
+  gem 'less-rails', '>=2.3.1'
+  gem 'less-rails-bootstrap', '=2.3.3'
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer'
+  gem 'therubyracer', :platform => :ruby
   gem 'less-rails-fontawesome'
   gem 'uglifier', '>= 1.0.3'
 end
@@ -32,6 +33,7 @@ gem 'mobylette'
 gem 'omniauth-facebook'
 gem 'omniauth-twitter'
 gem 'heritage', :git=>'git://github.com/tramuntanal/Heritage.git'
+gem 'bootstrap-datepicker-rails'
 
 gem 'nokogiri'
 #gem 'mechanize'
@@ -43,7 +45,6 @@ gem 'settingslogic'
 gem 'cancan'
 
 gem 'hpricot'
-gem 'annotate', :git => 'git://github.com/ctran/annotate_models.git'
 
 gem "aws-s3", :require => "aws/s3"
 gem 'social_stream-base', :git=>'git://github.com/justinsaul/social_stream.git'
@@ -70,6 +71,8 @@ group :development do
   gem 'ruby_parser'
   gem 'heroku'
   gem 'meta_request', '0.2.1'
+  gem 'annotate', :git => 'git://github.com/ctran/annotate_models.git'
+  gem 'better_errors'
 end
 
 group :test do

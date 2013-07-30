@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120901200429) do
+ActiveRecord::Schema.define(:version => 20130725211749) do
 
   create_table "activities", :force => true do |t|
     t.integer  "activity_verb_id"
@@ -89,6 +89,27 @@ ActiveRecord::Schema.define(:version => 20120901200429) do
   add_index "actors", ["activity_object_id"], :name => "index_actors_on_activity_object_id"
   add_index "actors", ["email"], :name => "index_actors_on_email"
   add_index "actors", ["slug"], :name => "index_actors_on_slug", :unique => true
+
+  create_table "actors_stylists", :id => false, :force => true do |t|
+    t.integer "actor_id",   :null => false
+    t.integer "stylist_id", :null => false
+  end
+
+  add_index "actors_stylists", ["actor_id", "stylist_id"], :name => "index_actors_stylists_on_actor_id_and_stylist_id"
+
+  create_table "addresses", :force => true do |t|
+    t.string   "address_1"
+    t.string   "address_2"
+    t.string   "city"
+    t.string   "state"
+    t.string   "zip"
+    t.integer  "addressable_id",   :null => false
+    t.string   "addressable_type", :null => false
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
+  end
+
+  add_index "addresses", ["addressable_type", "addressable_id"], :name => "index_addresses_on_addressable_type_and_addressable_id"
 
   create_table "affiliate_clothing_items", :force => true do |t|
     t.integer "activity_object_id"
@@ -501,6 +522,36 @@ ActiveRecord::Schema.define(:version => 20120901200429) do
 
   add_index "rooms", ["actor_id"], :name => "index_rooms_on_actor_id"
 
+  create_table "stylist_client_requests", :force => true do |t|
+    t.integer  "stylist_id",          :null => false
+    t.integer  "actor_id",            :null => false
+    t.boolean  "stylist_approved"
+    t.boolean  "client_approved"
+    t.datetime "stylist_approved_on"
+    t.datetime "client_approved_on"
+    t.datetime "created_at",          :null => false
+    t.datetime "updated_at",          :null => false
+  end
+
+  add_index "stylist_client_requests", ["actor_id"], :name => "index_stylist_client_requests_on_actor_id"
+  add_index "stylist_client_requests", ["stylist_id"], :name => "index_stylist_client_requests_on_stylist_id"
+
+  create_table "stylists", :force => true do |t|
+    t.integer  "actor_id",      :null => false
+    t.string   "youtube_video"
+    t.text     "about_me"
+    t.string   "facebook"
+    t.string   "twitter"
+    t.string   "google"
+    t.string   "pinterest"
+    t.string   "website"
+    t.string   "phone"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+  end
+
+  add_index "stylists", ["actor_id"], :name => "index_stylists_on_actor_id"
+
   create_table "taggings", :force => true do |t|
     t.integer  "tag_id"
     t.integer  "taggable_id"
@@ -516,6 +567,18 @@ ActiveRecord::Schema.define(:version => 20120901200429) do
 
   create_table "tags", :force => true do |t|
     t.string "name"
+  end
+
+  create_table "tasks", :force => true do |t|
+    t.string   "title",                              :null => false
+    t.text     "description"
+    t.datetime "due_date"
+    t.datetime "completion_date"
+    t.boolean  "is_complete",     :default => false
+    t.integer  "client_id"
+    t.datetime "created_at",                         :null => false
+    t.datetime "updated_at",                         :null => false
+    t.integer  "actor_id"
   end
 
   create_table "ties", :force => true do |t|

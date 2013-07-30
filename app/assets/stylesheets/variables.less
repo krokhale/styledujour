@@ -148,7 +148,7 @@
 @navbarLinkColorHover:            @grayLighter;
 @navbarLinkColorActive:           @navbarLinkColorHover;
 @navbarLinkBackgroundHover:       transparent;
-@navbarLinkBackgroundActive:      @navbarBackground;
+@navbarLinkBackgroundActive:      transparent;
 
 @navbarSearchBackground:          lighten(@navbarBackground, 25%);
 @navbarSearchBackgroundFocus:     @white;
@@ -184,18 +184,3 @@
 
 
 
-// GRID
-// --------------------------------------------------
-
-// Default 940px grid
-// -------------------------
-@gridColumns:             12;
-@gridColumnWidth:         60px;
-@gridGutterWidth:         20px;
-@gridRowWidth:            (@gridColumns * @gridColumnWidth) + (@gridGutterWidth * (@gridColumns - 1));
-
-
-// Fluid grid
-// -------------------------
-@fluidGridColumnWidth:    6.382978723%;
-@fluidGridGutterWidth:    2.127659574%;
