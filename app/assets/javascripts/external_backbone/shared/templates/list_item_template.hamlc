@@ -1,0 +1,4 @@
+%li
+  %button.bbf-remove.btn.right.default{"data-action" => "remove", :type => "button"} ×
+  .bbf-editor-container.field{:style => "width:50%;margin:1%"}
+    {{editor}}

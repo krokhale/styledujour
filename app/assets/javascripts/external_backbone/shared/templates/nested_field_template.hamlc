@@ -1,0 +1,9 @@
+%li.bbf-field.bbf-nested-field{:class => "field-{{key}}", :title => "{{title}}"}>
+  %label{:for => "{{id}}"}
+    {{title}}
+  .bbf-editor
+    {{editor}}
+  .bbf-help
+    {{help}}
+  .bbf-error
+    {{error}}

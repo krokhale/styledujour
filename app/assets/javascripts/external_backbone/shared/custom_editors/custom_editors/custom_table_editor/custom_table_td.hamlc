@@ -1,0 +1,7 @@
+- if @header
+  - if @td
+    %h4{:style => "margin:0;font-weight:bold;text-align:center;color:#888;padding:0"}
+      %span#header
+        = @td
+- else
+  %input#td-val{:value => "#{@td}", :style => "background:#f9f9f9;border:1px dashed #eee;font-size:16px;width:100%"}

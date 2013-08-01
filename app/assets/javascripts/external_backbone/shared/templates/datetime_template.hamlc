@@ -1,0 +1,8 @@
+.bbf-datetime
+  .bbf-date-container
+    {{date}}
+  %select{"data-type" => "hour"}
+    {{hours}}
+  :
+  %select{"data-type" => "min"}
+    {{mins}}

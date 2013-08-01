@@ -1,0 +1,39 @@
+%ul.tiles.two_up{:style => 'margin-top:4%'}
+  %li{:style =>  "border:4px solid #eee"}
+    %h4{:style => 'font-weight:bold;text-align:center'}
+      Total Students Signed up:
+      %span{:style => 'font-weight:normal'}
+        = @total
+    .btn.medium.default
+      %a#show-total{:href => "#"}
+        Show Students
+
+  %li{:style =>  "border:4px solid #eee"}
+    %h4{:style => 'font-weight:bold;text-align:center'}
+      Students Signed up Today:
+      %span{:style => 'font-weight:normal'}
+        = @today
+    .btn.medium.default
+      %a#show-today{:href => "#"}
+        Show Students
+.row.three.columns.centered{:style => 'margin-top:4%'}
+  .btn.large.danger
+    %a#show-all{:href => "#"}
+      Show All Students
+
+
+-#.row.twelve.columns
+
+
+    %tbody
+      %tr
+        %td{:style => 'border:1px solid #eee'}
+          hmm
+        %td{:style => 'border:1px solid #eee'}
+          aaa
+        %td{:style => 'border:1px solid #eee'}
+          aaa
+        %td{:style => 'border:1px solid #eee'}
+          aaa
+        %td{:style => 'border:1px solid #eee'}
+          aaa

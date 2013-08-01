@@ -1,0 +1,11 @@
+
+.row.twelve.columns.centered#size-wrapper{:style => "display:none"}
+  #sizes
+  -#%button.default.btn.medium{:style => "margin-bottom:5%;margin-top:5%"}
+  #submit-size{:style => ' cursor: pointer;text-align: right;font-weight:bold'}
+    Generate Table Structure
+
+.row.twelve.columns.centered
+  %table.bordered.width-100#thetable
+  -#%button.btn.btn-small#add-row
+    Add Row

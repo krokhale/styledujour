@@ -1,0 +1,8 @@
+.row.twelve.columns.centered{:style => "margin-top:2%"}
+  .two.columns
+    %label.inline.left{"for" => "{{id}}"}
+      {{title}}
+  .ten.columns
+    {{editor}}
+    %span.small.error
+      {{help}}

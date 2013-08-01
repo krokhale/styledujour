@@ -1,0 +1,7 @@
+%fieldset
+  %legend{:style => "border:1px solid #ddd;background:#f9f9f9"}
+    {{legend}}
+  .row.twelve.columns.centered
+    {{fields}}
+
+-#.btn.btn-square.width-100{:style => "text-align:left;background:#fff"}
