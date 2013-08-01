@@ -1,0 +1,106 @@
+.row.twelve.columns.centered
+  %h2.red{:style => "font-weight:bold"}
+    -#{:style => "margin-top:-2%"}
+    %i.icon-archive
+    Admissions App
+  %h5{:style => "margin-left:0.5%"}
+    Manage Admissions.
+%section.pill.tabs.twelve.columns
+  %ul.tab-nav
+    %li.active
+      %a{:href => "#"} Home
+    %li
+      %a{:href => "#"} External App Settings
+    %li
+      %a{:href => "#"} Design Forms
+  .tab-content.active
+    #menu
+    .row.ten.columns.centered{:style => "margin-top:2%"}
+      %table.hovered#the-table{:style => 'width:100%;'}
+        %thead
+          %tr
+            %td{:style => 'border:1px solid #eee;font-weight:bold;text-align:center'}
+              First Name
+            %td{:style => 'border:1px solid #eee;font-weight:bold;text-align:center'}
+              Last Name
+            %td{:style => 'border:1px solid #eee;font-weight:bold;text-align:center'}
+              Email Id
+            %td{:style => 'border:1px solid #eee;font-weight:bold;text-align:center'}
+              City
+            %td{:style => 'border:1px solid #eee;font-weight:bold;text-align:center'}
+              Mobile Number
+  .tab-content
+    #external-settings
+  .tab-content
+    #design-form
+    -##design
+
+-#.row.twelve.columns{:style => ""}
+  %h2.red.text-center{:style => "font-weight:bold;margin-top: 0%;text-align: left;border-bottom:1px solid #ddd"}
+    %i.icon-archive
+    Admissions App
+  #menu
+  .row.ten.columns.centered{:style => "margin-top:2%"}
+    %table.hovered#the-table{:style => 'width:100%;'}
+      %thead
+        %tr
+          %td{:style => 'border:1px solid #eee;font-weight:bold;text-align:center'}
+            First Name
+          %td{:style => 'border:1px solid #eee;font-weight:bold;text-align:center'}
+            Last Name
+          %td{:style => 'border:1px solid #eee;font-weight:bold;text-align:center'}
+            Email Id
+          %td{:style => 'border:1px solid #eee;font-weight:bold;text-align:center'}
+            City
+          %td{:style => 'border:1px solid #eee;font-weight:bold;text-align:center'}
+            Mobile Number
+      -##the-rows
+
+-#.row.twelve.columns{:style => ""}
+    -#%section.pill.tabs{:style => "position:;right:0;border-left:1px solid #ddd"}
+      -#.six.columns{:style => "position:absolute;right:0;"}
+      %ul.tab-nav{:style => "border-radius:0;border-right:0;border-left:0;margin-top:-1px;margin-right:3px"}
+        %li.active
+          %a{:href => "#{@subject.friendly_slug}", :style => "text-align:right;"}
+            %i.icon-home
+            Home
+        %li
+          %a{:href => "#events"}
+            %i.icon-flag
+            Syllabus
+        %li
+          %a{:href => "#events"}
+            %i.icon-flag
+            Resources
+          -#%a{:href => "#{@gallery.friendly_slug}"}
+            %i.icon-picture
+            Gallery
+      .tab-content.active{:style => "padding:0"}
+        .row.twelve.columns
+          .six.columns
+            .row.twelve.columns{:style => "border-bottom:1px solid #eee;"}
+              %h4.text-center.red{:style => "border-bottom:1px solid #eee;width:100%;background:#f9f9f9;margin-left:0%;font-weight:bold;border-left:"}
+                %i.icon-bookmark
+                Course Outline
+              #subjectcourse-box{:style => "max-height:500px;overflow:auto;background:#fff"}
+            .row.twelve.columns{:style => "border-bottom:1px solid #eee;"}
+              %h4.text-center.red{:style => "border-bottom:1px solid #eee;width:100%;background:#f9f9f9;margin-left:0%;font-weight:bold;border-left:"}
+                %i.icon-book
+                Books
+              #subjecttextbook-box
+            .row.twelve.columns{:style => "border-bottom:1px solid #eee;"}
+              %h4.text-center.red{:style => "border-bottom:1px solid #eee;width:100%;background:#f9f9f9;margin-left:0%;font-weight:bold;border-left:"}
+                %i.icon-doc-text
+                Description
+              #content-box{:style => "max-height:500px;overflow:auto;background:#fff;"}
+          .six.columns
+            .row.twelve.columns{:style => "border-bottom:1px solid #eee;"}
+              %h4.text-center.red{:style => "border-bottom:1px solid #eee;width:100%;background:#f9f9f9;margin-left:0%;font-weight:bold;border-left:1px solid #eee"}
+                %i.icon-share
+                Activity
+              #comments{:style => "background:#fff;width:104%;border-right:1px solid #eee;border-left:1px solid #eee"}
+      .tab-content{:style => "padding:0"}
+        #syllabus-upload{:style => "margin-bottom:1%;float:right;padding:1%"}
+        #subjectsyllabus-box
+      .tab-content{:style => "padding:0"}
+        #subjectresource-box

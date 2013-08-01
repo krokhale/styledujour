@@ -1,0 +1,92 @@
+-#%link{:href => "https://raw.github.com/powmedia/backbone-forms/master/distribution/templates/bootstrap.css", :rel => "stylesheet"}
+-#%link{:href => "//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css", :rel => "stylesheet"}/
+-#%script{:src => "//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"}
+.row.eleven.columns.centered.custom-skynet-form{:style => "padding:1%;margin-bottom:5%"}
+  .twelve.columns.row
+    -#%i.icon-cancel-circled.red.right#close{:style => "font-size:40px;cursor:pointer"}
+    -##list-forms
+    -#%span#print-form.blue{:style => "cursor:pointer"}
+      %span.gray
+        Get PDF
+      %i.icon-print.icon-large{:style => "font-size:16px"}
+      %i.icon-arrows-ccw.animate-spin#spinner{:style => "display:none;"}
+      %span#sample
+  #customform.twelve.columns
+  .twelve.columns.row.centered
+    .medium.btn.default.right#submit-stuff
+      %a.common-link{:href => '#'}
+        Submit
+    .medium.btn.default.right#add-stuff{:style => "display:none"}
+      %a.common-link{:href => '#'}
+        Add
+    .medium.btn.default.right#remove-stuff{:style => "display:none"}
+      %a.common-link{:href => '#'}
+        Remove
+    %span.label.success#success{:style => "font-size:16px;display:none"}
+      Success!
+    %span.label.danger#error{:style => "font-size:16px;display:none"}
+      Error!
+    -#%span.label.alert#activity{:style => "font-size:16px;display:none"}
+    %i.icon-spinner.icon-spin#activity-spinner.blue{:style => "display:none;font-size:25px"}
+
+
+:css
+  ul{
+    list-style:none
+  }
+  select {
+    width:15%;
+    margin-bottom:2%
+  }
+  fieldset {
+    -#border: none;
+    margin:0;
+    border-radius:0;
+  }
+  input[type="checkbox"] + label {
+    display: inline-block;
+    margin-left:5%;
+    font-weight:400;
+  }
+  input[type="radio"] + label {
+      display: inline-block;
+      margin-left:5%;
+      font-weight:400;
+  }
+  button {
+    float:right
+  }
+  label {
+    font-size:14px;
+    -#font-weight:300;
+    -#color: #2BA6CB;
+    -#color: #DA3E5A;
+  }
+  h4 {
+    text-transform: none;
+  }
+  .error {
+   margin-left:0px;
+  }
+  .green {
+    margin-top:-2%;
+  }
+  legend {
+    background:none
+  }
+  -#.bbf-field {
+  -#  background: #f9f9f9;
+  -#  padding:2%
+  -#}
+  -#button + div + input {
+  -#  width:50%
+  -#}
+  .webkit-show li input {
+    -webkit-appearance: show;
+  }
+  input[type="radio"] {
+    width: 5%;
+  }
+  input[type="radio"] {
+    width: 5%;
+  }

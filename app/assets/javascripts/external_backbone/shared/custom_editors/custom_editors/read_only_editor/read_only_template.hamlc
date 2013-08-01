@@ -1,0 +1,4 @@
+%h3
+  = @template_value
+  -#= @temporary_username
+  -#= @temporary_password

@@ -1,0 +1,9 @@
+.bbf-field{:class => "field-{{key}}", :style => "margin-bottom:1%"}
+  %label{:for => "{{id}}", :style => 'font-weight:bold;color:#666'}
+    {{title}}
+  .bbf-editor.field
+    {{editor}}
+  .bbf-help.green
+    {{help}}
+  .bbf-error.redsmall
+    {{error}}

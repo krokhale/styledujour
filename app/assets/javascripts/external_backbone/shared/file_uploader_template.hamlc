@@ -1,0 +1,29 @@
+.row.columns
+  - if @style == 'chain'
+    -#%a.button.secondary.small.radius.upload
+      %h6.subheader{:style => "margin:0"}
+        %i.icon-upload.icon-large
+        Upload
+    -#%i.icon-link.icon-large
+    -#%span Attach File:
+    -#%span.btn.gray.cursor.upload.btn-small{:style => "cursor:pointer;padding:5px;"}
+      %i.icon-upload.icon-large
+      Upload
+    .small.danger.btn.icon-left.entypo.icon-upload
+      %a.upload{:href => "#"} Upload
+    %input#fileupload{"data-url" => "server/php/", :multiple => "", :name => "files[]", :type => "file"}
+  - else if @style == 'clip'
+    %span
+      %i.icon-attach.icon-large.upload{:style => "cursor:pointer"}
+    -#%span.label.secondary.radius.cursor.upload{:style => "cursor:pointer"} Upload
+    %input#fileupload{"data-url" => "server/php/", :multiple => "", :name => "files[]", :type => "file"}
+
+.progress.radius{:style => "display:none"}
+  %span.meter#meter
+%span#meter-text
+
+
+:css
+  #fileupload, .progress {
+    display:none
+  }

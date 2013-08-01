@@ -1,0 +1,7 @@
+.bbf-date
+  %select.bbf-date{"data-type" => "date"}
+    {{dates}}
+  %select.bbf-month{"data-type" => "month"}
+    {{months}}
+  %select.bbf-year{"data-type" => "year"}
+    {{years}}
